@@ -10,10 +10,10 @@ ls: Lists the contents of the current directory. You'll see files and subdirecto
 cd: Changes the directory. This moves you to a different location in the file system.
 
 *Check your current location : cd
-Output: C:\Users\YourUserName
+- Output: C:\Users\YourUserName
 
 *List the contents of the current directory : dir
-Output: Directory of C:\Users\YourUserName
+- Output: Directory of C:\Users\YourUserName
 ... list of files and directories
 
 Change to the Documents directory
