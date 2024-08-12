@@ -19,24 +19,24 @@ cd: Changes the directory. This moves you to a different location in the file sy
 *Change to the Documents directory : cd Documents
 
 *Check your new location : cd
--Output: C:\Users\YourUserName\Documents
+- Output: C:\Users\YourUserName\Documents
 
 *List the contents of the Documents directory : dir
--Output: Directory of C:\Users\YourUserName\Documents
+- Output: Directory of C:\Users\YourUserName\Documents
 ... list of files and directories
 
 *Creating a File
--Command: type nul > filename.txt Creates an empty file named filename.txt.
+- Command: type nul > filename.txt Creates an empty file named filename.txt.
 
 *Creating a Directory
--Command: mkdir directoryname Creates a new directory named directoryname.
+- Command: mkdir directoryname Creates a new directory named directoryname.
 
 *Copying a File
--Command: copy sourcefile.txt destination\copyfile.txt Copies sourcefile.txt to destination directory as copyfile.txt.
+- Command: copy sourcefile.txt destination\copyfile.txt Copies sourcefile.txt to destination directory as copyfile.txt.
 
 *Moving a File or Directory
--Command: move sourcefile.txt destination\ Moves sourcefile.txt to the destination directory.
--Renaming: move oldname.txt newname.txt
+- Command: move sourcefile.txt destination\ Moves sourcefile.txt to the destination directory.
+- Renaming: move oldname.txt newname.txt
 
 *Deleting a File
 -Command: del filename.txt Deletes the file filename.txt.
