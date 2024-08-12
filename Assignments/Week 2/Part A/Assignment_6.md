@@ -9,12 +9,10 @@ pwd: Prints the working directory. This tells you where you currently are in the
 ls: Lists the contents of the current directory. You'll see files and subdirectories.
 cd: Changes the directory. This moves you to a different location in the file system.
 
-Check your current location
-cd
+*Check your current location : cd
 Output: C:\Users\YourUserName
 
-List the contents of the current directory
-dir
+*List the contents of the current directory : dir
 Output: Directory of C:\Users\YourUserName
 ... list of files and directories
 
