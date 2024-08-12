@@ -39,7 +39,7 @@ Moving a File or Directory
 - Renaming: move oldname.txt newname.txt
 
 Deleting a File
--Command: del filename.txt Deletes the file filename.txt.
+- Command: del filename.txt Deletes the file filename.txt.
 
 Deleting a Directory
--Command: rmdir directoryname Deletes the empty directory directoryname.
+- Command: rmdir directoryname Deletes the empty directory directoryname.
