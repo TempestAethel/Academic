@@ -55,16 +55,16 @@ These have multiple hidden layers, which can model very complex relationships. T
 Feedforward Neural Networks:
 
 Data flows in one direction, from the input layer to the output layer, through intermediate hidden layers. They use feedback loops to refine their predictions.
+
 Convolutional Neural Networks (CNNs):
-
 Designed specifically for processing images. They use convolutions to extract features like edges and textures, which are crucial for image recognition and classification.
+
 Backpropagation Algorithm:
-
 A method for training neural networks by adjusting weights based on the error between predicted and actual outcomes. This process involves iterative learning and error correction.
-Training Neural Networks:
 
+Training Neural Networks:
 Supervised Learning:
 Involves using labeled datasets where the correct answers are known. The network learns by comparing its predictions with the actual results and adjusting accordingly.
-Deep Learning:
 
+Deep Learning:
 A specialized form of machine learning that relies on deep neural networks with many layers. Unlike traditional machine learning, which requires manual feature extraction, deep learning networks can automatically discover and learn features from raw data, making them suitable for handling more complex and unstructured data.
