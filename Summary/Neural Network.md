@@ -76,7 +76,7 @@ Data scientists provide labeled datasets for artificial neural networks.
 Slowly builds knowledge from these datasets.
 After training, makes guesses about new images.
 
-* Deep Learning in Neural Networks
+* Deep Learning and machine learning in Neural Networks
 
 Artificial intelligence is a field that enables machines to perform tasks requiring human intelligence.
 Machine learning is a technique that provides computers with access to large datasets and teaches them to learn from this data.
