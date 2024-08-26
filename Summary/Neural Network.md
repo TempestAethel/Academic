@@ -50,21 +50,28 @@ Output Layer: Delivers the final result or prediction.
 Deep Neural Networks:
 These have multiple hidden layers, which can model very complex relationships. They require large datasets and extensive training to function effectively, but they can map intricate patterns from input data to outputs.
 
-- Types of Neural Networks:
+Types of Artificial Neural Networks
 
-Feedforward Neural Networks:
+Feedforward Neural Networks
+• Process data in one direction from input to output node.
+• Use feedback process to improve predictions over time.
 
-Data flows in one direction, from the input layer to the output layer, through intermediate hidden layers. They use feedback loops to refine their predictions.
+Backpropagation Algorithm
+• Continuous learning using corrective feedback loops.
+• Uses a feedback loop to find the correct path.
+• Each node makes a guess about the next node in the path.
+• Nodes assign higher weight values to paths leading to more correct guesses and lower weight values to paths leading to incorrect guesses.
 
-Convolutional Neural Networks (CNNs):
-Designed specifically for processing images. They use convolutions to extract features like edges and textures, which are crucial for image recognition and classification.
+Convolutional Neural Networks
+• Hidden layers perform mathematical functions like summarizing or filtering.
+• Useful for image classification.
+• Extract relevant features from images for better prediction.
 
-Backpropagation Algorithm:
-A method for training neural networks by adjusting weights based on the error between predicted and actual outcomes. This process involves iterative learning and error correction.
+Neural Network Training
+• Initial processing of large sets of labeled or unlabeled data.
+• Processes unknown inputs more accurately.
 
-Training Neural Networks:
-Supervised Learning:
-Involves using labeled datasets where the correct answers are known. The network learns by comparing its predictions with the actual results and adjusting accordingly.
-
-Deep Learning:
-A specialized form of machine learning that relies on deep neural networks with many layers. Unlike traditional machine learning, which requires manual feature extraction, deep learning networks can automatically discover and learn features from raw data, making them suitable for handling more complex and unstructured data.
+Supervised Learning
+• Data scientists provide labeled datasets for artificial neural networks.
+• Slowly builds knowledge from these datasets.
+• After training, makes guesses about new images.
