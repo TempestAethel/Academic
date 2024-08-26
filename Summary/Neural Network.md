@@ -75,3 +75,13 @@ Supervised Learning:
 Data scientists provide labeled datasets for artificial neural networks.
 Slowly builds knowledge from these datasets.
 After training, makes guesses about new images.
+
+* Deep Learning in Neural Networks
+
+Artificial intelligence is a field that enables machines to perform tasks requiring human intelligence.
+Machine learning is a technique that provides computers with access to large datasets and teaches them to learn from this data.
+Deep learning is a subset of machine learning that uses deep learning networks to process data.
+Traditional machine learning methods require human input, limiting the software's ability and making it tedious to create and manage.
+In contrast, deep learning uses raw data from the data scientist, allowing the network to derive features independently.
+Deep learning can analyze unstructured datasets, prioritize data attributes, and solve complex problems.
+For instance, deep learning would process all images and automatically analyze the number of legs and face shape first, then tails last to correctly identify the animal in the image.
