@@ -1,22 +1,20 @@
-Neural Networks Overview
+-Neural Networks Overview
 
-Definition: Neural networks are a type of artificial intelligence designed to process data in a manner inspired by the human brain's structure. They are integral to deep learning, which is a subset of machine learning. Neural networks consist of interconnected nodes or "neurons" organized in layers, which allows them to learn and adapt by processing vast amounts of data and improving their performance over time.
+*Definition: Neural networks are a type of artificial intelligence designed to process data in a manner inspired by the human brain's structure. They are integral to deep learning, which is a subset of machine learning. Neural networks consist of interconnected nodes or "neurons" organized in layers, which allows them to learn and adapt by processing vast amounts of data and improving their performance over time.
 
-Importance: Neural networks are crucial because they enable computers to make decisions and predictions with minimal human intervention. They excel at learning complex, nonlinear relationships within data, which allows them to handle and interpret intricate patterns. For instance, neural networks can understand various ways of asking a question, recognize that two different sentences have the same intent, or discern that a place and a person’s name are different types of entities.
+*Importance: Neural networks are crucial because they enable computers to make decisions and predictions with minimal human intervention. They excel at learning complex, nonlinear relationships within data, which allows them to handle and interpret intricate patterns. For instance, neural networks can understand various ways of asking a question, recognize that two different sentences have the same intent, or discern that a place and a person’s name are different types of entities.
 
-Applications: Neural networks have a broad range of applications across different industries:
-
+*Applications: 
+Neural networks have a broad range of applications across different industries:
 Medical Diagnosis: They are used for analyzing medical images to detect conditions and diseases.
 Marketing: By analyzing behavioral data, neural networks help in targeted advertising and social network filtering.
 Finance: They predict market trends and financial outcomes by processing historical data.
 Energy: Neural networks forecast electrical load and energy demands.
 Process Control: They monitor and control quality in manufacturing processes.
 Chemical Identification: They help identify chemical compounds in various research and industrial applications.
-Key Areas of Use:
 
-Computer Vision:
-
-Neural networks can extract and interpret visual information from images and videos. Applications include:
+-Key Areas of Use:
+Computer Vision:Neural networks can extract and interpret visual information from images and videos. 
 Self-Driving Cars: Identifying road signs and other vehicles.
 Content Moderation: Automatically filtering inappropriate content from media.
 Facial Recognition: Identifying individuals and their attributes.
