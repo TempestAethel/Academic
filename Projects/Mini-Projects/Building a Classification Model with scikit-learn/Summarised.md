@@ -44,8 +44,8 @@ df.drop(columns=['Id'], inplace=True)
 print("\nFinal preprocessed dataset:")
 print(df.head())
 ```
-Missing Values: We first check for missing values using df.isnull().sum(), which will give us a count of missing values for each column.
-Encoding Categorical Variables: The Species column is encoded using LabelEncoder, converting species names into numerical labels.
+Missing Values: We first check for missing values using df.isnull().sum(), which will give us a count of missing values for each column.\n
+Encoding Categorical Variables: The Species column is encoded using LabelEncoder, converting species names into numerical labels.\n
 Feature Scaling: We use StandardScaler to scale the numerical features, ensuring they have a mean of 0 and a standard deviation of 1. This is often beneficial for algorithms like k-NN or SVM.
 Dropping the Id Column: The Id column is just an identifier and doesn't contain useful information for modeling, so it's dropped.
 
