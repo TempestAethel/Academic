@@ -133,21 +133,23 @@ print(f"Recall: {random_forest_recall:.2f}")
 print(f"F1 Score: {random_forest_f1:.2f}")
 print(f"ROC AUC: {random_forest_roc_auc:.2f}")
 ```  
-Predictions: We use the predict method to generate predictions for the testing set for both models.\
-Metrics Calculation:\
-Accuracy: The proportion of correctly predicted instances.\
-Precision: The ratio of true positive predictions to the total predicted positives.\
-Recall: The ratio of true positive predictions to the total actual positives.\
-F1 Score: The harmonic mean of precision and recall, providing a balance between the two.\
-ROC AUC: The area under the ROC curve, which measures the model's ability to distinguish between classes.\
-Comparison and Discussion:\
-After running the above code, you will see the metrics for both models. Generally, you can compare the following:\
-Accuracy: Indicates overall performance; higher is better.\
-Precision and Recall: Important for understanding the trade-off between false positives and false negatives.\
-F1 Score: Useful when you need a balance between precision and recall.\
-ROC AUC: A higher value indicates better model performance in distinguishing classes.\
-In most cases, the Random Forest model tends to perform better than Logistic Regression, especially in terms of accuracy and F1 score, due to its ensemble nature and ability to capture complex patterns in the data. However, the final decision on which model to use should also consider the specific context of the problem and the importance of each metric based on the application.
+The predict method is used to generate predictions for testing sets for both models. The metrics calculated include accuracy, precision, recall, F1 score, and ROC AUC. Accuracy indicates overall performance, while precision and recall help understand the trade-off between false positives and false negatives. F1 score balances precision and recall, while ROC AUC indicates better model performance in class distinction.\
 
-Cross-Validation: Imp
+In most cases, Random Forest models perform better than Logistic Regression, especially in terms of accuracy and F1 score, due to their ensemble nature and ability to capture complex data patterns. However, the final decision should consider the specific context of the problem and the importance of each metric based on the application.
 
-- Hyperparameter Tuning (Optional):If time permits, you can perform hyperparameter tuning on one of the models to see if you can improve its performance. Usetechniques like GridSearchCV or RandomizedSearchCV for this.Conclusion:Summarize your findings. Discuss the strengths and weaknesses of the models you tested. Reflect on the importance of data preprocessing in model performance.
+Cross-Validation:
+```
+# Perform k-fold cross-validation
+logistic_cv_scores = cross_val_score(logistic_model, X, y, cv=5)  # 5-fold cross-validation
+random_forest_cv_scores = cross_val_score(random_forest_model, X, y, cv=5)  # 5-fold cross-validation
+
+# Display the results
+print("Logistic Regression Cross-Validation Scores:")
+print(f"Mean Accuracy: {logistic_cv_scores.mean():.2f} ± {logistic_cv_scores.std():.2f}")
+
+print("\nRandom Forest Cross-Validation Scores:")
+print(f"Mean Accuracy: {random_forest_cv_scores.mean():.2f} ± {random_forest_cv_scores.std():.2f}")
+```
+Explanation:\
+Cross-Validation: We use cross_val_score to perform k-fold cross-validation. The cv=5 parameter indicates that we want to split the dataset into 5 folds.\
+Mean and Standard Deviation: The mean accuracy and standard deviation of the cross-validation scores are calculated and printed for both models. This gives us an idea of the model's performance and its variability across different subsets of the data.
