@@ -10,13 +10,27 @@ Tasks:
 import pandas as pd
 Load the dataset
 df = pd.read_csv('Iris.csv')
-```
+
 Display the first few rows
 print(df.head())
+```
 
 - Data Preprocessing: Perform necessary data preprocessing steps such as handling missing values, encoding categorical variables (if any), and scaling/normalizing numerical features.
+```
+```  
+
 - Data Splitting:Split the dataset into two parts: a training set (70-80% of the data) and a testing set (20-30% of the data).
+```
+```  
+
 - Model Selection:Choose at least two classification algorithms from sklearn (e.g., Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, etc.). Train each model on the training data.
+```
+```  
+
 - Model Evaluation:Evaluate the performance of each model on the testing set using appropriate classification metrics such as accuracy, precision, recall, F1-score, and ROC AUC. Compare the performance of the models and discuss which one performs better.
+```
+```  
+
 Cross-Validation: Imp
+
 - Hyperparameter Tuning (Optional):If time permits, you can perform hyperparameter tuning on one of the models to see if you can improve its performance. Usetechniques like GridSearchCV or RandomizedSearchCV for this.Conclusion:Summarize your findings. Discuss the strengths and weaknesses of the models you tested. Reflect on the importance of data preprocessing in model performance.
