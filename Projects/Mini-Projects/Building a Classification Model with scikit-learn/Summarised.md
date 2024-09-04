@@ -6,9 +6,11 @@ Instructions:
 
 Tasks:
 - Data Loading:Load the dataset into a pandas DataFrame (if not using a built-in sklearn dataset). Display the first few rows to get a sense of the data.
+```
 import pandas as pd
 Load the dataset
 df = pd.read_csv('Iris.csv')
+```
 Display the first few rows
 print(df.head())
 
