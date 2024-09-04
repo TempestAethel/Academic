@@ -14,6 +14,7 @@ df = pd.read_csv('Iris.csv')
 Display the first few rows
 print(df.head())
 ```
+This code reads the Iris.csv file into a pandas DataFrame and then prints the first five rows using df.head(). 'Make sure the Iris.csv file is in the same directory as your script, or provide the full path to the file.'
 
 - Data Preprocessing: Perform necessary data preprocessing steps such as handling missing values, encoding categorical variables (if any), and scaling/normalizing numerical features.
 ```
