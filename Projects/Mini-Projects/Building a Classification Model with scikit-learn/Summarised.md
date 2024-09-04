@@ -14,11 +14,40 @@ df = pd.read_csv('Iris.csv')
 Display the first few rows
 print(df.head())
 ```
-This code reads the Iris.csv file into a pandas DataFrame and then prints the first five rows using df.head(). 'Make sure the Iris.csv file is in the same directory as your script, or provide the full path to the file.'
+This code reads the Iris.csv file into a pandas DataFrame and then prints the first five rows using df.head(). Make sure the Iris.csv file is in the same directory as your script, or provide the full path to the file.
 
 - Data Preprocessing: Perform necessary data preprocessing steps such as handling missing values, encoding categorical variables (if any), and scaling/normalizing numerical features.
 ```
-```  
+# Check for missing values
+print("\nMissing values in the dataset:")
+print(df.isnull().sum())
+
+# Encode the categorical 'Species' column
+label_encoder = LabelEncoder()
+df['Species'] = label_encoder.fit_transform(df['Species'])
+
+print("\nEncoded 'Species' column:")
+print(df['Species'].head())
+
+# Scale the numerical features
+scaler = StandardScaler()
+df[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']] = scaler.fit_transform(
+    df[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']]
+)
+
+print("\nScaled numerical features:")
+print(df.head())
+
+# Dropping the 'Id' column as it's not useful for modeling
+df.drop(columns=['Id'], inplace=True)
+
+print("\nFinal preprocessed dataset:")
+print(df.head())
+```
+Missing Values: We first check for missing values using df.isnull().sum(), which will give us a count of missing values for each column.
+Encoding Categorical Variables: The Species column is encoded using LabelEncoder, converting species names into numerical labels.
+Feature Scaling: We use StandardScaler to scale the numerical features, ensuring they have a mean of 0 and a standard deviation of 1. This is often beneficial for algorithms like k-NN or SVM.
+Dropping the Id Column: The Id column is just an identifier and doesn't contain useful information for modeling, so it's dropped.
 
 - Data Splitting:Split the dataset into two parts: a training set (70-80% of the data) and a testing set (20-30% of the data).
 ```
