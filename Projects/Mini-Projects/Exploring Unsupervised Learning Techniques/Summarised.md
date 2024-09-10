@@ -5,18 +5,169 @@ The objective of this assignment is to explore unsupervised learning techniques,
 # Tasks:
 ## Clustering Algorithms Implementation:
 
-## a. K-Means Clustering: Implement the K-Means clustering algorithm using scikit-learn. Choose an appropriate dataset for clustering and apply K-Means to find natural clusters. Determine the optimal number of clusters using techniques like the Elbow Method or Silhouette Score.
+## a. K-Means Clustering: 
+Implement the K-Means clustering algorithm using scikit-learn. Choose an appropriate dataset for clustering and apply K-Means to find natural clusters. Determine the optimal number of clusters using techniques like the Elbow Method or Silhouette Score.
 
+- Step-by-step approach:
+  
+Load a dataset suitable for clustering.\
+Implement K-Means clustering.\
+Determine the optimal number of clusters using: Elbow Method and Silhouette Score
+
+Code Example:
+```
+# Importing necessary libraries
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.datasets import make_blobs
+from sklearn.metrics import silhouette_score
+
+# Step 1: Generate a dataset
+X, y = make_blobs(n_samples=500, centers=4, cluster_std=0.60, random_state=42)
+
+# Step 2: Implementing K-Means and determining optimal clusters using the Elbow Method
+def elbow_method(X):
+    distortions = []
+    K = range(1, 11)
+    for k in K:
+        kmeans = KMeans(n_clusters=k, random_state=42)
+        kmeans.fit(X)
+        distortions.append(kmeans.inertia_)  # Inertia: Sum of squared distances to closest cluster center
+    
+    plt.figure(figsize=(8, 6))
+    plt.plot(K, distortions, 'bo-')
+    plt.xlabel('Number of clusters (k)')
+    plt.ylabel('Distortion (Inertia)')
+    plt.title('Elbow Method for Optimal k')
+    plt.show()
+
+# Step 3: Determine the optimal number of clusters using Silhouette Score
+def silhouette_analysis(X):
+    silhouette_scores = []
+    K = range(2, 11)
+    for k in K:
+        kmeans = KMeans(n_clusters=k, random_state=42)
+        labels = kmeans.fit_predict(X)
+        score = silhouette_score(X, labels)
+        silhouette_scores.append(score)
+
+    plt.figure(figsize=(8, 6))
+    plt.plot(K, silhouette_scores, 'bo-')
+    plt.xlabel('Number of clusters (k)')
+    plt.ylabel('Silhouette Score')
+    plt.title('Silhouette Analysis for Optimal k')
+    plt.show()
+
+# Run the analysis
+elbow_method(X)
+silhouette_analysis(X)
+
+# Step 4: Applying K-Means with the optimal number of clusters (for example, let's assume 4 is optimal)
+kmeans = KMeans(n_clusters=4, random_state=42)
+y_kmeans = kmeans.fit_predict(X)
+
+# Step 5: Visualizing the clusters
+plt.figure(figsize=(8, 6))
+plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
+centers = kmeans.cluster_centers_
+plt.scatter(centers[:, 0], centers[:, 1], c='red', s=200, alpha=0.75)
+plt.title('K-Means Clustering')
+plt.show()
 
 ```
 
-```
+- Explanation:
 
-## b. Hierarchical Clustering: Implement hierarchical clustering using either agglomerative or divisive clustering approaches. Visualize the resulting dendrogram and discuss the advantages and disadvantages of hierarchical clustering.
+Dataset Generation: We generate synthetic data with 4 clusters using make_blobs.\
+Elbow Method: The elbow method helps us visualize the "distortion" (sum of squared distances to the nearest cluster center) and suggests the optimal number of clusters based on the inflection point.\
+Silhouette Score: Measures the quality of clustering by considering how similar a point is to its own cluster compared to other clusters. The higher the score, the better the defined clusters.\
+Cluster Visualization: After applying K-Means with the optimal number of clusters (say 4), we plot the data points along with the cluster centers.
+
+
+
+
+
+
+## b. Hierarchical Clustering: 
+Implement hierarchical clustering using either agglomerative or divisive clustering approaches. Visualize the resulting dendrogram and discuss the advantages and disadvantages of hierarchical clustering.
+
+Hierarchical Clustering using the Agglomerative approach. We'll also visualize the resulting dendrogram using scipy's dendrogram function.
+
+- Steps:
+
+Load a dataset suitable for hierarchical clustering.\
+Implement Agglomerative Clustering.\
+Visualize the Dendrogram.\
+Discuss the advantages and disadvantages of hierarchical clustering.\
+
+Code Example:
+```
+# Import necessary libraries
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import make_blobs
+from scipy.cluster.hierarchy import dendrogram, linkage
+from sklearn.cluster import AgglomerativeClustering
+
+# Step 1: Generate a dataset (you can use any dataset like Iris, Wine, etc.)
+X, y = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=42)
+
+# Step 2: Perform Hierarchical Clustering (Agglomerative)
+# We'll first use 'linkage' for dendrogram and then agglomerative clustering from sklearn
+Z = linkage(X, method='ward')
+
+# Step 3: Visualizing the dendrogram
+plt.figure(figsize=(10, 7))
+plt.title("Dendrogram")
+dendrogram(Z)
+plt.show()
+
+# Step 4: Perform Agglomerative Clustering with a specific number of clusters (e.g., 4 clusters)
+agg_clustering = AgglomerativeClustering(n_clusters=4, affinity='euclidean', linkage='ward')
+y_agg = agg_clustering.fit_predict(X)
+
+# Step 5: Visualizing the clusters
+plt.figure(figsize=(8, 6))
+plt.scatter(X[:, 0], X[:, 1], c=y_agg, cmap='viridis')
+plt.title('Agglomerative Clustering')
+plt.show()
 
 ```
+### Explanation:
 
-```
+1. **Dataset Generation**: We generate synthetic data with 4 clusters using `make_blobs` (you can replace this with real datasets like Iris).
+2. **Linkage for Dendrogram**: We compute the hierarchical clustering using the `linkage` method, where:
+   * `ward` linkage minimizes the variance of clusters merged.
+   * The dendrogram helps visualize the hierarchy of clusters and the order in which they are merged.
+3. **Agglomerative Clustering**: We implement agglomerative clustering, which is a "bottom-up" approach. We specify the number of clusters (e.g., 4).
+4. **Cluster Visualization**: We visualize the resulting clusters using a scatter plot.
+
+### Dendrogram:
+
+* The dendrogram helps you visualize the cluster merging process at each stage.
+* The height at which two clusters merge indicates their distance (how different they are).
+* The number of clusters can be determined by cutting the dendrogram at a specific height.
+
+### Discussion: Advantages and Disadvantages of Hierarchical Clustering
+
+#### **Advantages:**
+
+1. **No need to specify the number of clusters upfront**: Unlike K-Means, hierarchical clustering does not require you to predefine the number of clusters. The dendrogram allows you to explore various numbers of clusters.
+2. **Dendrogram provides rich information**: You can see which clusters are closer or further apart and understand the relationship between clusters visually.
+3. **Agglomerative clustering is deterministic**: Since it doesn’t rely on initial centroids (like K-Means), the results are stable and reproducible.
+
+#### **Disadvantages:**
+
+1. **Computational Complexity**: Hierarchical clustering can be computationally expensive, especially for large datasets, as it scales with O(n² log n).
+2. **Not suitable for large datasets**: The memory and computational requirements make it impractical for very large datasets.
+3. **Once merged, can’t split clusters**: In agglomerative clustering, once clusters are merged, they cannot be split, which can lead to suboptimal clusters if early merges are poorly chosen.
+
+### Key Differences Between K-Means and Hierarchical Clustering:
+
+* **K-Means** requires the number of clusters to be specified in advance, while **hierarchical clustering** allows more exploration with the dendrogram.
+* **K-Means** is more scalable for large datasets, but **hierarchical clustering** provides more interpretability through the dendrogram.
+
 
 
 ## c. DBSCAN: 
