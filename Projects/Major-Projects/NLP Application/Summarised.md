@@ -6,6 +6,70 @@ Apply NLP techniques learned during the week to solve a real-world NLP task.
 ## Select an NLP Task: 
 Choose an NLP task that interests you, such as sentiment analysis, text summarization, or question-answering. Ensure you have access to relevant data for this task.
 
+I have chosen **Text Summarization** as my task.
+
+### Dataset
+
+For this task, I will use a dataset from Hugging Face's **CNN/DailyMail** dataset, which contains news articles and corresponding summaries.
+
+#### Dataset Information
+
+- **Source**: Hugging Face Datasets Library
+- **Content**: News articles and summaries from CNN and DailyMail.
+- **Application**: This dataset is ideal for extractive and abstractive summarization.
+
+### Task
+
+I will use a pre-trained model to perform **abstractive summarization**, where the model generates a concise version of the text using its own words.
+
+#### Selected NLP Model
+
+- **Model**: BART (Bidirectional and Auto-Regressive Transformers)
+- **Library**: Hugging Face Transformers
+
+### Implementation Steps
+
+1. **Load Dataset**: Load the dataset and select a few articles to summarize.
+2. **Load Pre-trained Model**: Use the Hugging Face `pipeline` to load the BART model for summarization.
+3. **Summarize the Text**: Generate summaries for the selected articles.
+4. **Evaluate**: Assess the quality of the summaries using ROUGE scores (ROUGE-1, ROUGE-2, ROUGE-L).
+
+
+
+```
+# Import libraries
+from transformers import pipeline
+from datasets import load_dataset
+
+# Load dataset from Hugging Face
+dataset = load_dataset('cnn_dailymail', '3.0.0')
+
+# Load the BART model for summarization
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+
+# Select an article to summarize
+article = dataset['train'][0]['article']
+
+# Generate summary
+summary = summarizer(article, max_length=150, min_length=50, do_sample=False)
+
+# Display the summary
+print("Original Article:", article)
+print("\nGenerated Summary:", summary[0]['summary_text'])
+
+```
+
+## Next Steps
+
+1. **Fine-tuning**: Optionally, the model can be fine-tuned on the dataset if needed.
+2. **Evaluation**: Use ROUGE scores to evaluate the summaries.
+
+This implementation will help in understanding how NLP models can be applied to real-world text summarization tasks.
+
+
+
+
+
 ## Data Preprocessing: 
 Preprocess the text data, including cleaning, tokenization, and any necessary text representation (e.g., TF-IDF or word embeddings).
 
