@@ -28,13 +28,16 @@ Unsupervised learning techniques have a broad range of applications in various d
 - Anomaly Detection:\
 Applications: Fraud detection, network security, and equipment failure prediction.\
 Techniques: Isolation Forest, One-Class SVM, Autoencoders.
+
 - Customer Segmentation:\
 Applications: Targeted marketing, personalized recommendations, and customer behavior analysis.\
 Techniques: K-Means Clustering, DBSCAN, Hierarchical Clustering.
+
 - Recommendation Systems:\
 Applications: Product recommendations, content recommendations, and personalized user experiences.\
 Techniques: Matrix Factorization, K-Means Clustering, t-SNE for visualizing user/item clusters.
-- Focus on Customer Segmentation:
+
+- Focus on Customer Segmentation:\
 Customer Segmentation is a classic application of unsupervised learning. It involves dividing a customer base into distinct groups based on similarities in behavior, preferences, or demographics. This segmentation helps businesses tailor their marketing strategies, product offerings, and services to specific customer needs.
 
 - Problem Description
