@@ -11,6 +11,37 @@ b. Hierarchical Clustering: Implement hierarchical clustering using either agglo
 
 c. DBSCAN: Implement DBSCAN (Density-Based Spatial Clustering of Applications with Noise) on a dataset with noise and varying density clusters. Explain how DBSCAN works and compare its performance to K- Means.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Dimensionality Reduction Techniques:
 
 a. Principal Component Analysis (PCA): Implement PCA to reduce the dimensionality of a high- dimensional dataset. Visualize the explained variance ratio and discuss the impact of dimensionality reduction on data visualization and modeling.
@@ -150,7 +181,7 @@ plt.show()
 Dataset: We use the Digits dataset, which is high-dimensional with 64 features.\
 Data Standardization: Both PCA and t-SNE are sensitive to scaling, so we standardize the dataset.\
 PCA: We apply PCA to reduce the dataset to 2 dimensions and visualize the result.\
-t-SNE: We apply t-SNE with perplexity=30 (which controls the number of nearest neighbors considered) and n_iter=1000 (number of iterations). t-SNE aims to preserve local structure, making it excellent for cluster visualization.\
+t-SNE: We apply t-SNE with perplexity=30 (which controls the number of nearest neighbors considered) and n_iter=1000 (number of iterations). t-SNE aims to preserve local structure, making it excellent for cluster visualization.
 
 
 
@@ -195,6 +226,7 @@ Spectral Clustering: An Advanced Clustering Technique
 Spectral Clustering is a technique that leverages graph theory and eigenvalues of similarity matrices to perform clustering on data points. Unlike traditional clustering methods that assume spherical clusters, spectral clustering can handle more complex cluster shapes, including non-linear structures.
 
 - How It Works:
+- 
 Similarity Matrix: Spectral clustering begins by constructing a similarity matrix, where each element represents how similar two points are (using metrics like Euclidean distance, Gaussian kernels, or cosine similarity).\
 Graph Representation: The data is treated as a graph, with data points as nodes and edges representing the similarity between them.\
 Laplacian Matrix: The algorithm constructs a Laplacian matrix from the similarity graph, capturing the relationships between data points.\
