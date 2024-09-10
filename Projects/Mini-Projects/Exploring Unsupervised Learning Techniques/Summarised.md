@@ -22,6 +22,38 @@ Advanced Clustering Techniques: Research and provide an overview of advanced clu
 # Dimensionality Reduction Techniques Comparison: 
 Compare PCA and t-SNE in terms of their strengths, weaknesses, and typical use cases. Create visualizations to illustrate the differences in dimensionality reduction achieved by each method.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Applications of Unsupervised Learning: Explore real-world applications of unsupervised learning, such as anomaly detection, customer segmentation, and recommendation systems. Choose one application and describe how unsupervised learning techniques can be applied to solve a specific problem in that domain. 
 Unsupervised learning techniques have a broad range of applications in various domains. Here’s a brief overview of some common applications:
 
@@ -40,7 +72,7 @@ Techniques: Matrix Factorization, K-Means Clustering, t-SNE for visualizing user
 - Focus on Customer Segmentation:\
 Customer Segmentation is a classic application of unsupervised learning. It involves dividing a customer base into distinct groups based on similarities in behavior, preferences, or demographics. This segmentation helps businesses tailor their marketing strategies, product offerings, and services to specific customer needs.
 
-- Problem Description
+- Problem Description: \
 Suppose we have an e-commerce company and want to understand the different customer groups to create targeted marketing campaigns. We have a dataset containing customer information such as:\
 Demographics: Age, gender, income.\
 Behavioral Data: Purchase frequency, average transaction amount, browsing history.\
