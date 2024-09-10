@@ -15,13 +15,128 @@ Select an appropriate NLP model for your task. This could be a traditional machi
 ## Model Training: 
 Train your selected model on the preprocessed data.
 
+
+
+
+
 ## Evaluation: 
 Evaluate the performance of your model using relevant evaluation metrics (e.g., accuracy, F1- score, BLEU score, etc.).
 
+## Evaluation of Fine-Tuned BART Model for Text Summarization
 
+For the text summarization task, standard classification metrics like accuracy or F1-score are not directly applicable. Instead, specialized metrics designed to evaluate text generation and summarization tasks are used. Below are some commonly used evaluation metrics for text summarization:
 
+### Relevant Evaluation Metrics
 
+1. **ROUGE (Recall-Oriented Understudy for Gisting Evaluation)**:
+   - **ROUGE-1**: Measures the overlap of unigrams (individual words) between the generated summary and the reference summary.
+   - **ROUGE-2**: Measures the overlap of bigrams (two consecutive words) between the generated summary and the reference summary.
+   - **ROUGE-L**: Measures the longest common subsequence between the generated and reference summaries. It captures sentence structure similarity.
 
+2. **BLEU (Bilingual Evaluation Understudy)**:
+   - BLEU is commonly used in translation tasks but can also be used to evaluate summarization. It measures the overlap between n-grams in the generated text and reference summaries.
+
+3. **METEOR (Metric for Evaluation of Translation with Explicit ORdering)**:
+   - Considers synonymy and stemming while comparing generated summaries to reference summaries.
+
+In this evaluation, we will primarily focus on the **ROUGE** metric, as it is the standard for summarization tasks.
+
+### Evaluation Code Using ROUGE
+
+```
+from transformers import BartTokenizer, BartForConditionalGeneration
+from datasets import load_dataset, load_metric
+
+# Load the fine-tuned model and tokenizer
+tokenizer = BartTokenizer.from_pretrained('./fine_tuned_bart_model')
+model = BartForConditionalGeneration.from_pretrained('./fine_tuned_bart_model')
+
+# Load the dataset again (for validation set evaluation)
+dataset = load_dataset('cnn_dailymail', '3.0.0')
+
+# Load ROUGE metric from Hugging Face's datasets library
+rouge = load_metric("rouge")
+
+# Tokenize and prepare the validation data
+def preprocess_function(examples):
+    inputs = tokenizer(examples['article'], max_length=1024, truncation=True, padding='max_length', return_tensors="pt")
+    return inputs
+
+# Process validation dataset
+tokenized_dataset = dataset['validation'].map(preprocess_function, batched=True)
+
+# Generate predictions for the validation set
+def generate_summary(batch):
+    inputs = tokenizer(batch["article"], return_tensors="pt", max_length=1024, truncation=True)
+    summary_ids = model.generate(inputs["input_ids"], max_length=150, min_length=50, length_penalty=2.0, num_beams=4, early_stopping=True)
+    return tokenizer.batch_decode(summary_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+
+# Apply summary generation on validation set
+predictions = [generate_summary(example) for example in dataset['validation']]
+
+# Decode reference summaries
+references = [example['highlights'] for example in dataset['validation']]
+
+# Compute ROUGE score
+result = rouge.compute(predictions=predictions, references=references)
+print(result)
+```
+
+## ROUGE Metric Explanation
+
+- **ROUGE-1**: Measures the overlap of individual words between the generated summary and the reference summary.
+- **ROUGE-2**: Measures the overlap of bigrams (2-word sequences) between the generated summary and the reference summary.
+- **ROUGE-L**: Measures the longest common subsequence between the generated and reference summaries, providing insight into the fluency and coherence of the summaries.
+
+## Interpreting ROUGE Scores
+
+- **ROUGE-N (Precision, Recall, F1-Score)**: Each ROUGE score consists of precision, recall, and F1-score.
+  - **Precision**: The proportion of n-grams in the generated summary that appear in the reference summary.
+  - **Recall**: The proportion of n-grams in the reference summary that appear in the generated summary.
+  - **F1-Score**: The harmonic mean of precision and recall, balancing both metrics to provide a comprehensive evaluation of summary quality.
+
+## Example Output
+
+The output of the ROUGE evaluation might look like this:
+
+```
+{
+    "rouge1": {
+        "precision": 0.45,
+        "recall": 0.48,
+        "f1": 0.46
+    },
+    "rouge2": {
+        "precision": 0.22,
+        "recall": 0.24,
+        "f1": 0.23
+    },
+    "rougeL": {
+        "precision": 0.42,
+        "recall": 0.44,
+        "f1": 0.43
+    }
+}
+```
+### BLEU Metric (Optional)
+
+You can also evaluate the model using the **BLEU** score, which focuses on n-gram overlap. Here's how you can compute it:
+
+```
+from datasets import load_metric
+
+# Load BLEU metric
+bleu = load_metric("bleu")
+
+# Evaluate BLEU score
+bleu_result = bleu.compute(predictions=predictions, references=references)
+print(bleu_result)
+
+```
+### Conclusion
+
+- **ROUGE scores** are widely used for summarization tasks and provide a good evaluation of how well the generated summaries match the reference summaries in terms of both individual words and sentence structure.
+- If you're handling machine translation or want a broader evaluation, you can also compute **BLEU** and **METEOR** scores.
 
 
 ## Results Presentation: 
