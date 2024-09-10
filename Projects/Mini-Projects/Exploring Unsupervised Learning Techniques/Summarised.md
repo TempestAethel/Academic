@@ -3,12 +3,17 @@ Objective: The objective of this assignment is to explore unsupervised learning 
 
 Tasks:
 Clustering Algorithms Implementation:
+
 a. K-Means Clustering: Implement the K-Means clustering algorithm using scikit-learn. Choose an appropriate dataset for clustering and apply K-Means to find natural clusters. Determine the optimal number of clusters using techniques like the Elbow Method or Silhouette Score.
+
 b. Hierarchical Clustering: Implement hierarchical clustering using either agglomerative or divisive clustering approaches. Visualize the resulting dendrogram and discuss the advantages and disadvantages of hierarchical clustering.
+
 c. DBSCAN: Implement DBSCAN (Density-Based Spatial Clustering of Applications with Noise) on a dataset with noise and varying density clusters. Explain how DBSCAN works and compare its performance to K- Means.
 
 Dimensionality Reduction Techniques:
+
 a. Principal Component Analysis (PCA): Implement PCA to reduce the dimensionality of a high- dimensional dataset. Visualize the explained variance ratio and discuss the impact of dimensionality reduction on data visualization and modeling.
+
 b. t-SNE (t-Distributed Stochastic Neighbor Embedding): Implement t-SNE to visualize high-dimensional data in two or three dimensions. Compare the results of t-SNE with PCA and explain when each technique is more suitable.
 
 Advanced Clustering Techniques: Research and provide an overview of advanced clustering techniques beyond K-Means, Hierarchical clustering, and DBSCAN. Discuss one advanced technique in detail, including its advantages and real-world applications.
