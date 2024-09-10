@@ -167,7 +167,7 @@ Data Transformation:After completing data preprocessing and feature engineering,
 The Titanic dataset has an imbalanced class distribution in the 'Survived' column. \
 To address this issue ,we use the Synthetic Minority Over-sampling Technique (SMOTE). \
 SMOTE creates synthetic samples of the minority class to balance the dataset.\
-Steps to Handle Class Imbalance with SMOTE\
+Steps to Handle Class Imbalance with SMOTE
 Identify Class Imbalance: Check the distribution of the target variable ('Survived').\
 Apply SMOTE: Use SMOTE to generate synthetic samples for the minority class.\
 Data Transformation and Saving the Preprocessed Dataset\
@@ -400,9 +400,9 @@ Summarize the key takeaways from this assignment, including the importance of da
 * Handling Imbalanced Data: Applied SMOTE to balance the classes, ensuring the model can learn effectively from both classes.
 
 # Importance of Data Preprocessing and Feature Engineering
-Data preprocessing and feature engineering are critical steps in preparing data for machine learning models. \
-- Enhance Data Quality: Clean and complete data is essential for accurate model training.\
-- Improve Model Performance: Scaling features, encoding categorical variables, and creating meaningful features provide the model with the necessary information to make accurate predictions.\
+Data preprocessing and feature engineering are critical steps in preparing data for machine learning models. 
+- Enhance Data Quality: Clean and complete data is essential for accurate model training.
+- Improve Model Performance: Scaling features, encoding categorical variables, and creating meaningful features provide the model with the necessary information to make accurate predictions.
 - Ensure Model Fairness: Handling class imbalance ensures the model is not biased towards the majority class, resulting in fairer and more reliable predictions.
 
 Overall, these steps transform raw data into a structured and informative dataset that machine learning algorithms can effectively learn from, leading to better model performance and more accurate predictions.
