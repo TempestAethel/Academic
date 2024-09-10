@@ -98,15 +98,89 @@ b. t-SNE (t-Distributed Stochastic Neighbor Embedding): Implement t-SNE to visua
 
 
 ```
+# Import necessary libraries
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_digits
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+from sklearn.preprocessing import StandardScaler
+
+# Step 1: Load a high-dimensional dataset (Digits dataset)
+digits = load_digits()
+X = digits.data
+y = digits.target
+
+# Step 2: Standardize the data (both PCA and t-SNE are sensitive to scaling)
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Step 3: Apply PCA to reduce dimensionality to 2 components for comparison
+pca = PCA(n_components=2)
+X_pca_2d = pca.fit_transform(X_scaled)
+
+# Step 4: Apply t-SNE to reduce dimensionality to 2 components
+tsne = TSNE(n_components=2, perplexity=30, n_iter=1000, random_state=42)
+X_tsne_2d = tsne.fit_transform(X_scaled)
+
+# Step 5: Visualize PCA results
+plt.figure(figsize=(14, 6))
+
+plt.subplot(1, 2, 1)
+plt.scatter(X_pca_2d[:, 0], X_pca_2d[:, 1], c=y, cmap='viridis', s=50)
+plt.title('PCA: 2D Visualization of Digits Dataset')
+plt.xlabel('Principal Component 1')
+plt.ylabel('Principal Component 2')
+plt.colorbar()
+
+# Step 6: Visualize t-SNE results
+plt.subplot(1, 2, 2)
+plt.scatter(X_tsne_2d[:, 0], X_tsne_2d[:, 1], c=y, cmap='viridis', s=50)
+plt.title('t-SNE: 2D Visualization of Digits Dataset')
+plt.xlabel('t-SNE Dimension 1')
+plt.ylabel('t-SNE Dimension 2')
+plt.colorbar()
+
+plt.tight_layout()
+plt.show()
+
 ```
 
+- Explanation:
+Dataset: We use the Digits dataset, which is high-dimensional with 64 features.\
+Data Standardization: Both PCA and t-SNE are sensitive to scaling, so we standardize the dataset.\
+PCA: We apply PCA to reduce the dataset to 2 dimensions and visualize the result.\
+t-SNE: We apply t-SNE with perplexity=30 (which controls the number of nearest neighbors considered) and n_iter=1000 (number of iterations). t-SNE aims to preserve local structure, making it excellent for cluster visualization.\
 
 
 
 
-Advanced Clustering Techniques: Research and provide an overview of advanced clustering techniques beyond K-Means, Hierarchical clustering, and DBSCAN. Discuss one advanced technique in detail, including its advantages and real-world applications.
 
-# Overview of Advanced Clustering Techniques:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Advanced Clustering Techniques: 
+Research and provide an overview of advanced clustering techniques beyond K-Means, Hierarchical clustering, and DBSCAN. Discuss one advanced technique in detail, including its advantages and real-world applications.
+
+- Overview of Advanced Clustering Techniques:
 Beyond traditional methods like K-Means, Hierarchical clustering, and DBSCAN, there are several advanced clustering techniques that address the limitations of these algorithms, particularly in handling complex, high-dimensional, or structured data. Some of these techniques include:
 
 1. Gaussian Mixture Models (GMM)
