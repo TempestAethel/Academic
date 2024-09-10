@@ -163,7 +163,7 @@ Appling two feature engineering techniques to create new meaningful features fro
 If your dataset has imbalanced classes (e.g., in classification tasks),address this issue using a technique of your choice (e.g., oversampling, undersampling, SMOTE, or any other method).Provide details on how you handled class imbalance.\
 Data Transformation:After completing data preprocessing and feature engineering,save the preprocessed dataset as a CSV file for further analysis. Include a link or attachment to this CSV file in your assignment submission.
 
-- Handling Imbalanced Data:
+- Handling Imbalanced Data:\
 The Titanic dataset has an imbalanced class distribution in the 'Survived' column. \
 To address this issue ,we use the Synthetic Minority Over-sampling Technique (SMOTE). \
 SMOTE creates synthetic samples of the minority class to balance the dataset.\
@@ -172,7 +172,7 @@ Identify Class Imbalance: Check the distribution of the target variable ('Surviv
 Apply SMOTE: Use SMOTE to generate synthetic samples for the minority class.\
 Data Transformation and Saving the Preprocessed Dataset\
 So We integrate SMOTE into our preprocessing pipeline and then save the final processed dataset as a CSV file.\
-to implement:\
+to implement:
 1. Identify Class Imbalance :First, We check the class distribution of the 'Survived' column.\
 2. Apply SMOTE : We will use the SMOTE class from the imblearn library to balance the classes.\
 ```
