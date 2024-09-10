@@ -18,6 +18,7 @@ a. Principal Component Analysis (PCA): Implement PCA to reduce the dimensionalit
 Principal Component Analysis (PCA), a popular technique for dimensionality reduction. PCA helps reduce the number of features while retaining most of the variance in the data. This is especially useful for high-dimensional datasets, improving both data visualization and model efficiency.
 
 - Steps:
+  
 Load a high-dimensional dataset.\
 Implement PCA to reduce the dimensionality.\
 Visualize the explained variance ratio (how much variance each principal component explains).\
@@ -70,19 +71,23 @@ plt.show()
 ```
 
 - Explanation:
-Dataset: We use the Digits dataset, which has 64 features (8x8 pixel images of handwritten digits). It’s a high-dimensional dataset suitable for PCA.
-Standardization: Since PCA is sensitive to the scale of the data, we standardize the features to have zero mean and unit variance.
-PCA Implementation: We apply PCA, retaining all components to explore how much variance each component explains.
-Explained Variance Ratio: This shows how much of the dataset’s variance is captured by each principal component. We plot the cumulative explained variance to see how many components are needed to capture most of the information.
-Dimensionality Reduction: We reduce the dataset to 2 principal components for 2D visualization. This gives a simplified view of the data.
+  
+Dataset: We use the Digits dataset, which has 64 features (8x8 pixel images of handwritten digits). It’s a high-dimensional dataset suitable for PCA.\
+Standardization: Since PCA is sensitive to the scale of the data, we standardize the features to have zero mean and unit variance.\
+PCA Implementation: We apply PCA, retaining all components to explore how much variance each component explains.\
+Explained Variance Ratio: This shows how much of the dataset’s variance is captured by each principal component. We plot the cumulative explained variance to see how many components are needed to capture most of the information.\
+Dimensionality Reduction: We reduce the dataset to 2 principal components for 2D visualization. This gives a simplified view of the data.\
 Visualization: We scatter-plot the reduced data and color it by the target variable (y), allowing us to see the separability between different classes.
 
 - Impact of PCA on Data Visualization and Modeling:
+  
 1. Data Visualization:
+   
 Reduces Complexity: PCA simplifies the visualization of high-dimensional data. By reducing the dataset to 2 or 3 components, we can visualize it in 2D or 3D, which is essential for understanding patterns in the data.\
 Loss of Detail: While PCA retains the most important variance, some information is lost, especially when reducing to very few components.
 
 2. Modeling:
+   
 Reduces Overfitting: In high-dimensional datasets, reducing dimensions can help prevent overfitting by reducing noise and irrelevant features.\
 Improves Efficiency: Reducing the number of features decreases computation time, especially for algorithms sensitive to the curse of dimensionality (e.g., K-Means, SVM).\
 Potential Loss of Interpretability: In models like decision trees, using principal components (which are combinations of the original features) can make it harder to interpret the model since the original features are not directly used.
