@@ -40,21 +40,16 @@ Spectral Clustering: An Advanced Clustering Technique
 Spectral Clustering is a technique that leverages graph theory and eigenvalues of similarity matrices to perform clustering on data points. Unlike traditional clustering methods that assume spherical clusters, spectral clustering can handle more complex cluster shapes, including non-linear structures.
 
 How It Works:
-Similarity Matrix: Spectral clustering begins by constructing a similarity matrix, where each element represents how similar two points are (using metrics like Euclidean distance, Gaussian kernels, or cosine similarity).
-
-Graph Representation: The data is treated as a graph, with data points as nodes and edges representing the similarity between them.
-
-Laplacian Matrix: The algorithm constructs a Laplacian matrix from the similarity graph, capturing the relationships between data points.
-
-Eigen Decomposition: Eigenvectors are computed from the Laplacian matrix, and the top few eigenvectors are selected.
-
+Similarity Matrix: Spectral clustering begins by constructing a similarity matrix, where each element represents how similar two points are (using metrics like Euclidean distance, Gaussian kernels, or cosine similarity).\
+Graph Representation: The data is treated as a graph, with data points as nodes and edges representing the similarity between them.\
+Laplacian Matrix: The algorithm constructs a Laplacian matrix from the similarity graph, capturing the relationships between data points.\
+Eigen Decomposition: Eigenvectors are computed from the Laplacian matrix, and the top few eigenvectors are selected.\
 K-Means on Eigenvectors: The selected eigenvectors are used as features, and K-Means or another clustering method is applied in this new feature space to assign clusters.
 
-Advantages of Spectral Clustering:
-Non-Linear Clusters: It can capture non-spherical, complex cluster shapes that methods like K-Means struggle with.
-
-Flexibility with Similarity Measures: Spectral clustering can use different similarity measures, making it adaptable to various data types, such as image or graph data.
-
+- Advantages of Spectral Clustering:
+  
+Non-Linear Clusters: It can capture non-spherical, complex cluster shapes that methods like K-Means struggle with.\
+Flexibility with Similarity Measures: Spectral clustering can use different similarity measures, making it adaptable to various data types, such as image or graph data.\
 Global Structure: It captures both local and global structures of the data by considering the eigenvectors of the Laplacian, providing a robust way to partition the data.
 
 - Limitations:
