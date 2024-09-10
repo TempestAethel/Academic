@@ -1,5 +1,6 @@
 
-Objective: The objective of this assignment is to explore unsupervised learning techniques, including clustering and dimensionality reduction, and understand their applications.
+# Objective: 
+The objective of this assignment is to explore unsupervised learning techniques, including clustering and dimensionality reduction, and understand their applications.
 
 # Tasks:
 Clustering Algorithms Implementation:
