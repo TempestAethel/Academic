@@ -173,8 +173,8 @@ Apply SMOTE: Use SMOTE to generate synthetic samples for the minority class.\
 Data Transformation and Saving the Preprocessed Dataset\
 So We integrate SMOTE into our preprocessing pipeline and then save the final processed dataset as a CSV file.\
 to implement:
-1. Identify Class Imbalance :First, We check the class distribution of the 'Survived' column.\
-2. Apply SMOTE : We will use the SMOTE class from the imblearn library to balance the classes.\
+1. Identify Class Imbalance :First, We check the class distribution of the 'Survived' column.
+2. Apply SMOTE : We will use the SMOTE class from the imblearn library to balance the classes.
 ```
 Implementation:
 Here is the complete implementation, including SMOTE, feature engineering, and data preprocessing:
@@ -243,7 +243,6 @@ If you run this code in your local Python environment, it will generate the proc
 
 # Analysis:
 Provide visualizations and summary statistics to illustrate the impact of data preprocessing and feature engineering on the dataset.Discuss how these techniques improved the dataset's suitability for machine learning tasks.\
-
 To analyze the impact of data preprocessing and feature engineering on the Titanic dataset, we'll follow these steps:\
   1)Visualize the original class distribution to highlight the class imbalance.\
   2)Apply SMOTE to balance the classes.\
@@ -251,7 +250,6 @@ To analyze the impact of data preprocessing and feature engineering on the Titan
   4)Generate summary statistics for numerical features before and after preprocessing.\
   5)Visualize the distribution of numerical features before and after preprocessing.\
   6)Visualize the new features created from feature engineering (e.g., 'FamilySize', 'Title').\
-  
 Let's proceed with these steps.\
 Step-by-Step Implementation\
 1. Visualize the Original Class Distribution: Start by visualizing the original class distribution to see the extent of class imbalance.\
@@ -401,11 +399,10 @@ Summarize the key takeaways from this assignment, including the importance of da
 * Feature Engineering: Created new features 'FamilySize' and 'Title' to provide additional context and improve the dataset's representational power.
 * Handling Imbalanced Data: Applied SMOTE to balance the classes, ensuring the model can learn effectively from both classes.
 
-- Importance of Data Preprocessing and Feature Engineering
+# Importance of Data Preprocessing and Feature Engineering
 Data preprocessing and feature engineering are critical steps in preparing data for machine learning models. \
-They help to:\
-Enhance Data Quality: Clean and complete data is essential for accurate model training.\
-Improve Model Performance: Scaling features, encoding categorical variables, and creating meaningful features provide the model with the necessary information to make accurate predictions.\
-Ensure Model Fairness: Handling class imbalance ensures the model is not biased towards the majority class, resulting in fairer and more reliable predictions.\
+- Enhance Data Quality: Clean and complete data is essential for accurate model training.\
+- Improve Model Performance: Scaling features, encoding categorical variables, and creating meaningful features provide the model with the necessary information to make accurate predictions.\
+- Ensure Model Fairness: Handling class imbalance ensures the model is not biased towards the majority class, resulting in fairer and more reliable predictions.
 
 Overall, these steps transform raw data into a structured and informative dataset that machine learning algorithms can effectively learn from, leading to better model performance and more accurate predictions.
