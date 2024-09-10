@@ -44,7 +44,7 @@ a. Data Cleaning: Identify and handle any missing values in the dataset. Explain
 b. Feature Scaling: Apply appropriate feature scaling techniques (e.g., Standardization or Min-Max scaling) to normalize the numerical features in the dataset. 
 c. Handling Categorical Data: Encode categoricalvariables using suitable techniques such as One-Hot Encoding or Label Encoding. Explain the rationale behind your choice.
 
-a. Data Cleaning
+- a. Data Cleaning
     Age: The 'Age' column has 177 missing values.
       Approach: We'll fill the missing 'Age' values with the median age of the passengers. This is a common technique as it reduces the impact of outliers and doesn't skew the distribution.    
     Cabin: The 'Cabin' column has 687 missing values. 
@@ -52,10 +52,10 @@ a. Data Cleaning
     Embarked: The 'Embarked' column has 2 missing values.
       Approach: We'll fill the missing 'Embarked' values with the mode (most frequent value), which is 'S' (Southampton).
 
-b. Feature Scaling
+- b. Feature Scaling
     Approach: We'll use Standardization (z-score normalization) to scale the numerical features. This method scales the features to have a mean of 0 and a standard deviation of 1. This is particularly useful when the features have different units or scales.
 
-c. Handling Categorical Data
+- c. Handling Categorical Data
     Approach: We'll use One-Hot Encoding for the categorical features 'Sex' and 'Embarked'. 
               One-Hot Encoding creates binary columns for each category, 
               which is suitable for categorical variables without ordinal relationships.
@@ -74,6 +74,7 @@ Appling two feature engineering techniques to create new meaningful features fro
             Titles can capture social status and potentially affect the likelihood of survival.
 Code examples to be used :
 1. Create the FamilySize Feature
+```
   # Create a new feature 'FamilySize' by combining 'SibSp' and 'Parch'
   df['FamilySize'] = df['SibSp'] + df['Parch'] + 1  # +1 to include the passenger themselves
 
@@ -81,8 +82,9 @@ Code examples to be used :
   df.drop(columns=['SibSp', 'Parch'], inplace=True)
 
   df.head()
+```
 2. Extract the Title from the Name Feature
-  # Extract titles from the 'Name' feature
+  ```# Extract titles from the 'Name' feature
   df['Title'] = df['Name'].str.extract(' ([A-Za-z]+)\.', expand=False)
 
   # Simplify the titles into common groups
@@ -99,7 +101,7 @@ Code examples to be used :
 *Integration with Previous Preprocessing Steps
   To integrate these feature engineering steps with the previous preprocessing steps 
   -(handling missing values, feature scaling, and encoding categorical data).
-
+``` ```
 *Here is the complete code:
   import pandas as pd
   from sklearn.preprocessing import StandardScaler, OneHotEncoder
@@ -156,19 +158,16 @@ Code examples to be used :
   # Save the processed dataset to a CSV file
   processed_file_path = 'processed_titanic_dataset.csv'
   df_processed.to_csv(processed_file_path, index=False)
+```
 
 
 
 
+# Handling Imbalanced Data: 
+If your dataset has imbalanced classes (e.g., in classification tasks),address this issue using a technique of your choice (e.g., oversampling, undersampling, SMOTE, or any other method).Provide details on how you handled class imbalance.
+Data Transformation:After completing data preprocessing and feature engineering,save the preprocessed dataset as a CSV file for further analysis. Include a link or attachment to this CSV file in your assignment submission.
 
-Handling Imbalanced Data: If your dataset has imbalanced classes (e.g., in classification tasks), 
-                          address this issue using a technique of your choice (e.g., oversampling, undersampling, SMOTE, or any other method). 
-                          Provide details on how you handled class imbalance.
-Data Transformation:After completing data preprocessing and feature engineering,   
-                    save the preprocessed dataset as a CSV file for further analysis. 
-                    Include a link or attachment to this CSV file in your assignment submission.
-
-Handling Imbalanced Data:
+- Handling Imbalanced Data:
 The Titanic dataset has an imbalanced class distribution in the 'Survived' column. 
 To address this issue ,we use the Synthetic Minority Over-sampling Technique (SMOTE). 
 SMOTE creates synthetic samples of the minority class to balance the dataset.
@@ -182,7 +181,7 @@ So We integrate SMOTE into our preprocessing pipeline and then save the final pr
 to implement:
 1. Identify Class Imbalance :First, We check the class distribution of the 'Survived' column.
 2. Apply SMOTE : We will use the SMOTE class from the imblearn library to balance the classes.
-
+```
 Implementation:
 Here is the complete implementation, including SMOTE, feature engineering, and data preprocessing:
   import pandas as pd
@@ -246,7 +245,7 @@ Here is the complete implementation, including SMOTE, feature engineering, and d
 
 This code will balance the classes using SMOTE and save the processed dataset to a CSV file. 
 If you run this code in your local Python environment, it will generate the processed dataset.
-
+```
 
 Analysis:Provide visualizations and summary statistics to illustrate the impact of data preprocessing and feature engineering on the dataset. 
         Discuss how these techniques improved the dataset's suitability for machine learning tasks.
