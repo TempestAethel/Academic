@@ -25,8 +25,7 @@ Compare PCA and t-SNE in terms of their strengths, weaknesses, and typical use c
 Applications of Unsupervised Learning: Explore real-world applications of unsupervised learning, such as anomaly detection, customer segmentation, and recommendation systems. Choose one application and describe how unsupervised learning techniques can be applied to solve a specific problem in that domain. 
 Unsupervised learning techniques have a broad range of applications in various domains. Here’s a brief overview of some common applications:
 
-Anomaly Detection:
-
+- Anomaly Detection:\
 Applications: Fraud detection, network security, and equipment failure prediction.\
 Techniques: Isolation Forest, One-Class SVM, Autoencoders.
 - Customer Segmentation:
@@ -117,7 +116,7 @@ plt.show()
 silhouette_avg = silhouette_score(X_scaled, clusters)
 print(f'Silhouette Score: {silhouette_avg:.2f}')
 ```
-- Explanation:
+- Explanation:\
 Data Simulation: We simulate a dataset containing customer features.\
 Data Preprocessing: Standardize the features to ensure uniformity in scaling.\
 Optimal Clusters: Use the Elbow Method to determine the optimal number of clusters (k).\
