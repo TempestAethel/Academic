@@ -9,6 +9,107 @@ Choose an NLP task that interests you, such as sentiment analysis, text summariz
 ## Data Preprocessing: 
 Preprocess the text data, including cleaning, tokenization, and any necessary text representation (e.g., TF-IDF or word embeddings).
 
+### Data Preprocessing for Summarization
+
+Before feeding text into a model for summarization, it is crucial to preprocess the data for optimal performance. Below are the steps to clean and prepare the text data for summarization.
+
+### 1. **Text Cleaning**
+
+* **Remove Special Characters**: Remove any irrelevant characters like symbols, emojis, and punctuations.
+* **Convert to Lowercase**: Convert the text to lowercase to maintain uniformity.
+* **Remove Stopwords**: Eliminate common stopwords that do not carry much meaning, such as "is," "the," and "in."
+* **Lemmatization**: Convert words to their base forms to reduce dimensionality (optional step, often used in tasks like sentiment analysis but less critical for summarization).
+
+### 2. **Tokenization**
+
+* **Sentence Tokenization**: Break the text into individual sentences. This is important for summarization models that work at the sentence level.
+* **Word Tokenization**: Split the text into individual words (tokens) for text representation.
+
+### 3. **Text Representation**
+
+For summarization tasks, most state-of-the-art models like BART and T5 use word embeddings instead of traditional techniques like TF-IDF. Therefore, pre-trained models like BART handle tokenization and word embeddings internally. However, if you need to preprocess text manually:
+
+* **TF-IDF (Term Frequency-Inverse Document Frequency)**: A technique that weighs words based on how often they appear in a document relative to their appearance in other documents.
+* **Word Embeddings**: Models like Word2Vec, GloVe, or BERT can be used to represent text in a dense vector form. Pre-trained models generally handle these representations automatically.
+
+### Data Preprocessing Code
+
+```
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import sent_tokenize, word_tokenize
+
+# Download stopwords
+nltk.download('punkt')
+nltk.download('stopwords')
+
+# Sample text (you can replace this with your dataset's text)
+text = """The quick brown fox jumps over the lazy dog. The fox is very clever and quick."""
+
+# Function for cleaning the text
+def clean_text(text):
+    # Remove special characters and numbers
+    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    
+    # Convert to lowercase
+    text = text.lower()
+    
+    # Tokenize sentences
+    sentences = sent_tokenize(text)
+    
+    # Tokenize words and remove stopwords
+    stop_words = set(stopwords.words('english'))
+    processed_sentences = []
+    
+    for sentence in sentences:
+        words = word_tokenize(sentence)
+        words = [word for word in words if word not in stop_words]  # Remove stopwords
+        processed_sentences.append(" ".join(words))
+    
+    return " ".join(processed_sentences)
+
+# Clean the text
+cleaned_text = clean_text(text)
+print("Cleaned Text:", cleaned_text)
+
+```
+### Explanation of Code
+
+- **Regex for Cleaning**: `re.sub(r'[^a-zA-Z\s]', '', text)` removes all characters that are not alphabets or spaces.
+- **Tokenization**: `nltk.sent_tokenize` splits the text into sentences, while `nltk.word_tokenize` splits each sentence into words.
+- **Stopword Removal**: Common stopwords are removed using NLTK's pre-defined set of English stopwords.
+
+### Tokenization for Summarization Models (BART, T5)
+
+For models like **BART**, you don’t need to manually tokenize the text. These models use built-in tokenizers, which handle tokenization and embedding creation.
+
+Example with Hugging Face Tokenizer:
+
+```
+from transformers import BartTokenizer
+
+# Load tokenizer
+tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
+
+# Tokenize the text (this automatically handles cleaning, lowercasing, and token splitting)
+tokens = tokenizer(text, return_tensors="pt", max_length=1024, truncation=True)
+
+# Display tokens
+print(tokens)
+
+```
+
+### Summary
+
+- **Text Cleaning**: Remove irrelevant characters, convert to lowercase, and remove stopwords.
+- **Tokenization**: Break down the text into sentences and words.
+- **Text Representation**: BART handles this internally, so manual TF-IDF or word embeddings are not necessary for summarization tasks.
+
+
+
+
+
 ## Model Selection: 
 Select an appropriate NLP model for your task. This could be a traditional machine learning model or a deep learning model like an LSTM or Transformer-based model.
 
