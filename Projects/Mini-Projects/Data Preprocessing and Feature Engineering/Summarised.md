@@ -1,11 +1,11 @@
-- Data Collection:
+# Data Collection:
 Choose a dataset of your choice from a reliable source or dataset repository. 
 Ensure that the dataset contains a mix of numerical and categorical features.
 ```
 Used Kaggle
 Choosed "Titanic - Machine Learning from Disaster"
 ```
-- Data Inspection:
+# Data Inspection:
 Provide a brief overview of the chosen dataset, including the number of samples, features, and the target variable (if applicable). 
 Mention any initial observations or challenges you notice in the dataset.
 ```
@@ -39,7 +39,7 @@ Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
   Imbalanced Target Variable: It's essential to check if the target variable (Survived) is imbalanced, which can affect model performance.
 ```
 
-- Data Preprocessing:
+# Data Preprocessing:
 a. Data Cleaning: Identify and handle any missing values in the dataset. Explain your approach and the techniques you used for dealing with missing data. 
 b. Feature Scaling: Apply appropriate feature scaling techniques (e.g., Standardization or Min-Max scaling) to normalize the numerical features in the dataset. 
 c. Handling Categorical Data: Encode categoricalvariables using suitable techniques such as One-Hot Encoding or Label Encoding. Explain the rationale behind your choice.
