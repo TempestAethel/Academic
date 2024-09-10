@@ -15,14 +15,127 @@ Select an appropriate NLP model for your task. This could be a traditional machi
 ## Model Training: 
 Train your selected model on the preprocessed data.
 
+### Model Training for Text Summarization with BART
 
+Since **BART** (Bidirectional and Auto-Regressive Transformer) is a pre-trained model, you have two options for training:
 
+1. **Fine-Tuning**: Fine-tune BART on your specific dataset to improve performance on the given task.
+2. **Direct Use**: Since BART is already fine-tuned for text summarization, you can use it directly without further training if you're working on a general summarization task like summarizing news articles (e.g., CNN/DailyMail dataset).
+
+Given that the BART model has already been fine-tuned for summarization, we will focus on **fine-tuning the model** on your dataset. Here are the steps for fine-tuning BART on your specific text data.
+
+### Steps for Fine-Tuning BART for Text Summarization
+
+1. **Load Preprocessed Dataset**: Load the preprocessed dataset, including articles and corresponding summaries.
+2. **Tokenizer and Model Setup**: Set up the tokenizer and model for BART.
+3. **Define Training Arguments**: Specify hyperparameters like batch size, learning rate, and the number of training epochs.
+4. **Fine-Tune the Model**: Train the model on your dataset.
+5. **Evaluate**: Evaluate the performance on a validation set using metrics like ROUGE.
+
+### Code for Model Training
+
+```
+from transformers import BartTokenizer, BartForConditionalGeneration, Trainer, TrainingArguments
+from datasets import load_dataset
+
+# Load the dataset (Assuming the dataset is preprocessed and in the correct format)
+dataset = load_dataset('cnn_dailymail', '3.0.0')
+
+# Load the tokenizer and model
+tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
+model = BartForConditionalGeneration.from_pretrained('facebook/bart-large-cnn')
+
+# Preprocess the dataset
+def preprocess_function(examples):
+    inputs = tokenizer(examples['article'], max_length=1024, truncation=True, padding='max_length')
+    outputs = tokenizer(examples['highlight'], max_length=150, truncation=True, padding='max_length')
+    inputs['labels'] = outputs['input_ids']
+    return inputs
+
+tokenized_datasets = dataset.map(preprocess_function, batched=True)
+
+# Define training arguments
+training_args = TrainingArguments(
+    output_dir='./results',          # output directory
+    evaluation_strategy="epoch",     # evaluate after each epoch
+    learning_rate=2e-5,              # learning rate
+    per_device_train_batch_size=4,   # batch size for training
+    per_device_eval_batch_size=4,    # batch size for evaluation
+    num_train_epochs=3,              # number of epochs
+    weight_decay=0.01,               # strength of weight decay
+)
+
+# Initialize Trainer
+trainer = Trainer(
+    model=model,                         # the instantiated model to be trained
+    args=training_args,                  # training arguments
+    train_dataset=tokenized_datasets['train'],   # training dataset
+    eval_dataset=tokenized_datasets['validation']   # evaluation dataset
+)
+
+# Train the model
+trainer.train()
+
+# Save the model
+model.save_pretrained('./fine_tuned_bart_model')
+tokenizer.save_pretrained('./fine_tuned_bart_model')
+```
+### Explanation of Code
+
+1. **Dataset**: We use the **CNN/DailyMail** dataset from Hugging Face, which contains news articles (`article`) and their summaries (`highlights`).
+
+2. **Tokenizer**: The BART tokenizer converts the input text into tokens that the model can process. Both articles and summaries are tokenized.
+
+3. **TrainingArguments**: These define hyperparameters such as batch size, the number of training epochs, and how frequently the model is evaluated/saved.
+
+4. **Trainer**: The Hugging Face `Trainer` simplifies the fine-tuning process, handling the forward pass, backward pass, and evaluation.
+
+5. **Training**: The model is fine-tuned on the training set, and checkpoints are saved every 1000 steps to avoid overfitting and for easier recovery.
+
+6. **Model Saving**: The fine-tuned model is saved for later use or evaluation.
+
+### Key Training Parameters
+
+- **Batch Size**: Set to 2 for both training and evaluation due to memory constraints of transformer models. You can increase it if you have a powerful GPU.
+- **Epochs**: 3 epochs are a good starting point for fine-tuning, but this can be adjusted based on performance.
+- **Evaluation**: An evaluation strategy is used to monitor performance after certain steps.
+
+### Optional: Fine-Tuning on Custom Dataset
+
+If you are using a custom dataset, replace the `load_dataset` with your dataset loading function and ensure it is formatted similarly with articles and summaries.
+
+### Evaluation and Metrics
+
+To evaluate the fine-tuned model, you can use the **ROUGE** (Recall-Oriented Understudy for Gisting Evaluation) metric, which is commonly used for summarization tasks.
+
+```
+from datasets import load_metric
+
+# Load ROUGE metric
+rouge = load_metric("rouge")
+
+# Evaluate the model
+predictions, labels, _ = trainer.predict(tokenized_datasets['validation'])
+
+# Decode predictions and labels
+decoded_preds = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+# Compute ROUGE score
+result = rouge.compute(predictions=decoded_preds, references=decoded_labels)
+print(result)
+
+```
+### Conclusion:
+
+- The BART model is fine-tuned on your dataset using Hugging Face's Trainer.
+- The training process can be monitored and evaluated using ROUGE scores.
+- After fine-tuning, the model is saved for use in generating summaries for unseen texts.
 
 
 ## Evaluation: 
 Evaluate the performance of your model using relevant evaluation metrics (e.g., accuracy, F1- score, BLEU score, etc.).
 
-## Evaluation of Fine-Tuned BART Model for Text Summarization
 
 For the text summarization task, standard classification metrics like accuracy or F1-score are not directly applicable. Instead, specialized metrics designed to evaluate text generation and summarization tasks are used. Below are some commonly used evaluation metrics for text summarization:
 
@@ -137,6 +250,8 @@ print(bleu_result)
 
 - **ROUGE scores** are widely used for summarization tasks and provide a good evaluation of how well the generated summaries match the reference summaries in terms of both individual words and sentence structure.
 - If you're handling machine translation or want a broader evaluation, you can also compute **BLEU** and **METEOR** scores.
+
+
 
 
 ## Results Presentation: 
