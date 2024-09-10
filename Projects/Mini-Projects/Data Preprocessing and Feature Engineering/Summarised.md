@@ -378,17 +378,17 @@ Step-by-Step Implementation\
 Summarize the key takeaways from this assignment, including the importance of data preprocessing and feature engineering in preparing data for machine learning models.
 
 # Key Takeaways : 
-- 1)Importance of Data Preprocessing:
+1)Importance of Data Preprocessing:
   Handling Missing Values: Imputing missing values ensures the dataset is complete and usable. Using the median for numerical features and the mode for categorical features is a simple yet effective strategy to fill missing values without introducing bias.
   Dropping Irrelevant Features: Removing columns with too many missing values (e.g., 'Cabin') or irrelevant information (e.g., 'Name') simplifies the dataset and improves model performance by reducing noise.
-  - 2)Feature Scaling:
+2)Feature Scaling:
   Standardization: Scaling numerical features to have a mean of zero and a standard deviation of one ensures that all features contribute equally to the model, preventing features with larger scales from dominating.
-- 3)Handling Categorical Data:
+3)Handling Categorical Data:
   One-Hot Encoding: Converting categorical variables into binary columns enables machine learning algorithms to interpret and leverage these features effectively.
-- 4)Feature Engineering:
+4)Feature Engineering:
   Creating New Features: Deriving new features from existing ones, such as 'FamilySize' and 'Title', can provide additional context and relationships that enhance the model's ability to learn and make accurate predictions.
   Capturing Social Status and Family Context: Features like 'Title' capture social status, while 'FamilySize' captures family context, both of which can be critical factors in survival scenarios like the Titanic disaster.
-- 5)Handling Imbalanced Data:
+5)Handling Imbalanced Data:
   SMOTE (Synthetic Minority Over-sampling Technique): Addressing class imbalance ensures that the model is trained on a balanced dataset, preventing bias towards the majority class and improving the model's ability to generalize to unseen data.
 
 # Summary of the Dataset Preparation Process
