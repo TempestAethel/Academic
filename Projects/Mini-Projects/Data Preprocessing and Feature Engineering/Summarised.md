@@ -1,19 +1,15 @@
-Data Collection:
+- Data Collection:
 Choose a dataset of your choice from a reliable source or dataset repository. 
 Ensure that the dataset contains a mix of numerical and categorical features.
-
-*Used Kaggle
-*Choosed "Titanic - Machine Learning from Disaster"
-
-
-
-
-
-Data Inspection:
+'''
+Used Kaggle
+Choosed "Titanic - Machine Learning from Disaster"
+'''
+- Data Inspection:
 Provide a brief overview of the chosen dataset, including the number of samples, features, and the target variable (if applicable). 
 Mention any initial observations or challenges you notice in the dataset.
-
-*Overview of the Titanic Dataset
+'''
+Overview of the Titanic Dataset
 The Titanic dataset consists of 891 samples and 12 features. 
 Here is a brief description of each feature:
 PassengerId: Unique ID for each passenger
@@ -28,7 +24,8 @@ Ticket: Ticket number
 Fare: Passenger fare
 Cabin: Cabin number
 Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
-
+'''
+'''
 *Initial Observations
   Numerical Features: PassengerId, Survived, Pclass, Age, SibSp, Parch, Fare
   Categorical Features: Name, Sex, Ticket, Cabin, Embarked
@@ -40,12 +37,9 @@ Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
   Missing Values: A significant portion of the data is missing for the 'Age' and 'Cabin' columns.
   Categorical Data: Features like 'Name', 'Ticket', 'Cabin', and 'Embarked' need to be processed and encoded appropriately for machine learning algorithms.
   Imbalanced Target Variable: It's essential to check if the target variable (Survived) is imbalanced, which can affect model performance.
+'''
 
-
-
-
-
-Data Preprocessing:
+- Data Preprocessing:
 a. Data Cleaning: Identify and handle any missing values in the dataset. Explain your approach and the techniques you used for dealing with missing data. 
 b. Feature Scaling: Apply appropriate feature scaling techniques (e.g., Standardization or Min-Max scaling) to normalize the numerical features in the dataset. 
 c. Handling Categorical Data: Encode categoricalvariables using suitable techniques such as One-Hot Encoding or Label Encoding. Explain the rationale behind your choice.
