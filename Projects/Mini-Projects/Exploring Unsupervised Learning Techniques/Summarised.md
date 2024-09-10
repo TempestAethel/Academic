@@ -28,7 +28,7 @@ Unsupervised learning techniques have a broad range of applications in various d
 - Anomaly Detection:\
 Applications: Fraud detection, network security, and equipment failure prediction.\
 Techniques: Isolation Forest, One-Class SVM, Autoencoders.
-- Customer Segmentation:
+- Customer Segmentation:\
 Applications: Targeted marketing, personalized recommendations, and customer behavior analysis.\
 Techniques: K-Means Clustering, DBSCAN, Hierarchical Clustering.
 - Recommendation Systems:\
@@ -38,22 +38,23 @@ Techniques: Matrix Factorization, K-Means Clustering, t-SNE for visualizing user
 Customer Segmentation is a classic application of unsupervised learning. It involves dividing a customer base into distinct groups based on similarities in behavior, preferences, or demographics. This segmentation helps businesses tailor their marketing strategies, product offerings, and services to specific customer needs.
 
 - Problem Description
-Suppose we have an e-commerce company and want to understand the different customer groups to create targeted marketing campaigns. We have a dataset containing customer information such as:
-
-Demographics: Age, gender, income.
-Behavioral Data: Purchase frequency, average transaction amount, browsing history.
+Suppose we have an e-commerce company and want to understand the different customer groups to create targeted marketing campaigns. We have a dataset containing customer information such as:\
+Demographics: Age, gender, income.\
+Behavioral Data: Purchase frequency, average transaction amount, browsing history.\
 Objective: Segment customers into distinct groups to target marketing strategies effectively.
 
-Application of Unsupervised Learning Techniques
+- Application of Unsupervised Learning Techniques
 1. Data Preparation:
 
 Normalization: Scale the features to ensure that they contribute equally to the clustering process.
 Feature Selection: Choose relevant features for clustering (e.g., purchase frequency, transaction amount).
+
 2. Choosing Clustering Technique:
 
 K-Means Clustering: A widely used technique that divides data into k clusters based on distance metrics.
 DBSCAN: Useful for discovering clusters of varying shapes and handling noise.
 Hierarchical Clustering: Creates a tree of clusters, which can be useful for understanding the hierarchical relationships between customer groups.
+
 3. Implementing K-Means Clustering for Customer Segmentation
 
 Here’s a step-by-step approach using K-Means Clustering:
