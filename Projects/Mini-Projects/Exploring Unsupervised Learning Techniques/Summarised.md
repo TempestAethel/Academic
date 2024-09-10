@@ -32,12 +32,7 @@ Compare PCA and t-SNE in terms of their strengths, weaknesses, and typical use c
 
 
 
-To compare PCA and t-SNE in terms of their strengths, weaknesses, and typical use cases, we will:\
-Discuss the Strengths and Weaknesses of each technique.\
-Provide Visualizations to illustrate the differences in dimensionality reduction.
-
-1. Strengths and Weaknesses\
-Principal Component Analysis (PCA)\
+# Principal Component Analysis (PCA)
 - Strengths:\
 Simplicity and Speed: PCA is computationally efficient and easy to implement.\
 Linear Relationships: It captures linear relationships between features, making it effective for datasets where these relationships are strong.\
@@ -51,26 +46,75 @@ Loss of Interpretability: When reducing dimensions to very few components, the p
 
 - Typical Use Cases:\
 
-Preprocessing for Machine Learning: Reducing dimensionality to improve computational efficiency and reduce overfitting.
-Data Compression: Reducing the number of features while preserving essential information.
+Preprocessing for Machine Learning: Reducing dimensionality to improve computational efficiency and reduce overfitting.\
+Data Compression: Reducing the number of features while preserving essential information.\
 Exploratory Data Analysis: Visualizing high-dimensional data by projecting it into a lower-dimensional space.
-t-Distributed Stochastic Neighbor Embedding (t-SNE)
-Strengths:
 
-Non-Linear Relationships: t-SNE captures complex, non-linear relationships and can reveal intricate patterns in data.
+# t-Distributed Stochastic Neighbor Embedding (t-SNE)
+
+- Strengths:\
+Non-Linear Relationships: t-SNE captures complex, non-linear relationships and can reveal intricate patterns in data.\
 Cluster Visualization: It is particularly effective for visualizing clusters and high-dimensional data in 2D or 3D space.
-Weaknesses:
 
-Computationally Intensive: t-SNE can be slow and memory-intensive, especially for large datasets.
-Parameter Sensitivity: Results can be sensitive to hyperparameters like perplexity and learning rate.
+- Weaknesses:\
+Computationally Intensive: t-SNE can be slow and memory-intensive, especially for large datasets.\
+Parameter Sensitivity: Results can be sensitive to hyperparameters like perplexity and learning rate.\
 Global Structure: t-SNE focuses more on local structure, which means it might not preserve the global relationships as well as PCA.
-Typical Use Cases:
 
-Data Visualization: Especially useful for exploring high-dimensional data and identifying clusters or patterns.
-Exploratory Data Analysis: Understanding the data structure before applying more complex models.
-Visualizing Embeddings: For example, visualizing word embeddings in NLP or features learned by neural networks.
-2. Visualizations
-Let's create visualizations to illustrate how PCA and t-SNE reduce the dimensionality of the same dataset. We’ll use the Digits dataset for this purpose, which is a high-dimensional dataset that can benefit from both techniques.
+- Typical Use Cases:\
+Data Visualization: Especially useful for exploring high-dimensional data and identifying clusters or patterns.\
+Exploratory Data Analysis: Understanding the data structure before applying more complex models.\
+Visualizing Embeddings: For example, visualizing word embeddings in NLP or features learned by neural networks.\
+
+# Visualizations
+lets create visualizations to demonstrate PCA and t-SNE's reduction in dimensionality using the Digits dataset, a high-dimensional dataset that can benefit from both techniques.
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_digits
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+from sklearn.preprocessing import StandardScaler
+
+# Load the dataset
+digits = load_digits()
+X = digits.data
+y = digits.target
+
+# Standardize the data
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Apply PCA to reduce dimensionality to 2 components
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_scaled)
+
+# Apply t-SNE to reduce dimensionality to 2 components
+tsne = TSNE(n_components=2, perplexity=30, n_iter=1000, random_state=42)
+X_tsne = tsne.fit_transform(X_scaled)
+
+# Plot PCA results
+plt.figure(figsize=(14, 6))
+
+plt.subplot(1, 2, 1)
+plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y, cmap='viridis', s=50)
+plt.title('PCA: 2D Visualization of Digits Dataset')
+plt.xlabel('Principal Component 1')
+plt.ylabel('Principal Component 2')
+plt.colorbar()
+
+# Plot t-SNE results
+plt.subplot(1, 2, 2)
+plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=y, cmap='viridis', s=50)
+plt.title('t-SNE: 2D Visualization of Digits Dataset')
+plt.xlabel('t-SNE Dimension 1')
+plt.ylabel('t-SNE Dimension 2')
+plt.colorbar()
+
+plt.tight_layout()
+plt.show()
+
+```
 
 
 
@@ -100,11 +144,13 @@ Let's create visualizations to illustrate how PCA and t-SNE reduce the dimension
 
 
 
+# Applications of Unsupervised Learning: 
 
+Explore real-world applications of unsupervised learning, such as anomaly detection, customer segmentation, and recommendation systems.\
+Choose one application and describe how unsupervised learning techniques can be applied to solve a specific problem in that domain. \
+Unsupervised learning techniques have a broad range of applications in various domains. Here’s a brief overview of some common 
 
-
-Applications of Unsupervised Learning: Explore real-world applications of unsupervised learning, such as anomaly detection, customer segmentation, and recommendation systems. Choose one application and describe how unsupervised learning techniques can be applied to solve a specific problem in that domain. 
-Unsupervised learning techniques have a broad range of applications in various domains. Here’s a brief overview of some common applications:
+Applications:
 
 - Anomaly Detection:\
 Applications: Fraud detection, network security, and equipment failure prediction.\
