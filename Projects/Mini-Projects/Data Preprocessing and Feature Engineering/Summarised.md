@@ -50,7 +50,7 @@ c. Handling Categorical Data: Encode categoricalvariables using suitable techniq
     Cabin: The 'Cabin' column has 687 missing values.\
       Approach: Since the majority of the 'Cabin' values are missing, we'll drop this column from the dataset. \
     Embarked: The 'Embarked' column has 2 missing values.\
-      Approach: We'll fill the missing 'Embarked' values with the mode (most frequent value), which is 'S' (Southampton).\
+      Approach: We'll fill the missing 'Embarked' values with the mode (most frequent value), which is 'S' (Southampton).
 
 - b. Feature Scaling
     Approach: We'll use Standardization (z-score normalization) to scale the numerical features. This method scales the features to have a mean of 0 and a standard deviation of 1.This is particularly useful when the features have different units or scales.
@@ -64,9 +64,9 @@ Apply at least two feature engineering techniques to create new meaningful featu
 Appling two feature engineering techniques to create new meaningful features from the existing ones. 
 - Create the following new features:
     FamilySize: Combining the 'SibSp' and 'Parch' features to create a new feature representing the total number of family members aboard.
-            This can provide insight into whether traveling with family had an impact on survival.\
+            This can provide insight into whether traveling with family had an impact on survival.
     Title: Extracting titles from the 'Name' feature (e.g., Mr., Mrs., Miss, etc.). 
-            Titles can capture social status and potentially affect the likelihood of survival.\
+            Titles can capture social status and potentially affect the likelihood of survival.
 - Code examples to be used :
 1. Create the FamilySize Feature
 ```
@@ -173,7 +173,6 @@ Identify Class Imbalance: Check the distribution of the target variable ('Surviv
 Apply SMOTE: Use SMOTE to generate synthetic samples for the minority class.\
 Data Transformation and Saving the Preprocessed Dataset\
 So We integrate SMOTE into our preprocessing pipeline and then save the final processed dataset as a CSV file.\
-
 to implement:\
 1. Identify Class Imbalance :First, We check the class distribution of the 'Survived' column.\
 2. Apply SMOTE : We will use the SMOTE class from the imblearn library to balance the classes.\
