@@ -251,7 +251,7 @@ To analyze the impact of data preprocessing and feature engineering on the Titan
   5)Visualize the distribution of numerical features before and after preprocessing.\
   6)Visualize the new features created from feature engineering (e.g., 'FamilySize', 'Title').\
 Let's proceed with these steps.\
-Step-by-Step Implementation\
+Step-by-Step Implementation
 1. Visualize the Original Class Distribution: Start by visualizing the original class distribution to see the extent of class imbalance.\
   
 ```
@@ -377,7 +377,8 @@ Step-by-Step Implementation\
 # Conclusion:
 Summarize the key takeaways from this assignment, including the importance of data preprocessing and feature engineering in preparing data for machine learning models.
 
-- Key Takeaways : 
+- Key Takeaways :
+  
 1)Importance of Data Preprocessing:
   Handling Missing Values: Imputing missing values ensures the dataset is complete and usable. Using the median for numerical features and the mode for categorical features is a simple yet effective strategy to fill missing values without introducing bias.
   Dropping Irrelevant Features: Removing columns with too many missing values (e.g., 'Cabin') or irrelevant information (e.g., 'Name') simplifies the dataset and improves model performance by reducing noise.
