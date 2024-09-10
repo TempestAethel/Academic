@@ -1,7 +1,7 @@
 
 Objective: The objective of this assignment is to explore unsupervised learning techniques, including clustering and dimensionality reduction, and understand their applications.
 
-Tasks:
+# Tasks:
 Clustering Algorithms Implementation:
 
 a. K-Means Clustering: Implement the K-Means clustering algorithm using scikit-learn. Choose an appropriate dataset for clustering and apply K-Means to find natural clusters. Determine the optimal number of clusters using techniques like the Elbow Method or Silhouette Score.
@@ -18,7 +18,8 @@ b. t-SNE (t-Distributed Stochastic Neighbor Embedding): Implement t-SNE to visua
 
 Advanced Clustering Techniques: Research and provide an overview of advanced clustering techniques beyond K-Means, Hierarchical clustering, and DBSCAN. Discuss one advanced technique in detail, including its advantages and real-world applications.
 
-Dimensionality Reduction Techniques Comparison: Compare PCA and t-SNE in terms of their strengths, weaknesses, and typical use cases. Create visualizations to illustrate the differences in dimensionality reduction achieved by each method.
+# Dimensionality Reduction Techniques Comparison: 
+Compare PCA and t-SNE in terms of their strengths, weaknesses, and typical use cases. Create visualizations to illustrate the differences in dimensionality reduction achieved by each method.
 
 Applications of Unsupervised Learning: Explore real-world applications of unsupervised learning, such as anomaly detection, customer segmentation, and recommendation systems. Choose one application and describe how unsupervised learning techniques can be applied to solve a specific problem in that domain. 
 
