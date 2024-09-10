@@ -10,7 +10,7 @@ b. Hierarchical Clustering: Implement hierarchical clustering using either agglo
 
 c. DBSCAN: Implement DBSCAN (Density-Based Spatial Clustering of Applications with Noise) on a dataset with noise and varying density clusters. Explain how DBSCAN works and compare its performance to K- Means.
 
-Dimensionality Reduction Techniques:
+# Dimensionality Reduction Techniques:
 
 a. Principal Component Analysis (PCA): Implement PCA to reduce the dimensionality of a high- dimensional dataset. Visualize the explained variance ratio and discuss the impact of dimensionality reduction on data visualization and modeling.
 
