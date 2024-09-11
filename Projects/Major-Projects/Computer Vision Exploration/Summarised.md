@@ -2,7 +2,6 @@
 Explore various aspects of computer vision and apply your knowledge to solve real-world image-related tasks
 
 # Instructions:
-
 ## Part 1: 
 
 Understanding Computer Vision Basics
