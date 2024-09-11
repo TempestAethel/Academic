@@ -2,14 +2,12 @@
 Apply NLP techniques learned during the week to solve a real-world NLP task. 
 
 # Instructions:
-
 ## Select an NLP Task: 
 Choose an NLP task that interests you, such as sentiment analysis, text summarization, or question-answering. Ensure you have access to relevant data for this task.
 
 I have chosen **Text Summarization** as my task.
 
 ### Dataset
-
 For this task, I will use a dataset from Hugging Face's **CNN/DailyMail** dataset, which contains news articles and corresponding summaries.
 
 #### Dataset Information
