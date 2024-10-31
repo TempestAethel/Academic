@@ -75,7 +75,7 @@ Open innovation encourages companies to integrate knowledge and insights from ex
 ### Strategic Partnerships with Academic Institutions
 - **Ex-Ante and Ex-Post Collaboration:** The course highlights different modes of university-industry partnerships. Ex-ante, or proactive collaboration, involves companies funding research to support new technology development. Ex-post partnerships occur when companies license already developed technologies for commercialization.
 - **Bayh-Dole Act’s Role in Academic Collaboration:** This act allows universities to retain ownership of innovations funded by federal grants, promoting tech transfer to private companies. The act has encouraged startups and established firms to work with universities, particularly in drug discovery and other fields that benefit from cutting-edge research.
-
+---
 ## Real-World Applications and Implementation of Course Insights
 
 ### Strategic Technology Lifecycle Management
