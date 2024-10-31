@@ -1,7 +1,8 @@
 <!---
 Choose a certified course on Tech. Innovation and Mgmt  Entrepreneurship from a reputable institution and submit a report summarizing the course content and how the knowledge gained can be applied in real-world scenarios.
----># Managing Innovation & Entrepreneurship
+--->
 
+# Managing Innovation & Entrepreneurship
 The course "Managing Innovation & Entrepreneurship," taught by Fiona Murray at MIT Sloan, is a comprehensive study of how to drive and manage technology-based innovation effectively. This non-certified course focuses on integrating technological advancements, entrepreneurial strategies, and management practices to foster sustainable growth and innovation within organizations.
 
 ---
