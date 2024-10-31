@@ -1,7 +1,9 @@
 # Managing Innovation & Entrepreneurship
 
 The course "Managing Innovation & Entrepreneurship," taught by Fiona Murray at MIT Sloan, is a comprehensive study of how to drive and manage technology-based innovation effectively. This non-certified course focuses on integrating technological advancements, entrepreneurial strategies, and management practices to foster sustainable growth and innovation within organizations.
+
 ---
+
 ## 1. Understanding Technology Dynamics through the S-Curve Model
 
 ### The S-Curve of Technological Growth
@@ -18,7 +20,9 @@ Companies can apply the S-Curve to predict technological advances in their field
   
 ### Practical Applications in Industry
 - **Moore’s Law:** The course illustrates how companies like Intel use the S-Curve to guide the semiconductor industry’s rapid innovation cycle. Intel’s adherence to Moore’s Law (predicting transistor growth) shows the S-Curve’s utility in managing consistent, incremental progress while recognizing the eventual physical limitations of semiconductor technology.
+- 
 ---
+
 ## 2. Opportunity Identification in Technology Entrepreneurship
 
 ### Defining Opportunities
@@ -33,7 +37,9 @@ Opportunity identification is a critical early step in innovation management, wh
 ### Types of Innovation
 - **Incremental vs. Radical Innovation:** Incremental innovations, which improve existing technologies, are differentiated from radical innovations, which create entirely new market spaces or radically redefine industries. The course emphasizes that balancing these types is essential to sustain long-term growth.
 - **Architectural and Modular Innovations:** Architectural innovation restructures the connections between components, while modular innovation changes the individual components themselves. These concepts guide firms in tailoring products to market needs or to the specific functions of each innovation.
+  
 ---
+
 ## 3. Experimentation and Risk Management in Innovation Processes
 
 ### Structured Experimentation for Uncertainty Reduction
@@ -47,7 +53,9 @@ Experimentation is a key discipline in innovation, helping firms verify early hy
 
 ### Risk Mitigation Techniques
 By running structured experiments, companies can systematically address the highest-risk factors in innovation. For example, by validating assumptions about customer adoption or technology compatibility early on, companies can reduce both market and operational risks.
+
 ---
+
 ## 4. Building and Structuring Organizations for Effective Innovation
 
 ### Organizational Design for Innovation Execution
