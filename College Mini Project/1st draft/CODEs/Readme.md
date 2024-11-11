@@ -64,7 +64,7 @@ The script also allows for interactive control system design through the `contro
 This script serves as the initialization and configuration backbone for the PLL system, defining the components, transfer functions, and noise parameters needed for simulation and analysis.
 ---
 ---
-# implementation.slx Explanation
+# Implementation.slx Explanation
 
 The `implementation.slx` file represents the Simulink model of a Phase-Locked Loop (PLL) system. This model simulates the behavior of the PLL and allows for the analysis of its performance, including phase noise contributions from different components. Below is an overview of its structure and key components:
 
@@ -107,7 +107,7 @@ The `implementation.slx` model is used in conjunction with MATLAB scripts (e.g.,
 This Simulink model is essential for simulating and analyzing the PLL system's performance, enabling detailed phase noise and stability analysis.
 ---
 ---
-# analysis.m Explanation
+# Analysis.m Explanation
 
 The `analysis.m` script is designed to analyze the phase noise and overall performance of a Phase-Locked Loop (PLL) system by linearizing its Simulink model (`implementation.slx`). This script performs phase noise computations and visualizes the contributions from various noise sources. Below is an outline of its functionality:
 
