@@ -293,5 +293,27 @@ The **17 Sustainable Development Goals (SDGs)**, adopted by the United Nations i
 - **Targets**: Strengthen global partnerships, increase financing for development.
 - **Implementation**: International cooperation, multilateral agreements.
 - **Capacity Development**: Strengthening global institutions and partnerships for SDG implementation.
+
+| **Goal** | **Targets** | **Implementation** | **Capacity Development** |
+|----------|-------------|--------------------|--------------------------|
+| **1. No Poverty** | End extreme poverty, reduce multidimensional poverty | Social safety nets, economic inclusion | Build capacity for poverty monitoring and inclusive policies |
+| **2. Zero Hunger** | End hunger, improve nutrition, sustainable agriculture | Support farmers, food security programs | Agricultural training, sustainable farming techniques |
+| **3. Good Health and Well-Being** | Reduce maternal mortality, end epidemics | Universal healthcare, disease prevention | Strengthen health systems, workforce training |
+| **4. Quality Education** | Ensure access to education, improve quality | Build schools, invest in teacher training | Curriculum reforms, teacher capacity-building |
+| **5. Gender Equality** | End violence, ensure equal leadership | Gender-sensitive policies, legal reforms | Gender equality training for policymakers |
+| **6. Clean Water and Sanitation** | Ensure water and sanitation for all | Infrastructure development, water management | Training in water conservation and sanitation |
+| **7. Affordable and Clean Energy** | Ensure access to clean energy | Renewable energy investments, energy efficiency | Skill development in renewable energy |
+| **8. Decent Work and Economic Growth** | Promote inclusive economic growth, productive employment | Job creation, skill development | Vocational training, entrepreneurship programs |
+| **9. Industry, Innovation, and Infrastructure** | Build resilient infrastructure, promote industrialization | Investment in infrastructure, support innovation | Technological innovation and sustainable industry training |
+| **10. Reduced Inequality** | Reduce income inequality, promote equality | Progressive taxation, social protection | Strengthen institutions to address inequality |
+| **11. Sustainable Cities and Communities** | Make cities inclusive, safe, and sustainable | Urban planning, green infrastructure | Local capacity for sustainable urban development |
+| **12. Responsible Consumption and Production** | Promote sustainable consumption, reduce waste | Circular economy models, eco-friendly production | Train businesses on sustainable practices |
+| **13. Climate Action** | Strengthen resilience to climate change | Climate policies, green energy projects | Climate change adaptation training and research |
+| **14. Life Below Water** | Protect oceans, end marine pollution | Marine conservation, sustainable fishing | Training in marine resource management |
+| **15. Life on Land** | Combat desertification, protect biodiversity | Reforestation, land restoration | Biodiversity conservation, sustainable land use training |
+| **16. Peace, Justice, and Strong Institutions** | Promote rule of law, strengthen institutions | Legal reforms, anti-corruption measures | Strengthen judicial systems and governance |
+| **17. Partnerships for the Goals** | Strengthen global partnerships, increase financing | International cooperation, multilateral agreements | Strengthening global institutions and partnerships |
+
+
 ### Conclusion:
 The **SDGs** are interconnected, and achieving them requires collective global action. The **targets** set a clear roadmap, while **implementation** focuses on practical steps in areas like education, infrastructure, and health. Effective **capacity development** is key to ensuring local and global stakeholders have the skills and knowledge to meet these ambitious goals.
