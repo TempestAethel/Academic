@@ -1,6 +1,5 @@
 # Ecosystem Structures
-## Question:
-**Explain the structure of Forest, Desert, Wetlands, River, Oceanic, and Lake ecosystems.**
+## Question 1: **Explain the structure of Forest, Desert, Wetlands, River, Oceanic, and Lake ecosystems.**
 
 Ecosystems are communities of organisms interacting with their physical environment. The structure of each ecosystem is shaped by both biotic (living) and abiotic (non-living) components. Below is an overview of the structure of six distinct ecosystems: Forest, Desert, Wetlands, River, Oceanic, and Lake ecosystems.
 ## 1\. Forest Ecosystem
@@ -48,8 +47,8 @@ Ecosystems are communities of organisms interacting with their physical environm
 -----
 Each ecosystem's unique structure supports a wide variety of organisms that are adapted to their specific environments. Understanding these structures is essential for conservation efforts and ecological balance.
 # Comparison of Energy Systems: Hydrogen, Solar, OTEC, Tidal, and Wind
-## Question:
-**Compare and contrast the merits and demerits of Hydrogen, Solar, OTEC, Tidal, and Wind energy systems.**
+
+## Question 2:**Compare and contrast the merits and demerits of Hydrogen, Solar, OTEC, Tidal, and Wind energy systems.**
 
 Energy systems like Hydrogen, Solar, Ocean Thermal Energy Conversion (OTEC), Tidal, and Wind are increasingly being considered as alternatives to fossil fuels. Below is a comparison of their merits and demerits.
 ## 1\. Hydrogen Energy
@@ -108,8 +107,7 @@ Each system has its strengths and challenges, and their suitability depends on s
 
 
 # Sustainable Mining and Case Studies for Disaster Management and Carbon Trading
-## Question:
-**What is sustainable mining? Discuss relevant case study for Disaster Management and Carbon Trading.**
+## Question 3:**What is sustainable mining? Discuss relevant case study for Disaster Management and Carbon Trading.**
 ### Sustainable Mining
 **Sustainable mining** refers to the practice of extracting minerals and other geological materials in a way that minimizes environmental damage, supports economic development, and ensures social responsibility. The goal is to balance the extraction of valuable resources with environmental conservation, community welfare, and long-term resource management.
 
@@ -159,9 +157,10 @@ In India, one of the most significant mining disasters in recent years was the *
 This case study emphasizes the importance of safety standards, early risk detection, and investment in technological solutions for disaster management in India's mining sector.
 ### Conclusion
 **Sustainable mining** seeks to balance resource extraction with environmental conservation and social equity. The **Pike River Mine Disaster** and the **Andhra Pradesh Coal Mine Collapse** serve as cautionary tales of the critical need for disaster management protocols and rigorous safety standards in the mining industry. The **California Cap-and-Trade Program** demonstrates how carbon trading can be an effective tool in reducing emissions from industries, including mining, while promoting clean technologies and economic development. Both case studies underline the importance of proactive and responsible approaches to resource management in achieving sustainability in the mining sector.
+
+
 # Major Sources and Impacts of Different Types of Pollution
-## Question:
-**Classify the major sources and impacts of different types of pollution: Surface and Groundwater Pollution, Noise Pollution, Soil Pollution, and Air Pollution.**
+## Question 4:**Classify the major sources and impacts of different types of pollution: Surface and Groundwater Pollution, Noise Pollution, Soil Pollution, and Air Pollution.**
 
 Pollution is the introduction of harmful substances or contaminants into the environment, which can have detrimental effects on the health of ecosystems, wildlife, and humans. Pollution is typically classified into various types based on the medium that is affected, such as water, air, soil, or noise. Below, we explore the major sources and impacts of **surface and groundwater pollution**, **noise pollution**, **soil pollution**, and **air pollution**.
 ### 1\. Surface and Groundwater Pollution
@@ -220,9 +219,10 @@ Each type of pollution has distinct sources and impacts on the environment and h
 - **Air Pollution** contributes to a range of health problems, climate change, and environmental damage.
 
 To mitigate pollution, governments, industries, and individuals must adopt cleaner technologies, enforce environmental regulations, and promote sustainable lifestyles.
+
+
 # Targets, Implementation, and Capacity Development of the 17 SDGs
-## Question:
-**Discuss the targets, implementation, and capacity development of the 17 SDGs.**
+## Question 5:**Discuss the targets, implementation, and capacity development of the 17 SDGs.**
 
 The **17 Sustainable Development Goals (SDGs)**, adopted by the United Nations in 2015, are a global call to action to end poverty, protect the planet, and ensure prosperity for all by 2030. Each goal includes specific **targets** and **indicators** that guide progress. The **implementation** of the SDGs requires coordinated efforts across governments, businesses, and civil society, while **capacity development** ensures the skills, knowledge, and institutions necessary to achieve them.
 ### 1\. **No Poverty (Goal 1)**
