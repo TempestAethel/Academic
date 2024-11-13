@@ -105,6 +105,8 @@ Energy systems like Hydrogen, Solar, Ocean Thermal Energy Conversion (OTEC), Tid
 - **Wind** is a renewable and efficient source of energy but faces intermittency and potential ecological impacts.
 
 Each system has its strengths and challenges, and their suitability depends on specific geographic, economic, and environmental factors. Diversifying energy sources will be crucial in creating a sustainable and resilient energy future.
+
+
 # Sustainable Mining and Case Studies for Disaster Management and Carbon Trading
 ## Question:
 **What is sustainable mining? Discuss relevant case study for Disaster Management and Carbon Trading.**
