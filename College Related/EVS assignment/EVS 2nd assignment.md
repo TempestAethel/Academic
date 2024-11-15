@@ -143,4 +143,12 @@ Effective waste management is critical to reducing environmental pollution, cons
 | **Hazardous Waste**         | Specialized treatment (e.g., incineration).               | Toxic exposure leading to long-term health issues.  | Prevents toxic pollution of air, water, and soil.          |
 | **E-Waste**                 | Recycling to recover materials and prevent pollution.     | Exposure to harmful metals (e.g., lead, mercury).   | Prevents contamination of water and ecosystems.            |
 | **Industrial Sludge**       | Treatment to separate harmful substances.                 | Contains toxins and pathogens causing health risks. | Avoids groundwater and surface water contamination.        |
+
+| **Waste Type**             | **Necessity of Management & Impact**                                                                                 |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **Biomedical Waste**        | Requires safe disposal to prevent infection spread and contamination; protects public health and prevents pollution.   |
+| **Solid Waste**             | Proper sorting and recycling reduce disease risks (e.g., malaria) and limit landfill use, lowering environmental impact. |
+| **Hazardous Waste**         | Needs special treatment to avoid toxic exposure, protecting health and preventing pollution of air, water, and soil.   |
+| **E-Waste**                 | Recycling recovers valuable materials and prevents hazardous substances (lead, mercury) from polluting ecosystems.     |
+| **Industrial Sludge**       | Must be treated to remove toxins, preventing water contamination and minimizing health risks.                         |
 ---
