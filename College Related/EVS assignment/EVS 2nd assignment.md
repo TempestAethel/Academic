@@ -136,4 +136,11 @@ Effective waste management is critical to reducing environmental pollution, cons
 - **Safe Disposal**: Biomedical and hazardous waste should be incinerated or treated to eliminate contaminants. E-waste should be responsibly recycled to recover valuable materials and prevent environmental harm.
 - **Public Health and Environmental Protection**: Proper waste management reduces pollution, prevents disease outbreaks, and minimizes ecological degradation, contributing to overall sustainability.
 
+| **Waste Type**             | **Necessity of Management**                                | **Health Issues**                                   | **Environmental Protection**                              |
+|----------------------------|-----------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------------|
+| **Biomedical Waste**        | Safe disposal to prevent infections.                      | Risk of disease spread and contamination.           | Prevents soil, water, and air contamination.               |
+| **Solid Waste**             | Sorting, recycling, and proper disposal.                  | Can cause vector-borne diseases (e.g., malaria).    | Reduces landfill use and pollution, promotes recycling.    |
+| **Hazardous Waste**         | Specialized treatment (e.g., incineration).               | Toxic exposure leading to long-term health issues.  | Prevents toxic pollution of air, water, and soil.          |
+| **E-Waste**                 | Recycling to recover materials and prevent pollution.     | Exposure to harmful metals (e.g., lead, mercury).   | Prevents contamination of water and ecosystems.            |
+| **Industrial Sludge**       | Treatment to separate harmful substances.                 | Contains toxins and pathogens causing health risks. | Avoids groundwater and surface water contamination.        |
 ---
