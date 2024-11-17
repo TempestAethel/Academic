@@ -1,8 +1,3 @@
-**`clc`**  
-  Clears the command window.  
-  ```matlab
-clc
-
 ## General Control and Initialization
 - **clc**
   - **Syntax**: `clc`
