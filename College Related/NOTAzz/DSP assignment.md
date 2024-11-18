@@ -28,8 +28,17 @@ The goal of this project is to:
 ## Block Diagram:
 
 ```
-+------------+ +-----------+ +----------+ +--------------+ | Original |---->| Add Noise |---->| Filtered |---->| Frequency | | Signal | | (AWGN) | | Signal | | Analysis | +------------+ +-----------+ +----------+ +--------------+ |
-+------v------+ | FFT (Freq | | Domain) | +-------------+
++------------------+       +-------------------+       +----------------+       +------------------+
+ |   Original      |------>|     Add Noise     |------>|   Filtered     |------>|   Frequency      |
+ |   Signal        |       |     (AWGN)        |       |   Signal       |       |   Analysis       |
++------------------+       +-------------------+       +----------------+       +------------------+
+                                                                 |
+                                                                 v
+                                                      +---------------------+
+                                                      |    FFT (Freq        |
+                                                      |    Domain)          |
+                                                      +---------------------+
+
 
 ```
 
@@ -54,7 +63,7 @@ End
 
 ```
 
-##MATLABs
+## MATLABs
 
 ```
 % DSP-based Noise Removal and Filtering
@@ -126,3 +135,30 @@ xlabel('Frequency (Hz)');
 ylabel('Magnitude');
 
 ```
+
+
+## Output:
+
+### Time Domain:
+
+1. **Original Signal (Sine Wave):**
+   - A pure sine wave with a frequency of 50 Hz.
+
+2. **Noisy Signal:**
+   - The sine wave is contaminated by Additive White Gaussian Noise (AWGN), resulting in a distorted signal with random fluctuations.
+
+3. **Filtered Signal:**
+   - After applying a low-pass filter with a cutoff frequency of 100 Hz, the high-frequency noise is removed, leaving the original sine wave intact.
+
+![Figure 1: Time Domain - Original, Noisy, and Filtered Signals](image/Figure_1.png)
+
+### Frequency Domain:
+
+1. **Frequency Spectrum of Noisy Signal:**
+   - The noisy signal contains components at the desired signal frequency (50 Hz) and additional high-frequency components corresponding to the noise.
+
+2. **Frequency Spectrum of Filtered Signal:**
+   - The filtered signal retains the main frequency component at 50 Hz, while the high-frequency noise is attenuated due to the low-pass filter.
+
+![Figure 2: Frequency Spectrum of Noisy and Filtered Signals](image/Figure_2.png)
+
