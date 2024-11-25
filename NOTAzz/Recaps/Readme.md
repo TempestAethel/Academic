@@ -2,5 +2,4 @@
 
 Here are the images in the 2024 folder:
 
-* **![Music Recap 2024](./2024/Music-Recap_2024.jpg)**
-* **![Title](./2024/Title.jpg)**
+ **![Music Recap 2024](./2024/Music-Recap_2024.jpg)**  **![Title](./2024/Title.jpg)**
