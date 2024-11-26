@@ -12,7 +12,7 @@ First, focus on fully upgrading your build. Prioritize upgrades that boost your 
 - **Core Facilities**: Invest in expanding your item-carrying capacity or healing efficiency.
 
 ### **Screenshot**
-![Max Upgraded Build](images/coromon_menu.jpeg)
+![Max Upgraded Build](images/Coromon_menu.jpeg)
 
 The screenshot above shows my current build, which is fully maxed out.
 
@@ -38,7 +38,7 @@ Once you’ve gathered enough coins, find an opportunity to purchase high-value 
 - **Prioritize**: Focus on restocking healing items, powerful spinners, and high-tier potions.
 
 ### **Screenshot**
-![Items Purchased in Bulk](images/coromon_choose.jpeg)
+![Items Purchased in Bulk](images/Coromon_choose.jpeg)
 
 The screenshot above shows my purchase screen after using my savings to buy everything in bulk.
 
@@ -49,7 +49,7 @@ The screenshot above shows my purchase screen after using my savings to buy ever
 Before finalizing your purchase, apply any available discounts. For this step, I used a **75% discount**, which allowed me to maximize my spending and stock up on essential supplies.
 
 ### **Screenshot**
-![Discount Accepted](images/coromon_accept.jpeg)
+![Discount Accepted](images/Coromon_accept.jpeg)
 
 The screenshot above shows the purchase screen after successfully applying the discount.
 
