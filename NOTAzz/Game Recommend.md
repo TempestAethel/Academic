@@ -20,7 +20,7 @@ If you're into challenging puzzles and mind-bending gameplay, here are some grea
 
 - **The Chronos Principle**  PAID
   A time-based puzzle game that explores time manipulation to solve intricate challenges.  
-  [Play on Play Store](https://play.google.com/store/apps/details?id=com.yudiz.thechronosprinciple)
+  [Play on Play Store](https://play.google.com/store/apps/details?id=com.logisk.chronos)
 
 - **Limbo**  PAID
   A dark and atmospheric puzzle-platformer where you help a young boy navigate a mysterious world.  
