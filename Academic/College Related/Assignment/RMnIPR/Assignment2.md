@@ -124,7 +124,7 @@ Explain with a flowchart , the process of copyright registration and rights of t
 # Question 3)
 Explain the process of Trademark registration with a neat flowchart.
 
-![Image](img/TR.jpg)
+![Image](img/TM.jpg)
 
 
 ## Steps in the Trademark Registration Process
@@ -175,7 +175,7 @@ Explain the process of Trademark registration with a neat flowchart.
 # Question 4)
 With a flowchart, explain the process of GI registration.
 
-![Image](img/GI.jpg)
+![Image](img/GI.png)
 
 
 1. **Prior Search**  
