@@ -1,6 +1,8 @@
 # Question 1)
 With a neat flow chart, explain the steps involved in  the  patent application procedure starting from filing to the grant of a patent. Also explain patent infringements.	
-![Example Image](img/img1.png)
+
+![Image](img/PA.png)
+
 #### 1. **Patent Filing**
    - The process begins with the filing of a patent application before the **Indian Patent Office (IPO)**. Applicants can optionally claim priority from an earlier filing under the Paris Convention.
 
@@ -55,6 +57,9 @@ With a neat flow chart, explain the steps involved in  the  patent application p
 ---
 # Question 2) 
 Explain with a flowchart , the process of copyright registration and rights of the copyright owner.	
+
+![Image](img/CR.png)
+
 
 ## Process of Copyright Registration
 
@@ -119,6 +124,9 @@ Explain with a flowchart , the process of copyright registration and rights of t
 # Question 3)
 Explain the process of Trademark registration with a neat flowchart.
 
+![Image](img/TR.png)
+
+
 ## Steps in the Trademark Registration Process
 
 1. **Prior Art Search**:  
@@ -161,3 +169,108 @@ Explain the process of Trademark registration with a neat flowchart.
 
 - Trademark registration is not mandatory but provides significant legal protection and exclusive rights.  
 - Registered trademarks grant the owner the legal authority to prevent others from using similar marks in commerce.
+
+---
+---
+# Question 4)
+With a flowchart, explain the process of GI registration.
+
+![Image](img/GI.png)
+
+
+1. **Prior Search**  
+   - Conduct a prior search to check if the GI is already registered.  
+   - Use tools like WIPO databases or the official CGPDTM website.
+
+2. **Filing the Application**  
+   - The application can be filed by individuals, organizations, or authorities under Indian law.  
+   - Submit the application in the prescribed format (Form GI-1A) with the prescribed fees to the Registrar of Geographical Indications.  
+   - Include necessary documents like a statement of goods, class of goods, and affidavit confirming the interest of producers.
+
+3. **Examination of the Application**  
+   - The examiner scrutinizes the application for discrepancies or similarities.  
+   - Discrepancies are communicated to the applicant for a response within one month.
+
+4. **Publication in GI Journal**  
+   - After clearing the examination, the application is published in the GI Journal.  
+   - Any objections must be raised within four months of publication.
+
+5. **Objections and Hearings**  
+   - If objections are raised, they are reviewed, and hearings are conducted.  
+   - If no objections are filed, the process moves forward.
+
+6. **Registration**  
+   - The GI is registered if there are no unresolved objections.  
+   - The filing date becomes the date of registration.
+
+7. **Duration and Renewal**  
+   - The GI is registered for an initial period of 10 years and can be renewed upon payment of a fee.
+
+---
+---
+# Question 5)
+Outline the step-by-step procedure for registering an Industrial Design. Also List out the Non-protectable Industrial designs in India
+
+#### Procedure for Registering an Industrial Design  
+
+The registration of an industrial design involves the following steps:  
+
+1. **Prior Art Search**  
+   - Conduct a prior art search to ensure the design is novel and has not been registered previously.  
+   - Use resources like the Design Search Utility (CGPDTM) and the Global Design Database (WIPO).  
+
+2. **Filing an Application**  
+   - The application can be filed by individuals, small entities, organizations, or industries.  
+   - Non-resident applicants must hire an Indian agent for filing.  
+   - Submit the application at the Design Office in Kolkata or through online platforms.  
+
+3. **Examination of the Application**  
+   - An examiner reviews the application to check compliance with eligibility criteria.  
+   - Queries or objections, if any, are communicated to the applicant.  
+
+4. **Response to Queries**  
+   - The applicant must respond to any queries within six months.  
+   - If the objections are resolved satisfactorily, the application proceeds.  
+
+5. **Registration and Publication**  
+   - Upon acceptance, the design is registered and published in the official Design Journal.  
+
+6. **Certificate of Registration**  
+   - A certificate is issued to the applicant, granting exclusive rights to the registered design.  
+
+7. **Duration of Protection**  
+   - The registration is valid for an initial period of 10 years.  
+   - It can be renewed for an additional five years through a renewal application.  
+
+---
+
+# Non-Protectable Industrial Designs in India  
+
+The following designs cannot be registered as industrial designs in India:  
+
+1. **Against Public Morality**  
+   - Designs that violate public moral values or are scandalous in nature.  
+
+2. **National Symbols**  
+   - Flags, emblems, or signs of any country.  
+
+3. **Integrated Circuits**  
+   - Designs of integrated circuits are non-registerable.  
+
+4. **Functional Processes**  
+   - Designs that describe the process of making an article.  
+
+5. **Documents and Printed Matter**  
+   - Items like books, calendars, certificates, forms, dressmaking patterns, greeting cards, maps, postcards, and stamps.  
+
+6. **Artistic Works**  
+   - Artistic works as defined under Section 2(c) of the Copyright Act, 1957, such as:  
+     - Paintings, sculptures, and drawings (e.g., diagrams, maps, charts).  
+     - Photographs and architectural works.  
+     - Works of artistic craftsmanship.  
+
+7. **Trademarks and Similar Items**  
+   - Designs that are trademarks, property marks, or any other trade-related identifiers.  
+
+By following the procedure for registration and adhering to the eligibility criteria, creators can protect their industrial designs effectively in India.  
+
