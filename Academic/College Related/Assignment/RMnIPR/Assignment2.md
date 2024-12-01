@@ -3,33 +3,52 @@ With a neat flow chart, explain the steps involved in  the  patent application p
 
 ![Image](img/PA.jpg)
 
-#### 1. **Patent Filing**
-   - The process begins with the filing of a patent application before the **Indian Patent Office (IPO)**. Applicants can optionally claim priority from an earlier filing under the Paris Convention.
+## **Steps in the Patent Application Process**
 
-#### 2. **Determine Request for Early Publication**
-   - The applicant must decide if they want their application to be published early.
-     - **Yes:** The application is published quickly in the **Official Journal**, reducing wait times.
-     - **No:** The application is published automatically after **18 months** from the priority date.
+### 1. **Prior Art Search**
+   - Conduct a **prior art search** to ensure the invention meets patentability criteria:
+     - **Novelty**: The invention is new and not disclosed in prior patents or publications.
+     - **Inventiveness**: The invention is not obvious to someone skilled in the relevant field.
+     - **Industrial Applicability**: The invention has practical utility.
+   - Tools for prior art search:
+     - Patent databases (e.g., USPTO, WIPO, IPO databases).
+     - Scientific and technical literature.
 
-#### 3. **Filing a Request for Examination**
-   - A **mandatory request for examination** must be filed, either at the time of application submission or within **48 months** from the priority date. Examination will not proceed without this request.
+### 2. **Filing the Patent Application**
+   - Submit the application to the **Indian Patent Office (IPO)** or another relevant patent authority.
+   - Include necessary documents:
+     - Specification (provisional or complete).
+     - Drawings, claims, and abstract.
+     - Priority documents (if claiming priority under the Paris Convention).
 
-#### 4. **Examination Process**
-   - The **patent examiner** evaluates the application to check if it meets **patentability criteria**, which include:
-     - **Novelty** (newness of the invention).
-     - **Inventiveness** (non-obviousness).
-     - **Industrial Applicability** (usefulness).
+### 3. **Publication of the Application**
+   - The application is published in the **Official Journal** of the IPO.
+   - **Early Publication Request** (optional):
+     - If requested, the application is published early.
+   - **Automatic Publication**:
+     - If no early publication is requested, the application is published **18 months** after the filing or priority date.
 
-#### 5. **First Examination Report (FER)**
-   - If the examiner raises objections, a **First Examination Report (FER)** is issued to the applicant, detailing areas of non-compliance or deficiencies.
+### 4. **Request for Examination**
+   - Submit a **Request for Examination (RFE)** within **48 months** of the filing or priority date.
+   - Examination will not proceed without this request.
 
-#### 6. **Applicant Response to FER**
-   - The applicant has **12 months** to respond to the FER, addressing the objections raised by the examiner.
+### 5. **Examination Process**
+   - The **patent examiner** evaluates the application based on:
+     - Patentability criteria (novelty, inventiveness, industrial applicability).
+     - Compliance with formal requirements.
 
-#### 7. **Decision on Patent**
-   - **If No Objections:** The patent is granted, and the details are published in the Official Journal.
-   - **If Objections Remain:** Failure to resolve the issues within the given time frame results in the rejection of the patent application.
+### 6. **First Examination Report (FER)**
+   - If objections are found, the examiner issues a **First Examination Report (FER)**.
+   - The report highlights deficiencies or objections regarding patentability or compliance.
 
+### 7. **Applicant Response**
+   - The applicant has **12 months** to respond to the FER.
+   - Address all objections and provide amendments or clarifications as required.
+
+### 8. **Grant of Patent**
+   - **If objections are resolved**: The patent is granted, and details are published in the Official Journal.
+   - **If objections are not resolved**: The application is rejected.
+     
 #### **What is Patent Infringement?**
    - **Patent infringement** occurs when someone uses, makes, sells, or distributes a patented invention without the patent holder's permission during the patent's validity period.
 
