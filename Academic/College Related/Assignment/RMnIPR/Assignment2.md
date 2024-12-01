@@ -1,7 +1,7 @@
 # Question 1)
 With a neat flow chart, explain the steps involved in  the  patent application procedure starting from filing to the grant of a patent. Also explain patent infringements.	
 
-![Image](img/PA.png)
+![Image](img/PA.jpg)
 
 #### 1. **Patent Filing**
    - The process begins with the filing of a patent application before the **Indian Patent Office (IPO)**. Applicants can optionally claim priority from an earlier filing under the Paris Convention.
@@ -58,7 +58,7 @@ With a neat flow chart, explain the steps involved in  the  patent application p
 # Question 2) 
 Explain with a flowchart , the process of copyright registration and rights of the copyright owner.	
 
-![Image](img/CR.png)
+![Image](img/CR.jpg)
 
 
 ## Process of Copyright Registration
@@ -124,7 +124,7 @@ Explain with a flowchart , the process of copyright registration and rights of t
 # Question 3)
 Explain the process of Trademark registration with a neat flowchart.
 
-![Image](img/TR.png)
+![Image](img/TR.jpg)
 
 
 ## Steps in the Trademark Registration Process
@@ -175,7 +175,7 @@ Explain the process of Trademark registration with a neat flowchart.
 # Question 4)
 With a flowchart, explain the process of GI registration.
 
-![Image](img/GI.png)
+![Image](img/GI.jpg)
 
 
 1. **Prior Search**  
