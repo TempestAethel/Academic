@@ -41,9 +41,6 @@ Generate and analyze common discrete-time sequences:
 
 ### Code:
 ```matlab
-clc;
-clear all;
-close all;
 
 % Unit Sample Sequence
 n = -10:10;
@@ -105,9 +102,7 @@ Perform the following operations:
 ### Code:
 #### Addition:
 ```matlab
-clc;
-clear all;
-close all;
+
 
 n = 0:10;
 x1 = sin(0.2 * pi * n);
@@ -123,9 +118,7 @@ ylabel('Amplitude');
 
 #### Folding:
 ```matlab
-clc;
-clear all;
-close all;
+
 
 n = -10:10;
 x = [zeros(1, 10), 1, zeros(1, 10)]; % Unit sample sequence
@@ -141,9 +134,6 @@ ylabel('Amplitude');
 
 #### Scaling:
 ```matlab
-clc;
-clear all;
-close all;
 
 n = 0:10;
 x = sin(0.2 * pi * n);
@@ -165,9 +155,6 @@ Perform convolution of two signals **manually** (without using MATLABâ€™s built-
 
 ### Code:
 ```matlab
-clc;
-clear all;
-close all;
 
 % Two input sequences
 x = [1, 2, 3];
@@ -204,9 +191,7 @@ Analyze the system \( y(n) = 0.9y(n-1) + x(n) \):
 
 ### Code:
 ```matlab
-clc;
-clear all;
-close all;
+
 
 % Transfer function coefficients
 num = [1]; % Numerator coefficients
@@ -234,9 +219,7 @@ Compute the **N-point DFT** of a given sequence manually (without using MATLABâ€
 
 ### Code:
 ```matlab
-clc;
-clear all;
-close all;
+
 
 x = [1, 2, 3, 4]; % Input sequence
 N = length(x);
@@ -267,9 +250,6 @@ Use **DFT and IDFT** to compute:
 
 ### Code:
 ```matlab
-clc;
-clear all;
-close all;
 
 x = [1, 2, 3];
 h = [4, 5, 6];
