@@ -77,4 +77,3 @@ Create a single HTML file for a dark-themed Forest Fire Simulation. Use a black 
 
 **Prompt**:  
 Create a single HTML file for a dark-themed Prisoner's Dilemma tournament. Use a black background with glowing text and icons representing players. Players should compete using predefined strategies (e.g., Tit-for-Tat, Always Cooperate, Always Defect). Include an interactive chart to visualize scores and outcomes over multiple rounds.
-"""
