@@ -3,12 +3,12 @@
 Here are the images in the 2024 folder:
 
 ## Music
-<div align="center">
-    ![Music Recap 2024](./2024/Music-Recap_2024.png)
-</div>
+<p align="center">
+    <img src="./2024/Music-Recap_2024.png" alt="Music Recap 2024">
+</p>
 
 ## Gaming
-<div align="center">
-    ![Gaming Recap 2024](./2024/2024_Gaming.png)  
-    ![Gaming 2024](./2024/2024.png)
-</div>
+<p align="center">
+    <img src="./2024/2024_Gaming.png" alt="Gaming Recap 2024">
+    <img src="./2024/2024.png" alt="Gaming 2024">
+</p>
