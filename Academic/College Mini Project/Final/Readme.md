@@ -88,12 +88,11 @@ Analyzes the simulation results and phase noise behavior.
      - Visualizes the time-domain step response.
    - **Open-Loop Magnitude Response**:
      - Plots magnitude response of `OL_GAIN`.
-
+     - 
 5. **RMS Jitter Calculation**:
-   - Computes RMS jitter using:
-     \[
-     RMS\_Jitter = \frac{1}{2\pi N F_{ref}} \sqrt{2 \int_{freqv} PN(f) \, df}
-     \]
+   - Computes RMS jitter as the product of:
+     1. The reciprocal of \( 2 \pi N F_{ref} \), where \( N \) is the divider value and \( F_{ref} \) is the reference frequency.
+     2. The square root of twice the integral of the phase noise \( PN(f) \) across the frequency range of interest.
    - **Output**: Jitter in picoseconds.
 
 ### **Outputs**
