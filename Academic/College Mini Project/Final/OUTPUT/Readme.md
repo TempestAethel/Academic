@@ -7,7 +7,7 @@ This document describes the outputs generated during the simulation and analysis
 ## **1. Output Plots**
 
 ### **1.1. Closed-Loop Transfer Function**
-[ClosedLoop_Transfer_Function.png](./images/ClosedLoop_Transfer_Function.png)
+![ClosedLoop_Transfer_Function.png](./images/ClosedLoop_Transfer_Function.png)
 - **Description**: 
   - This plot represents the step response of the closed-loop transfer function (`CL_TF`).
   - It shows the system's time-domain behavior in response to a step input.
@@ -19,7 +19,7 @@ This document describes the outputs generated during the simulation and analysis
 ---
 
 ### **1.2. Open-Loop Frequency Response**
- [OpenLoop_Frequency_Response.png](./images/OpenLoop_Frequency_Response.png)
+![OpenLoop_Frequency_Response.png](./images/OpenLoop_Frequency_Response.png)
 - **Description**: 
   - This plot represents the magnitude response of the open-loop transfer function (`OL_GAIN`) in the frequency domain.
   - It provides insights into the system's gain and phase characteristics over a wide frequency range.
@@ -31,7 +31,7 @@ This document describes the outputs generated during the simulation and analysis
 ---
 
 ### **1.3. Overall Phase Noise Spectrum**
-[Overall_PhaseNoise_Spectrum.png](./images/Overall_PhaseNoise_Spectrum.png)
+![Overall_PhaseNoise_Spectrum.png](./images/Overall_PhaseNoise_Spectrum.png)
 - **Description**: 
   - This plot shows the overall phase noise spectrum at the output of the PLL.
   - Combines phase noise contributions from the reference, charge pump, and VCO.
@@ -43,7 +43,7 @@ This document describes the outputs generated during the simulation and analysis
 ---
 
 ### **1.4. Command Window Output**
-[Command_window.png](./images/Command_window.png)
+![Command_window.png](./images/Command_window.png)
 - **Description**: 
   - A screenshot of the MATLAB command window showing the progress of simulations and the computed RMS jitter.
   - Confirms successful execution of all steps in `implementation.m` and `analysis.m`.
