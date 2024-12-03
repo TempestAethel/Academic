@@ -16,8 +16,6 @@ graph TD
 - `graph TD`: Top-down graph.
 - `A[Start] --> B[End]`: A simple flow from start to end.
 
-### Result:
-![Simple Diagram](https://via.placeholder.com/250x100.png?text=Simple+Diagram)
 
 ---
 
@@ -37,8 +35,6 @@ graph TD
 ### Explanation:
 - The diagram uses a decision block (`B{Decision?}`) to branch the flow.
 
-### Result:
-![Conditional Flow](https://via.placeholder.com/250x100.png?text=Conditional+Flow)
 
 ---
 
@@ -57,8 +53,6 @@ graph TD
 ### Explanation:
 - The loop will continue if the action is not successful, repeating until it is.
 
-### Result:
-![Process with Loop](https://via.placeholder.com/250x100.png?text=Process+with+Loop)
 
 ---
 
@@ -77,8 +71,6 @@ graph LR
 ### Explanation:
 - Each step occurs in order from left to right.
 
-### Result:
-![Sequential Process](https://via.placeholder.com/250x100.png?text=Sequential+Process)
 
 ---
 
@@ -101,9 +93,6 @@ graph TB
 ### Explanation:
 - The flow checks if the data is valid. If not, it fixes the data and re-processes it.
 - It also loops if there’s more data to process.
-
-### Result:
-![Complex Process](https://via.placeholder.com/250x100.png?text=Complex+Process)
 
 ---
 
@@ -128,8 +117,6 @@ graph TD
 ### Explanation:
 - The flow moves through two stages with multiple conditions and decision points at each stage.
 
-### Result:
-![Multi-Stage Process](https://via.placeholder.com/250x100.png?text=Multi-Stage+Process)
 
 ---
 
@@ -159,8 +146,6 @@ graph TB
 - The diagram uses both conditional branches and parallel paths to handle various scenarios.
 - After the main process, final verification tests are performed, determining success or failure.
 
-### Result:
-![Final Complex Flow](https://via.placeholder.com/250x100.png?text=Final+Complex+Flow)
 
 ---
 
