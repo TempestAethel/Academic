@@ -23,10 +23,8 @@ This document guides you on how to:
 3. Save the file after making changes.
 
 ### 2. Implement the System
-1. Run **`implementation.m`** in MATLAB by typing:
-   ```matlab
-   implementation
-   ```
+1. Run **`implementation.m`** in MATLAB :
+
 2. This script will:
    - Load the parameters from `Parameters.m`.
    - Implement and simulate the system (e.g., step response, frequency response).
@@ -34,10 +32,8 @@ This document guides you on how to:
 3. Check the MATLAB Command Window for messages confirming successful execution.
 
 ### 3. Analyze Results
-1. Run **`analysis.m`** in MATLAB by typing:
-   ```matlab
-   analysis
-   ```
+1. Run **`analysis.m`** in MATLAB :
+
 2. This script will:
    - Load the parameters from `Parameters.m` and results from `Implementation_Results.mat`.
    - Compute and visualize phase noise, transfer functions, and RMS jitter.
