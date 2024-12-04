@@ -41,4 +41,5 @@ Check that the file `Implementation_Results.mat` is created in the same folder a
 - View the generated plots for phase noise, step response, and frequency response.
 
 ### 8. Output Explanation
-For detailed examples and explanations of the outputs, refer to the file `output.md` located in the same folder.
+For detailed examples and explanations of the outputs, refer to [output.md](./output.md) located in the same folder.
+
