@@ -49,4 +49,7 @@ This folder contains documentation on the functions and commands used throughout
 
 ---
 
-This overview helps you navigate the project folder structure and understand the purpose of each file and folder.
+## **Footer**
+
+This overview helps you navigate the project folder structure and understand the purpose of each file and folder.  
+For more information, refer to the respective files in each folder.  
