@@ -17,7 +17,7 @@ This folder contains all the program files used for the antenna simulation and a
 - **[Analysis.m](./Programs/Analysis.m)**:  
   Processes the simulation results saved by **Implementation.m** and analyzes the phase noise, RMS jitter, and system performance. It generates various plots to visualize the results.
 
-- **[readme.md](./Programs/readme.md)**:  
+- **[Readme.md](./Programs/Readme.md)**:  
   This file contains a summary of all the program files and explains their purpose and usage in the overall project.
 
 ---
