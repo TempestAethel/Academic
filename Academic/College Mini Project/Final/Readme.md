@@ -49,5 +49,20 @@ This folder contains documentation on the functions and commands used throughout
 
 ---
 
+## **[LineByLine Folder](./LineByLine/)**
+
+This folder contains line-by-line analysis of the MATLAB scripts used in the project:
+
+- **[Parameters_manual.md](./LineByLine/Parameters_manual.md)**:  
+  A detailed line-by-line analysis of the **Parameters.m** script, explaining each parameter and transfer function defined for the antenna simulation.
+
+- **[Implementation_manual.md](./LineByLine/Implementation_manual.md)**:  
+  A detailed line-by-line analysis of the **Implementation.m** script, explaining how the simulation is executed and how the results are saved.
+
+- **[Analysis_manual.md](./LineByLine/Analysis_manual.md)**:  
+  A detailed line-by-line analysis of the **Analysis.m** script, explaining how the results from **Implementation.m** are processed and how the phase noise, RMS jitter, and system performance are analyzed.
+
+---
+
 This overview helps you navigate the project folder structure and understand the purpose of each file and folder.  
-For more information, refer to the respective files in each folder.  
+For more information, refer to the respective files in each folder.
