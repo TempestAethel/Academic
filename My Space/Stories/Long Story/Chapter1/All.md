@@ -1,7 +1,7 @@
 # Unspoken Expectations  
 *By Aurora Heart*  
 
----       ## Chapter 1: Crossing Paths  
+## Chapter 1: Crossing Paths  
 
 Ethan didn’t think much about the day when it began. It was one of those overcast mornings where the sun seemed too tired to push through the thick gray clouds. He adjusted the strap of his backpack, groaning inwardly at the weight of his textbooks, and shuffled into the bustling campus coffee shop.  
 
@@ -43,7 +43,7 @@ Before he could respond, she was gone, leaving behind the faint scent of lavende
 
 He didn’t know it yet, but this small moment would mark the beginning of something that would change both their lives forever.  
 
----  : Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 Ethan found himself returning to the coffee shop every day that week, half-hoping to see Maya again. It wasn’t like him to fixate on someone he barely knew, but there was something magnetic about her—an energy that pulled him in despite his better judgment.  
 
@@ -91,7 +91,7 @@ Ethan smiled, a rare, genuine smile that caught even him off guard. “Yeah. Sam
 
 And just like that, the coffee shop became their spot.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 Over the next two weeks, the coffee shop became an unspoken part of their routine. Ethan didn’t know how it happened—there was no explicit agreement, no promises exchanged—but every afternoon, like clockwork, Maya would be there, and he would follow.  
 
@@ -141,7 +141,7 @@ The words were light, playful, but they left a strange warmth in the air between
 
 Ethan didn’t know what it was, exactly, but he knew one thing for certain: he didn’t want to lose it.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 For the first time in years, Ethan found himself looking forward to something outside of his usual routines. It wasn’t just the coffee shop or the quiet hours spent typing away on his laptop—it was Maya. She had a way of lighting up even the dullest moments, of turning everyday conversations into something vivid and alive.  
 
@@ -199,7 +199,7 @@ Ethan nodded, his lips curving into a faint smile of his own. “Same time.”
 
 And as they parted ways, Ethan couldn’t help but feel that this—whatever it was—was only the beginning.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 Ethan didn’t think much about how quickly Maya had become a part of his life until Ryan noticed.  
 
@@ -261,7 +261,7 @@ But even as he tried to reassure himself, a quiet voice in the back of his mind 
 
 What if this was the beginning of something he couldn’t afford to lose?  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 Ethan found himself thinking about Maya more than he cared to admit. It wasn’t just the time they spent together, though those moments felt like they carried their own gravity. It was the way her voice lingered in his thoughts, her laughter playing like a distant melody long after they’d parted ways.
 
@@ -319,7 +319,7 @@ As the evening wore on, Ethan found himself glancing at her more often, noticing
 
 He didn’t say anything, but deep down, he knew: he was falling for her.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 Ethan didn’t know how long he could keep pretending that his feelings for Maya were just friendly. Every time they met at the coffee shop or spent time together at her studio, the line between friendship and something more grew thinner.  
 
@@ -381,7 +381,7 @@ The only thing he knew for certain was that Maya had changed something in him—
 
 And now, he wasn’t sure if he could close it again.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 The next day, Ethan arrived at the coffee shop earlier than usual. The familiar buzz of conversation filled the air, but for once, it didn’t comfort him. He found himself restless, his mind replaying the previous night’s conversation with Maya.  
 
@@ -441,7 +441,7 @@ He didn’t know how she’d done it, but somehow, she’d captured more than ju
 
 And for the first time, Ethan wondered if Maya saw something in him that he’d never seen in himself.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 The next few days passed in a blur of quiet conversations, laughter, and stolen glances. Ethan couldn’t remember the last time he’d felt this way—like every moment he spent with Maya was a thread weaving itself into something bigger, something he didn’t fully understand yet.  
 
@@ -485,7 +485,7 @@ Ethan sighed, his chest tight with indecision. For someone who prided himself on
 
 All he knew was that he couldn’t keep going like this. Sooner or later, something had to give.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 Ethan avoided Maya for the next two days.  
 
@@ -553,7 +553,7 @@ Ethan nodded, though the tightness in his chest didn’t ease. “Yeah. Tomorrow
 
 As he watched her walk away, he couldn’t help but wonder what she’d been about to say—and why a part of him was so afraid to hear it.  
 
----       ## Chapter 1: Crossing Paths (Continued)  
+## Chapter 1: Crossing Paths (Continued)  
 
 The next morning, Ethan woke up with a knot in his stomach.  
 
