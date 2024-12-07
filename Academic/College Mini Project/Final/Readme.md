@@ -22,6 +22,21 @@ This folder contains all the program files used for the antenna simulation and a
 
 ---
 
+## **[LineByLine Folder](./LineByLine/)**
+
+This folder contains line-by-line analysis of the MATLAB scripts used in the project:
+
+- **[Parameters_manual.md](./LineByLine/Parameters_manual.md)**:  
+  A detailed line-by-line analysis of the **Parameters.m** script, explaining each parameter and transfer function defined for the antenna simulation.
+
+- **[Implementation_manual.md](./LineByLine/Implementation_manual.md)**:  
+  A detailed line-by-line analysis of the **Implementation.m** script, explaining how the simulation is executed and how the results are saved.
+
+- **[Analysis_manual.md](./LineByLine/Analysis_manual.md)**:  
+  A detailed line-by-line analysis of the **Analysis.m** script, explaining how the results from **Implementation.m** are processed and how the phase noise, RMS jitter, and system performance are analyzed.
+
+---
+
 ## **[Output Folder](./Output/)**
 
 This folder contains the output files generated after running the **Implementation.m** script and analyzing the results:
@@ -42,25 +57,10 @@ This folder contains the output files generated after running the **Implementati
 
 ## **[NOTAzz Folder](./NOTAzz/)**
 
-This folder contains documentation on the functions and commands used throughout the project:
+This folder contains documentation on functions and commands that fall outside the scope of the other folders:
 
 - **[Functions.md](./NOTAzz/Functions.md)**:  
   This file provides an explanation of the MATLAB functions and commands used in the project. It details the syntax and purpose of each function, including **run**, **tf**, **step**, **bode**, and others, explaining how they are applied to process the system parameters, simulate the antenna system, and analyze the results.
-
----
-
-## **[LineByLine Folder](./LineByLine/)**
-
-This folder contains line-by-line analysis of the MATLAB scripts used in the project:
-
-- **[Parameters_manual.md](./LineByLine/Parameters_manual.md)**:  
-  A detailed line-by-line analysis of the **Parameters.m** script, explaining each parameter and transfer function defined for the antenna simulation.
-
-- **[Implementation_manual.md](./LineByLine/Implementation_manual.md)**:  
-  A detailed line-by-line analysis of the **Implementation.m** script, explaining how the simulation is executed and how the results are saved.
-
-- **[Analysis_manual.md](./LineByLine/Analysis_manual.md)**:  
-  A detailed line-by-line analysis of the **Analysis.m** script, explaining how the results from **Implementation.m** are processed and how the phase noise, RMS jitter, and system performance are analyzed.
 
 ---
 
