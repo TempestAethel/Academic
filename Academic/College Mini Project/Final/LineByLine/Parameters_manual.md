@@ -295,3 +295,19 @@ CL_TF = feedback(FWD_GAIN, tf_div);
   - `FWD_GAIN = tf_pd * tf_lf * tf_vco`: The product of PFD/CP transfer function, loop filter, and VCO transfer functions represents the forward gain of the system.  
   - `OL_GAIN = FWD_GAIN * tf_div`: The open-loop gain adds the effect of the divider.  
   - `CL_TF = feedback(FWD_GAIN, tf_div)`: Applies negative feedback to the forward gain to form the closed-loop transfer function.
+ 
+- **Manual Calculation**:  
+  - The transfer function of the system is calculated step-by-step by multiplying the individual transfer functions:
+    - `tf_pd` is the transfer function of the Phase Frequency Detector and Charge Pump.
+    - `tf_lf` is the transfer function of the loop filter, defined by the third-order passive filter.
+    - `tf_vco` is the transfer function of the Voltage-Controlled Oscillator (VCO).
+    - `tf_div` represents the divider in the feedback loop.
+    
+  - **`FWD_GAIN`**: The forward gain is calculated by multiplying the transfer functions:  
+    `FWD_GAIN = tf_pd * tf_lf * tf_vco`.
+
+  - **`OL_GAIN`**: The open-loop gain is calculated by multiplying the forward gain by the divider transfer function:  
+    `OL_GAIN = FWD_GAIN * tf_div`.
+
+  - **`CL_TF`**: The closed-loop transfer function is calculated by applying feedback to the open-loop gain:  
+    `CL_TF = feedback(FWD_GAIN, tf_div)`.
