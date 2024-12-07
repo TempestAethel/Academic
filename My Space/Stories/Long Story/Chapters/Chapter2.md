@@ -69,7 +69,7 @@ Maya paused, meeting his gaze. For a moment, neither of them said anything, the 
 
 “Well,” she said, her voice light but warm, “I guess that makes us even.”  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 The next week passed in a blur of late nights, laughter, and quiet moments that lingered long after they ended. Ethan found himself craving Maya’s presence more and more, drawn to the way she brought color to his otherwise black-and-white world.  
 
@@ -125,7 +125,7 @@ Maya had a way of making the world feel bigger and smaller at the same time—li
 
 He didn’t know where this was all heading, and for once, he didn’t care. All he knew was that he wanted to keep walking this path with her, wherever it led.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 The next morning, Ethan found himself waiting outside Maya’s studio. It wasn’t their usual meeting spot, but after last night, he felt drawn to her space in a way he hadn’t before.  
 
@@ -185,7 +185,7 @@ Ethan’s chest tightened, and for a moment, he couldn’t find the words to res
 
 For the first time, he felt like the future didn’t have to be something to fear. With Maya by his side, it felt like it could be something to look forward to.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 The days began to blur into a rhythm Ethan hadn’t realized he needed. Mornings were spent in class or at his desk, afternoons at the coffee shop with Maya, and evenings often spilled into her studio, where they talked, painted, or simply existed in each other’s presence.  
 
@@ -245,7 +245,7 @@ And yet, as she looped her arm through his and leaned her head against his shoul
 
 Whatever the future held, he wasn’t ready to let go.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 The morning after the art showcase, Ethan woke with an odd mix of emotions swirling in his chest. Maya’s painting had stayed with him, its colors and energy replaying in his mind like a vivid dream.  
 
@@ -301,7 +301,7 @@ Her smile was brighter this time, and she squeezed his arm. “Thanks, Ethan. Th
 
 As they continued walking, Ethan couldn’t help but feel a quiet sense of certainty settling over him. Whatever challenges lay ahead, he knew one thing for sure: he wanted to be there for her, every step of the way.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 As the semester progressed, the days grew shorter, and the air carried a crisp chill that hinted at the approaching winter. Ethan found himself savoring every moment he spent with Maya, acutely aware of how fleeting their time felt.  
 
@@ -363,7 +363,7 @@ As he sat back, exhaustion pulling at him, Ethan realized something surprising: 
 
 And maybe, just maybe, he was starting to understand what Maya had been trying to teach him all along.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 The next afternoon, Ethan carried the painted canvas to Maya’s studio. He wasn’t sure what to expect—whether she’d laugh, offer pointers, or simply give him one of her trademark teasing smirks.  
 
@@ -433,7 +433,7 @@ The words stayed with Ethan long after he left the studio that night. For the fi
 
 And for that, he knew he had Maya to thank.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 As winter crept closer, the days grew shorter, and the time Ethan and Maya spent together felt more precious. The routines they’d built—afternoons at the coffee shop, evenings in the studio—became an anchor for Ethan, a constant he found himself clinging to.  
 
@@ -491,7 +491,7 @@ By the time he set the pen down, the knot in his chest had eased, replaced by a 
 
 He didn’t know what the future held, but for now, he was certain of one thing: Maya was the best thing that had ever happened to him.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 Winter break was just around the corner, and the campus was beginning to quiet down. Students rushed to finish final projects and prepare for the holidays, but for Ethan, everything outside his time with Maya felt like background noise.  
 
@@ -543,7 +543,7 @@ Maya’s eyes softened, and she reached out to take his hand. “You won’t hav
 
 In that moment, with her hand in his and the quiet warmth of her words wrapping around him, Ethan felt like maybe—just maybe—they could hold on to this, no matter what the future brought.  
 
-## Chapter 2: Shared Worlds (Continued)  
+--- 
 
 The last week of the semester arrived in a blur of deadlines and farewells. Campus buzzed with an electric mix of excitement and anxiety as students prepared to leave for the holidays. For Ethan, though, the thought of winter break felt bittersweet.  
 
