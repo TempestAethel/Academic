@@ -1,72 +1,66 @@
 # Unspoken Expectations  
 *By Aurora Heart*  
 
-## Chapter 3: A Winter Apart  
+## Chapter 6: Quiet Distance  
 
-The drive home felt longer than usual, the familiar roads stretching endlessly before Ethan. His parents greeted him with warmth and excitement, the house decked out in festive lights and the scent of pine wafting through the air.  
+The days that followed felt heavier for Ethan, each one blending into the next in a dull haze. The routines that had once grounded him now felt hollow, their meaning stripped away by the absence of Maya in his life.  
 
-But even as he settled back into the rhythms of home—family dinners, catching up with old friends, and evenings spent in front of the fireplace—Ethan couldn’t shake the quiet ache of missing Maya.  
-
-It wasn’t that he hadn’t been apart from people before. His life had been full of temporary connections, friendships that faded with time and distance. But this was different.  
-
-Maya was different.  
+He found himself avoiding the places they used to go together—the coffee shop, the park, even the quiet corner of the library where they’d often study side by side. Everywhere he went, memories of her seemed to linger, refusing to fade.  
 
 ---
 
-The first text came the night he arrived home.  
+Maya, too, struggled to adjust. The studio, which had always been her sanctuary, now felt suffocating. Her paintings lacked the energy they once held, her brushstrokes hesitant and uncertain.  
 
-**Maya:** Made it back in one piece. My mom is already asking if I’ve “found myself” yet. Classic.  
-
-Ethan laughed, his chest easing as he typed back:  
-
-**Ethan:** Glad you survived. Let me know if you need an escape plan.  
-
-Her reply came almost instantly.  
-
-**Maya:** You’re my first call.  
-
-The conversation carried on late into the night, a string of jokes and updates that made the miles between them feel smaller. By the time Ethan fell asleep, his phone still in hand, he felt lighter.  
+She threw herself into her work anyway, hoping that the act of creating would quiet the ache in her chest. But no matter how many hours she spent painting, she couldn’t escape the feeling that something was missing.  
 
 ---
 
-Over the next few days, their texts became a constant thread running through Ethan’s time at home.  
+One evening, Ethan sat at his desk, staring at the blank pages of the journal Maya had given him. The weight of his emotions felt too heavy to put into words, but he picked up his pen anyway, letting the thoughts spill out in messy, fragmented sentences.  
 
-Maya sent pictures of her mom’s eccentric holiday decorations, including a reindeer made entirely of recycled bottle caps. Ethan responded with shots of his dad’s over-the-top Christmas village display, complete with a miniature train set that took up half the living room.  
+“I miss her. I miss the way she made everything feel brighter, lighter. I know we needed this space, but it feels like a part of me is missing. How do you move forward when you’re not sure where you’re going?”  
 
-Their conversations ranged from the mundane to the deeply personal—Maya’s struggles with finding inspiration for her next project, Ethan’s worries about what came after graduation.  
-
-“I feel like I’m standing at the edge of something huge,” Ethan admitted one night, his words spilling out before he could overthink them. “Like everything’s about to change, and I’m not ready.”  
-
-Maya’s response was immediate.  
-
-“You don’t have to be ready,” she wrote. “You just have to keep moving forward. One step at a time.”  
-
-Ethan stared at the message, the knot in his chest easing slightly. Somehow, Maya always knew exactly what to say.  
+He set the pen down, closing the journal with a sigh.  
 
 ---
 
-One evening, as snow fell softly outside his bedroom window, Ethan sat at his desk, staring at the journal Maya had given him.  
+A few weeks later, Ethan ran into Maya by chance. It was late in the afternoon, and he was walking across campus when he spotted her coming out of the art building.  
 
-The blank pages felt less intimidating now, though he still wasn’t sure where to start. After a moment, he picked up his pen and began to write.  
+She looked the same—her hair pulled into a loose braid, her bag slung over one shoulder—but there was something different about her. She seemed quieter, more subdued.  
 
-He wrote about the way the snow looked under the streetlights, the quiet stillness of the night. He wrote about the ache of missing Maya, the way her voice lingered in his mind like a melody he couldn’t forget.  
+“Ethan,” she said, her voice soft as she stopped in front of him.  
 
-And as the words filled the page, Ethan felt a sense of clarity he hadn’t expected.  
+“Maya,” he replied, his heart pounding at the sight of her.  
+
+They stood there for a moment, an awkward silence stretching between them.  
+
+“How have you been?” Maya asked finally.  
+
+Ethan hesitated, unsure how to answer. “I’ve been… okay,” he said. “What about you?”  
+
+Maya smiled faintly, though it didn’t reach her eyes. “Same.”  
+
+Another silence fell between them, and Ethan felt the weight of all the things he wanted to say pressing down on him.  
+
+“I miss you,” he said suddenly, the words tumbling out before he could stop them.  
+
+Maya’s eyes widened slightly, and for a moment, he thought she might say it back. But instead, she looked down, her expression pained.  
+
+“I miss you too,” she said quietly. “But…”  
+
+Ethan’s chest tightened. “But what?”  
+
+Maya met his gaze, her eyes filled with sadness. “I don’t know if we’re ready to go back to the way things were. Not yet.”  
+
+Ethan nodded slowly, though her words felt like a punch to the gut. “I get it,” he said, his voice barely above a whisper.  
+
+Maya smiled faintly, her eyes glistening. “I hope you do.”  
+
+With that, she turned and walked away, leaving Ethan standing there, the ache in his chest deeper than ever.  
 
 ---
 
-Later that night, Maya called.  
+That night, Ethan lay in bed, staring at the ceiling. Her words echoed in his mind, and though they brought no clarity, they stirred a small, fragile hope.  
 
-“Hey,” she said, her voice warm and familiar. “How’s the holiday madness?”  
+Maybe they weren’t ready yet.  
 
-Ethan smiled, leaning back in his chair. “Chaotic, as usual. You?”  
-
-“Same,” she said, laughing softly. “But it’s kind of nice, in a way. Makes me appreciate the quiet moments more.”  
-
-They talked for hours, the conversation flowing as easily as it always did. And by the time they said goodnight, Ethan felt closer to her than ever, despite the miles between them.  
-
----
-
-As the days passed, Ethan began to notice something surprising: the ache of missing Maya hadn’t gone away, but it no longer felt unbearable. Instead, it had become a quiet hum, a reminder of how much she meant to him and how much he wanted to hold on to what they had.  
-
-Because even though they were apart, Ethan knew they were still connected. And for now, that was enough.  
+But maybe, someday, they would be.  
