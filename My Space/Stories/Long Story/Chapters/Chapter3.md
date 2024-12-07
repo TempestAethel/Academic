@@ -71,7 +71,7 @@ As the days passed, Ethan began to notice something surprising: the ache of miss
 
 Because even though they were apart, Ethan knew they were still connected. And for now, that was enough.  
 
-## Chapter 3: A Winter Apart (Continued)  
+---
 
 The days of winter break drifted by in a blur of family traditions and quiet introspection. Ethan found himself slipping into old routines—helping his dad string up new lights along the roofline, cooking with his mom, and catching up with childhood friends he hadn’t seen in months.  
 
@@ -143,7 +143,7 @@ Because for the first time, the future didn’t feel so uncertain.
 
 It felt like the start of something new.  
 
-## Chapter 3: A Winter Apart (Continued)  
+---
 
 As winter break stretched on, the days began to take on a familiar rhythm. Ethan spent his mornings helping around the house, his afternoons catching up with old friends, and his evenings either texting or calling Maya.  
 
@@ -211,7 +211,7 @@ But for now, as the snow fell softly outside his window, he let himself hold on 
 
 Maya had changed everything. And Ethan was ready to see where that change would lead.  
 
-## Chapter 3: A Winter Apart (Continued)  
+---
 
 The morning Ethan returned to campus, the sky was a pale gray, and the air carried the crispness of early January. Snow still clung to the edges of the sidewalks, but most of it had been cleared away, leaving the familiar paths open again.  
 
@@ -301,7 +301,7 @@ As he walked back to his dorm that evening, the weight of winter break lifted fr
 
 Because no matter what lay ahead, he and Maya were here, together. And for now, that was enough.  
 
-## Chapter 3: A Winter Apart (Continued)  
+---
 
 The transition back to campus life felt almost surreal for Ethan. The snow-covered pathways, the hum of students rushing between buildings, and the quiet evenings in the dorm all felt familiar, yet somehow changed.  
 
