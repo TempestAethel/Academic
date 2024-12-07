@@ -67,7 +67,7 @@ For the first time in a long while, he felt like he was exactly where he was sup
 
 Whatever challenges lay ahead, they’d face them together.  
 
-## Chapter 4: The Challenge (Continued)  
+---
 
 The drive to the park was both exhilarating and peaceful. The highway stretched endlessly before them, lined by rolling hills and trees still dusted with the remnants of winter.  
 
@@ -139,7 +139,7 @@ Maya shook her head, but her smile didn’t fade. “Well,” she said, leaning 
 
 And as the stars shone brightly overhead, he couldn’t help but feel that they were on the brink of something extraordinary.  
 
-## Chapter 4: The Challenge (Continued)  
+---
 
 The morning greeted them with a golden sunrise, the light filtering through the trees and casting long shadows across the ground. Ethan stretched as he stepped out of the tent, the crisp air waking him up instantly.  
 
@@ -229,7 +229,7 @@ And as they sat there, the quiet sounds of the forest surrounding them, Ethan fe
 
 This—being here, with her—was exactly where he was meant to be.  
 
-## Chapter 4: The Challenge (Continued)  
+---
 
 The next morning, Ethan woke to the sound of birds chirping faintly in the distance. The air was cold and crisp, and the faint glow of the rising sun filtered through the thin walls of the tent.  
 
@@ -307,7 +307,7 @@ She reached out, placing her hand over his. “Anytime.”
 
 And as they sat there, the stars bright and endless above them, Ethan felt like he was finally starting to understand what it meant to let go and truly live.  
 
-## Chapter 4: The Challenge (Continued)  
+---
 
 The following morning, they set out early, the trail winding higher into the mountains. The air was colder, the trees sparser, and the snow crunching beneath their boots was thicker with every step.  
 
@@ -397,7 +397,7 @@ Maya smiled, reaching for his hand. “We always do.”
 
 And as the fire crackled softly between them, Ethan felt a sense of peace he hadn’t known in years—a certainty that whatever came next, they’d face it together.  
 
-## Chapter 4: The Challenge (Continued)  
+---
 
 The final morning of their trip was quiet. The forest seemed still, as if the world itself knew their time there was coming to an end.  
 
