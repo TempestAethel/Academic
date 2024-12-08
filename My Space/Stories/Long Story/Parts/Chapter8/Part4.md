@@ -72,10 +72,3 @@ Ethan no longer felt like he had to be everything for Maya, and Maya no longer l
 
 That balance carried them into the next chapter of their lives—one where growth became the centerpiece, and their connection, though different, remained a source of quiet strength.  
 
-## Chapter 9: Growth in the Space Between  
-
-Ethan was surprised by how natural it felt to rebuild his friendship with Maya. At first, he’d been cautious, unsure if they could truly exist in this new space without falling back into old patterns. But as the weeks passed, he found himself appreciating the clarity and balance they’d found.  
-
-He no longer felt the pressure to be her everything, and she, in turn, seemed more at ease—content to let their connection breathe.  
-
----
