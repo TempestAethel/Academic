@@ -308,7 +308,7 @@ save('Implementation_Results.mat', 't', 'y', 'w', 'mag', 'phase', 'mag_dB');
 disp('Implementation complete!');
 ```
 
-### analysis.m
+### Analysis.m
 ```
 %% analysis.m: Analyze results from Parameters.m and implementation.m.
 
