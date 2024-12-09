@@ -62,6 +62,18 @@ This folder contains documentation on functions and commands that fall outside t
 - **[Functions.md](./NOTAzz/Functions.md)**:  
   This file provides an explanation of the MATLAB functions and commands used in the project. It details the syntax and purpose of each function, including **run**, **tf**, **step**, **bode**, and others, explaining how they are applied to process the system parameters, simulate the antenna system, and analyze the results.
 
+- **[Title.md](./NOTAzz/Title.md)**:  
+  Includes detailed information on the project title and naming conventions.
+
+- **[Review 2 Final.pptx](./NOTAzz/Review%202%20Final.pptx)**:  
+  The PowerPoint presentation for the second project review.
+
+- **[Block Diagrams](./NOTAzz/Block_diagram.html)**:  
+  Contains six block diagrams. Key diagrams include the **Second Block Diagram** (PLL system with phase noise simulation) and the **Sixth Block Diagram** (Complete system workflow).
+
+- **[Report.md](./NOTAzz/Report.md)**:  
+  Contains details related to the process of writing the report.
+
 ---
 
 This overview helps you navigate the project folder structure and understand the purpose of each file and folder.  
