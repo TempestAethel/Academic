@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mermaid Diagrams</title>
+  <title>Mermaid Diagrams with Theme Toggle</title>
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
     mermaid.initialize({ startOnLoad: true });
@@ -47,128 +47,234 @@
         img.src = url;
       }
     }
+
+    // Theme toggle function
+    function toggleTheme() {
+      document.body.classList.toggle("dark-theme");
+    }
   </script>
   <style>
-    .diagram-container {
-      margin-bottom: 30px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
     }
+
+    body.dark-theme {
+      background-color: #1e1e1e;
+      color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    header button {
+      padding: 8px 15px;
+      font-size: 14px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    header button:hover {
+      background-color: #555;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .diagram-container {
+      margin-bottom: 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: white;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-theme .diagram-container {
+      background-color: #2e2e2e;
+    }
+
+    .mermaid-placeholder {
+      text-align: center;
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
     .download-buttons {
       margin-top: 10px;
+      text-align: center;
+    }
+
+    .download-buttons button {
+      padding: 8px 15px;
+      font-size: 14px;
+      margin: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .download-buttons button:hover {
+      background-color: #45a049;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>Mermaid Diagrams with Download Options</h1>
+  <header>
+    <h1>Mermaid Diagrams</h1>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </header>
 
-  <div class="diagram-container">
-    <div class="mermaid" id="diagram1">
-      graph TD
-          A[Input Signal] --> B[Phase Detector]
-          B --> C[Loop Filter]
-          C --> D[VCO]
-          D --> E[Output Signal]
-          D --> F[Frequency Divider]
-          F --> B
+  <main>
+    <div class="diagram-container">
+      <h2>Simple PLL Block Diagram</h2>
+      <div class="mermaid-placeholder">Rendering Diagram...</div>
+      <div class="mermaid" id="diagram1">
+        graph TD
+            A[Input Signal] --> B[Phase Detector]
+            B --> C[Loop Filter]
+            C --> D[VCO]
+            D --> E[Output Signal]
+            D --> F[Frequency Divider]
+            F --> B
+      </div>
+      <div class="download-buttons">
+        <button onclick="downloadDiagram('diagram1', 'svg')">Download SVG</button>
+        <button onclick="downloadDiagram('diagram1', 'png')">Download PNG</button>
+      </div>
     </div>
-    <div class="download-buttons">
-      <button onclick="downloadDiagram('diagram1', 'svg')">Download SVG</button>
-      <button onclick="downloadDiagram('diagram1', 'png')">Download PNG</button>
-    </div>
-  </div>
 
-  <div class="diagram-container">
-    <div class="mermaid" id="diagram2">
-      graph TD
-          A[Input Signal] --> B[Phase Detector]
-          B --> C[Loop Filter]
-          C --> D[VCO]
-          D --> E[Output Signal]
-          D --> F[Frequency Divider]
-          F --> B
-          G[Phase Noise Model] --> D
+    <div class="diagram-container">
+      <h2>Detailed PLL System with Phase Noise Simulation</h2>
+      <div class="mermaid-placeholder">Rendering Diagram...</div>
+      <div class="mermaid" id="diagram2">
+        graph TD
+            A[Input Signal] --> B[Phase Detector]
+            B --> C[Loop Filter]
+            C --> D[VCO]
+            D --> E[Output Signal]
+            D --> F[Frequency Divider]
+            F --> B
+            G[Phase Noise Model] --> D
+      </div>
+      <div class="download-buttons">
+        <button onclick="downloadDiagram('diagram2', 'svg')">Download SVG</button>
+        <button onclick="downloadDiagram('diagram2', 'png')">Download PNG</button>
+      </div>
     </div>
-    <div class="download-buttons">
-      <button onclick="downloadDiagram('diagram2', 'svg')">Download SVG</button>
-      <button onclick="downloadDiagram('diagram2', 'png')">Download PNG</button>
-    </div>
-  </div>
 
-  <div class="diagram-container">
-    <div class="mermaid" id="diagram3">
-      graph LR
-          A[System Parameters Setup] --> B[Phase Noise Simulation]
-          B --> C[PLL Design in Simulink]
-          C --> D[Performance Analysis]
-          D --> E[Phase Noise Spectrum]
-          D --> F[Step Response Analysis]
-          D --> G[Open-Loop Frequency Response]
+    <div class="diagram-container">
+      <h2>Antenna System Simulation Workflow</h2>
+      <div class="mermaid-placeholder">Rendering Diagram...</div>
+      <div class="mermaid" id="diagram3">
+        graph LR
+            A[System Parameters Setup] --> B[Phase Noise Simulation]
+            B --> C[PLL Design in Simulink]
+            C --> D[Performance Analysis]
+            D --> E[Phase Noise Spectrum]
+            D --> F[Step Response Analysis]
+            D --> G[Open-Loop Frequency Response]
+      </div>
+      <div class="download-buttons">
+        <button onclick="downloadDiagram('diagram3', 'svg')">Download SVG</button>
+        <button onclick="downloadDiagram('diagram3', 'png')">Download PNG</button>
+      </div>
     </div>
-    <div class="download-buttons">
-      <button onclick="downloadDiagram('diagram3', 'svg')">Download SVG</button>
-      <button onclick="downloadDiagram('diagram3', 'png')">Download PNG</button>
-    </div>
-  </div>
 
-  <div class="diagram-container">
-    <div class="mermaid" id="diagram4">
-      graph TD
-          A[Input Signal] --> B[PLL System]
-          B --> C[Signal Stabilization]
-          C --> D[Antenna Transmission Line]
-          D --> E[Insertion Loss Minimization]
-          E --> F[Output Signal]
-          B --> G[Phase Noise Control]
-          C --> H[SFDR Improvement]
-          D --> I[Noise Figure Analysis]
+    <div class="diagram-container">
+      <h2>Complete Antenna System Block Diagram</h2>
+      <div class="mermaid-placeholder">Rendering Diagram...</div>
+      <div class="mermaid" id="diagram4">
+        graph TD
+            A[Input Signal] --> B[PLL System]
+            B --> C[Signal Stabilization]
+            C --> D[Antenna Transmission Line]
+            D --> E[Insertion Loss Minimization]
+            E --> F[Output Signal]
+            B --> G[Phase Noise Control]
+            C --> H[SFDR Improvement]
+            D --> I[Noise Figure Analysis]
+      </div>
+      <div class="download-buttons">
+        <button onclick="downloadDiagram('diagram4', 'svg')">Download SVG</button>
+        <button onclick="downloadDiagram('diagram4', 'png')">Download PNG</button>
+      </div>
     </div>
-    <div class="download-buttons">
-      <button onclick="downloadDiagram('diagram4', 'svg')">Download SVG</button>
-      <button onclick="downloadDiagram('diagram4', 'png')">Download PNG</button>
-    </div>
-  </div>
 
-  <div class="diagram-container">
-    <div class="mermaid" id="diagram5">
-      graph LR
-          A[Reference Signal] --> B[Phase Detector]
-          B --> C[Loop Filter]
-          C --> D[VCO]
-          D --> E[Output Signal]
-          D --> F[Frequency Divider]
-          F --> B
-          G[Noise Figure Analysis] --> E
-          H[Power Analysis] --> C
-          I[SFDR Evaluation] --> E
-          J[Phase Noise Spectrum] --> D
+    <div class="diagram-container">
+      <h2>Feedback Control Loop with Analysis Metrics</h2>
+      <div class="mermaid-placeholder">Rendering Diagram...</div>
+      <div class="mermaid" id="diagram5">
+        graph LR
+            A[Reference Signal] --> B[Phase Detector]
+            B --> C[Loop Filter]
+            C --> D[VCO]
+            D --> E[Output Signal]
+            D --> F[Frequency Divider]
+            F --> B
+            G[Noise Figure Analysis] --> E
+            H[Power Analysis] --> C
+            I[SFDR Evaluation] --> E
+            J[Phase Noise Spectrum] --> D
+      </div>
+      <div class="download-buttons">
+        <button onclick="downloadDiagram('diagram5', 'svg')">Download SVG</button>
+        <button onclick="downloadDiagram('diagram5', 'png')">Download PNG</button>
+      </div>
     </div>
-    <div class="download-buttons">
-      <button onclick="downloadDiagram('diagram5', 'svg')">Download SVG</button>
-      <button onclick="downloadDiagram('diagram5', 'png')">Download PNG</button>
-    </div>
-  </div>
 
-  <div class="diagram-container">
-    <div class="mermaid" id="diagram6">
-      graph TD
-          A[System Parameters Setup] --> B[Phase Noise Simulation]
-          B --> C[PLL Design]
-          C --> D[Open-Loop Response]
-          D --> E[Closed-Loop Response]
-          E --> F[Phase Noise Spectrum]
-          E --> G[Step Response Analysis]
-          E --> H[Performance Metrics]
-          H --> I[SFDR Improvement]
-          H --> J[Power Consumption Analysis]
-          H --> K[Noise Figure Analysis]
-          I --> L[Enhanced Signal Quality]
-          J --> M[Power Efficiency]
-          K --> N[Improved SNR]
-          L --> O[Optimized Antenna Performance]
+    <div class="diagram-container">
+      <h2>Full Block Diagram of the Project</h2>
+      <div class="mermaid-placeholder">Rendering Diagram...</div>
+      <div class="mermaid" id="diagram6">
+        graph TD
+            A[System Parameters Setup] --> B[Phase Noise Simulation]
+            B --> C[PLL Design]
+            C --> D[Open-Loop Response]
+            D --> E[Closed-Loop Response]
+            E --> F[Phase Noise Spectrum]
+            E --> G[Step Response Analysis]
+            E --> H[Performance Metrics]
+            H --> I[SFDR Improvement]
+            H --> J[Power Consumption Analysis]
+            H --> K[Noise Figure Analysis]
+            I --> L[Enhanced Signal Quality]
+            J --> M[Power Efficiency]
+            K --> N[Improved SNR]
+            L --> O[Optimized Antenna Performance]
+      </div>
+      <div class="download-buttons">
+        <button onclick="downloadDiagram('diagram6', 'svg')">Download SVG</button>
+        <button onclick="downloadDiagram('diagram6', 'png')">Download PNG</button>
+      </div>
     </div>
-    <div class="download-buttons">
-      <button onclick="downloadDiagram('diagram6', 'svg')">Download SVG</button>
-      <button onclick="downloadDiagram('diagram6', 'png')">Download PNG</button>
-    </div>
-  </div>
+  </main>
 </body>
 </html>
