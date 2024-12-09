@@ -22,6 +22,11 @@ print("The sum of", num1, "and", num2, "is:", sum_result)
 - It then adds these two numbers and stores the result in `sum_result`.
 - Finally, it prints the sum of the two integers.
 
+
+<p align="center">
+    <img src="./Outputs/Output1.png" alt="Output for 1st program.png">
+</p>
+
 ---
 
 **2. Write a program to find the largest two numbers from a user input array.**
