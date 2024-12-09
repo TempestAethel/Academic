@@ -3,143 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PLL Block Diagram</title>
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    
-    // Initialize mermaid
-    mermaid.initialize({startOnLoad:true});
-  </script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      padding: 20px;
-    }
-    .toggle-button {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      background-color: #007bff;
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .mermaid {
-      margin-bottom: 40px;
-    }
-    .mermaid svg {
-      max-width: 100%;
-      height: auto;
-    }
-    .light-theme {
-      background-color: #ffffff;
-      color: #333;
-    }
-    .dark-theme {
-      background-color: #2e2e2e;
-      color: #f1f1f1;
-    }
-  </style>
-</head>
-<body class="dark-theme">
-  <button class="toggle-button" onclick="toggleTheme()">Toggle Theme</button>
-  <div class="container">
-    <h1>PLL System and Antenna Workflow Diagrams</h1>
-    
-    <div class="mermaid">
-      graph TD  
-          A[Input Signal] --> B[Phase Detector]  
-          B --> C[Loop Filter]  
-          C --> D[VCO]  
-          D --> E[Output Signal]  
-          D --> F[Frequency Divider]  
-          F --> B
-    </div>
-    
-    <div class="mermaid">
-      graph TD  
-          A[Input Signal] --> B[Phase Detector]  
-          B --> C[Loop Filter]  
-          C --> D[VCO]  
-          D --> E[Output Signal]  
-          D --> F[Frequency Divider]  
-          F --> B  
-          G[Phase Noise Model] --> D
-    </div>
-    
-    <div class="mermaid">
-      graph LR  
-          A[System Parameters Setup] --> B[Phase Noise Simulation]  
-          B --> C[PLL Design in Simulink]  
-          C --> D[Performance Analysis]  
-          D --> E[Phase Noise Spectrum]  
-          D --> F[Step Response Analysis]  
-          D --> G[Open-Loop Frequency Response]
-    </div>
-    
-    <div class="mermaid">
-      graph TD  
-          A[Input Signal] --> B[PLL System]  
-          B --> C[Signal Stabilization]  
-          C --> D[Antenna Transmission Line]  
-          D --> E[Insertion Loss Minimization]  
-          E --> F[Output Signal]  
-          B --> G[Phase Noise Control]  
-          C --> H[SFDR Improvement]  
-          D --> I[Noise Figure Analysis]
-    </div>
-    
-    <div class="mermaid">
-      graph LR  
-          A[Reference Signal] --> B[Phase Detector]  
-          B --> C[Loop Filter]  
-          C --> D[VCO]  
-          D --> E[Output Signal]  
-          D --> F[Frequency Divider]  
-          F --> B  
-          G[Noise Figure Analysis] --> E  
-          H[Power Analysis] --> C  
-          I[SFDR Evaluation] --> E  
-          J[Phase Noise Spectrum] --> D
-    </div>
-    
-    <div class="mermaid">
-      graph TD  
-          A[System Parameters Setup] --> B[Phase Noise Simulation]  
-          B --> C[PLL Design]  
-          C --> D[Open-Loop Response]  
-          D --> E[Closed-Loop Response]  
-          E --> F[Phase Noise Spectrum]  
-          E --> G[Step Response Analysis]  
-          E --> H[Performance Metrics]  
-          H --> I[SFDR Improvement]  
-          H --> J[Power Consumption Analysis]  
-          H --> K[Noise Figure Analysis]  
-          I --> L[Enhanced Signal Quality]  
-          J --> M[Power Efficiency]  
-          K --> N[Improved SNR]  
-          L --> O[Optimized Antenna Performance]
-    </div>
-    
-  </div>
-
+  <title>Mermaid Diagrams</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
-    function toggleTheme() {
-      const body = document.body;
-      if (body.classList.contains('dark-theme')) {
-        body.classList.remove('dark-theme');
-        body.classList.add('light-theme');
-      } else {
-        body.classList.remove('light-theme');
-        body.classList.add('dark-theme');
+    mermaid.initialize({ startOnLoad: true });
+
+    // Function to download the diagram
+    function downloadDiagram(elementId, format) {
+      const svg = document.getElementById(elementId).querySelector("svg");
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svg);
+
+      if (format === "svg") {
+        const blob = new Blob([svgString], { type: "image/svg+xml" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `${elementId}.svg`;
+        link.click();
+        URL.revokeObjectURL(url);
+      } else if (format === "png") {
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+        const img = new Image();
+        const svgBlob = new Blob([svgString], { type: "image/svg+xml" });
+        const url = URL.createObjectURL(svgBlob);
+
+        img.onload = () => {
+          canvas.width = img.width;
+          canvas.height = img.height;
+          context.drawImage(img, 0, 0);
+          URL.revokeObjectURL(url);
+
+          canvas.toBlob((blob) => {
+            const pngUrl = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = pngUrl;
+            link.download = `${elementId}.png`;
+            link.click();
+            URL.revokeObjectURL(pngUrl);
+          }, "image/png");
+        };
+        img.src = url;
       }
     }
   </script>
+  <style>
+    .diagram-container {
+      margin-bottom: 30px;
+    }
+    .download-buttons {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mermaid Diagrams with Download Options</h1>
+
+  <div class="diagram-container">
+    <div class="mermaid" id="diagram1">
+      graph TD
+          A[Input Signal] --> B[Phase Detector]
+          B --> C[Loop Filter]
+          C --> D[VCO]
+          D --> E[Output Signal]
+          D --> F[Frequency Divider]
+          F --> B
+    </div>
+    <div class="download-buttons">
+      <button onclick="downloadDiagram('diagram1', 'svg')">Download SVG</button>
+      <button onclick="downloadDiagram('diagram1', 'png')">Download PNG</button>
+    </div>
+  </div>
+
+  <div class="diagram-container">
+    <div class="mermaid" id="diagram2">
+      graph TD
+          A[Input Signal] --> B[Phase Detector]
+          B --> C[Loop Filter]
+          C --> D[VCO]
+          D --> E[Output Signal]
+          D --> F[Frequency Divider]
+          F --> B
+          G[Phase Noise Model] --> D
+    </div>
+    <div class="download-buttons">
+      <button onclick="downloadDiagram('diagram2', 'svg')">Download SVG</button>
+      <button onclick="downloadDiagram('diagram2', 'png')">Download PNG</button>
+    </div>
+  </div>
+
+  <div class="diagram-container">
+    <div class="mermaid" id="diagram3">
+      graph LR
+          A[System Parameters Setup] --> B[Phase Noise Simulation]
+          B --> C[PLL Design in Simulink]
+          C --> D[Performance Analysis]
+          D --> E[Phase Noise Spectrum]
+          D --> F[Step Response Analysis]
+          D --> G[Open-Loop Frequency Response]
+    </div>
+    <div class="download-buttons">
+      <button onclick="downloadDiagram('diagram3', 'svg')">Download SVG</button>
+      <button onclick="downloadDiagram('diagram3', 'png')">Download PNG</button>
+    </div>
+  </div>
+
+  <div class="diagram-container">
+    <div class="mermaid" id="diagram4">
+      graph TD
+          A[Input Signal] --> B[PLL System]
+          B --> C[Signal Stabilization]
+          C --> D[Antenna Transmission Line]
+          D --> E[Insertion Loss Minimization]
+          E --> F[Output Signal]
+          B --> G[Phase Noise Control]
+          C --> H[SFDR Improvement]
+          D --> I[Noise Figure Analysis]
+    </div>
+    <div class="download-buttons">
+      <button onclick="downloadDiagram('diagram4', 'svg')">Download SVG</button>
+      <button onclick="downloadDiagram('diagram4', 'png')">Download PNG</button>
+    </div>
+  </div>
+
+  <div class="diagram-container">
+    <div class="mermaid" id="diagram5">
+      graph LR
+          A[Reference Signal] --> B[Phase Detector]
+          B --> C[Loop Filter]
+          C --> D[VCO]
+          D --> E[Output Signal]
+          D --> F[Frequency Divider]
+          F --> B
+          G[Noise Figure Analysis] --> E
+          H[Power Analysis] --> C
+          I[SFDR Evaluation] --> E
+          J[Phase Noise Spectrum] --> D
+    </div>
+    <div class="download-buttons">
+      <button onclick="downloadDiagram('diagram5', 'svg')">Download SVG</button>
+      <button onclick="downloadDiagram('diagram5', 'png')">Download PNG</button>
+    </div>
+  </div>
+
+  <div class="diagram-container">
+    <div class="mermaid" id="diagram6">
+      graph TD
+          A[System Parameters Setup] --> B[Phase Noise Simulation]
+          B --> C[PLL Design]
+          C --> D[Open-Loop Response]
+          D --> E[Closed-Loop Response]
+          E --> F[Phase Noise Spectrum]
+          E --> G[Step Response Analysis]
+          E --> H[Performance Metrics]
+          H --> I[SFDR Improvement]
+          H --> J[Power Consumption Analysis]
+          H --> K[Noise Figure Analysis]
+          I --> L[Enhanced Signal Quality]
+          J --> M[Power Efficiency]
+          K --> N[Improved SNR]
+          L --> O[Optimized Antenna Performance]
+    </div>
+    <div class="download-buttons">
+      <button onclick="downloadDiagram('diagram6', 'svg')">Download SVG</button>
+      <button onclick="downloadDiagram('diagram6', 'png')">Download PNG</button>
+    </div>
+  </div>
 </body>
 </html>
