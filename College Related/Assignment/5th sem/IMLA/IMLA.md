@@ -22,7 +22,7 @@ print("The sum of", num1, "and", num2, "is:", sum_result)
 - It then adds these two numbers and stores the result in `sum_result`.
 - Finally, it prints the sum of the two integers.
 
-
+**Output:**
 <p align="center">
     <img src="./Outputs/Output1.png" alt="Output for 1st program.png">
 </p>
@@ -51,6 +51,12 @@ print("The two largest numbers are:", arr[0], "and", arr[1])
 - It sorts the array in descending order using `sort(reverse=True)`.
 - It then prints the first two elements, which are the largest numbers in the array.
 
+**Output:**
+<p align="center">
+    <img src="./Outputs/Output2.png" alt="Output for 2nd program.png">
+</p>
+
+
 ---
 
 **3. Write a program that takes a list of numbers and returns their sum.**
@@ -75,6 +81,12 @@ print("The sum of the numbers is:", total_sum)
 - It calculates the sum of the list using Python's built-in `sum()` function.
 - Finally, it prints the total sum of the numbers.
 
+**Output:**
+<p align="center">
+    <img src="./Outputs/Output3.png" alt="Output for 3rd program.png">
+</p>
+
+
 ---
 
 **4. Write a program that calculates the sum of all even numbers between 1 to N. N must be user input.**
@@ -98,6 +110,12 @@ print("The sum of even numbers between 1 and", N, "is:", even_sum)
 - The program takes an integer `N` as input from the user.
 - It calculates the sum of all even numbers between 1 and N using `range(2, N+1, 2)` to generate even numbers from 2 to N.
 - It then prints the total sum of the even numbers.
+
+**Output:**
+<p align="center">
+    <img src="./Outputs/Output4.png" alt="Output for 4th program.png">
+</p>
+
 
 ---
 
@@ -153,5 +171,12 @@ plt.show()
 - It then asks for the two matrices as input from the user.
 - Using `numpy`, it subtracts the second matrix from the first.
 - The result is displayed as a matrix, and then the program plots both matrices using `matplotlib` to visualize them.
+
+**Output:**
+<p align="center">
+    <img src="./Outputs/Output5.png" alt="Output for 5th program.png">
+    <img src="./Outputs/Output5Plot.png" alt="Output for 5th program plot .png">
+</p>
+
 
 ---
