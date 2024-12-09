@@ -367,3 +367,115 @@ RMS_Jitter = (1 / (2*pi*N*Fref)) * sqrt(2 * trapz(freqv, 10.^(10*log10(PN_TOTAL)
 disp(['RMS Jitter = ', num2str(RMS_Jitter * 1e12), ' ps']);
 ```
 
+
+# Simple PLL Block Diagram
+
+**Block Diagram:**  
+```mermaid  
+graph TD  
+    A[Input Signal] --> B[Phase Detector]  
+    B --> C[Loop Filter]  
+    C --> D[VCO]  
+    D --> E[Output Signal]  
+    D --> F[Frequency Divider]  
+    F --> B
+```  
+
+**Explanation:**  
+This is a basic block diagram of a Phase-Locked Loop (PLL) system. It shows the flow of the input signal through the phase detector, followed by a loop filter that controls the voltage-controlled oscillator (VCO). The VCO output is used as the output signal, with feedback through the frequency divider to the phase detector, stabilizing the system.
+
+# Detailed PLL System with Phase Noise Simulation
+
+**Block Diagram:**  
+```mermaid  
+graph TD  
+    A[Input Signal] --> B[Phase Detector]  
+    B --> C[Loop Filter]  
+    C --> D[VCO]  
+    D --> E[Output Signal]  
+    D --> F[Frequency Divider]  
+    F --> B  
+    G[Phase Noise Model] --> D
+```  
+
+**Explanation:**  
+This diagram adds a phase noise model to the basic PLL structure, illustrating how phase noise is introduced to the VCO. The output signal is affected by this noise, making it essential to model and reduce phase noise for improved system performance.
+
+# Antenna System Simulation Workflow
+
+**Block Diagram:**  
+```mermaid  
+graph LR  
+    A[System Parameters Setup] --> B[Phase Noise Simulation]  
+    B --> C[PLL Design in Simulink]  
+    C --> D[Performance Analysis]  
+    D --> E[Phase Noise Spectrum]  
+    D --> F[Step Response Analysis]  
+    D --> G[Open-Loop Frequency Response]
+```  
+
+**Explanation:**  
+This workflow outlines the steps involved in setting up and simulating the antenna system. It starts with system parameter setup, followed by phase noise simulation, PLL design, and performance analysis. The results of the analysis include phase noise spectrum, step response, and frequency response.
+
+# Complete Antenna System Block Diagram
+
+**Block Diagram:**  
+```mermaid  
+graph TD  
+    A[Input Signal] --> B[PLL System]  
+    B --> C[Signal Stabilization]  
+    C --> D[Antenna Transmission Line]  
+    D --> E[Insertion Loss Minimization]  
+    E --> F[Output Signal]  
+    B --> G[Phase Noise Control]  
+    C --> H[SFDR Improvement]  
+    D --> I[Noise Figure Analysis]
+```  
+
+**Explanation:**  
+This diagram represents the full antenna system design. It includes the PLL system for signal stabilization, phase noise control, and insertion loss minimization. Additionally, it addresses SFDR improvement and noise figure analysis, essential for ensuring optimal system performance.
+
+# Feedback Control Loop with Analysis Metrics
+
+**Block Diagram:**  
+```mermaid  
+graph LR  
+    A[Reference Signal] --> B[Phase Detector]  
+    B --> C[Loop Filter]  
+    C --> D[VCO]  
+    D --> E[Output Signal]  
+    D --> F[Frequency Divider]  
+    F --> B  
+    G[Noise Figure Analysis] --> E  
+    H[Power Analysis] --> C  
+    I[SFDR Evaluation] --> E  
+    J[Phase Noise Spectrum] --> D
+```  
+
+**Explanation:**  
+This diagram illustrates the feedback control loop of the PLL system and integrates performance analysis metrics, such as noise figure analysis, power analysis, SFDR evaluation, and phase noise spectrum analysis. These metrics are essential to evaluate and improve the system's overall performance.
+
+# Full Block Diagram of the Project
+
+**Block Diagram:**  
+```mermaid  
+graph TD  
+    A[System Parameters Setup] --> B[Phase Noise Simulation]  
+    B --> C[PLL Design]  
+    C --> D[Open-Loop Response]  
+    D --> E[Closed-Loop Response]  
+    E --> F[Phase Noise Spectrum]  
+    E --> G[Step Response Analysis]  
+    E --> H[Performance Metrics]  
+    H --> I[SFDR Improvement]  
+    H --> J[Power Consumption Analysis]  
+    H --> K[Noise Figure Analysis]  
+    I --> L[Enhanced Signal Quality]  
+    J --> M[Power Efficiency]  
+    K --> N[Improved SNR]  
+    L --> O[Optimized Antenna Performance]
+```  
+
+**Explanation:**  
+This comprehensive diagram covers the entire project, from system parameter setup through phase noise simulation and PLL design. It integrates open-loop and closed-loop responses, performance metrics analysis, and key improvements such as SFDR enhancement, power efficiency, noise figure optimization, and improved signal-to-noise ratio (SNR). The ultimate goal is to achieve optimized antenna performance for high-frequency communication systems.
+
