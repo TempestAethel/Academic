@@ -152,18 +152,43 @@ print("The result of matrix subtraction is:")
 for row in result_matrix:
     print(row)
 
-# Plotting the matrices
-plt.subplot(1, 2, 1)
-plt.title("Matrix 1")
-plt.imshow(matrix1, cmap='viridis')
-plt.colorbar()
+# Function to plot a matrix with numbers displayed and properly labeled axes
+def plot_matrix_with_numbers(matrix, title, color_map):
+    plt.imshow(matrix, cmap=color_map, interpolation='none', aspect='equal')
+    plt.title(title, fontsize=14)
+    plt.colorbar(label="Values")
+    plt.xlabel("Columns", fontsize=12)
+    plt.ylabel("Rows", fontsize=12)
+    
+    # Ensure axes are integer-only
+    rows, cols = matrix.shape
+    plt.xticks(ticks=np.arange(cols), labels=np.arange(1, cols + 1))
+    plt.yticks(ticks=np.arange(rows), labels=np.arange(1, rows + 1))
+    
+    # Add numbers on each cell
+    for i in range(rows):
+        for j in range(cols):
+            plt.text(j, i, f'{matrix[i, j]}', ha='center', va='center', color='black', fontsize=10)
 
-plt.subplot(1, 2, 2)
-plt.title("Matrix 2")
-plt.imshow(matrix2, cmap='viridis')
-plt.colorbar()
+# Plotting all matrices
+plt.figure(figsize=(15, 5))
 
+# First matrix
+plt.subplot(1, 3, 1)
+plot_matrix_with_numbers(np.array(matrix1), "Matrix 1", "Blues")
+
+# Second matrix
+plt.subplot(1, 3, 2)
+plot_matrix_with_numbers(np.array(matrix2), "Matrix 2", "Greens")
+
+# Resultant matrix
+plt.subplot(1, 3, 3)
+plot_matrix_with_numbers(np.array(result_matrix), "Resultant Matrix", "Reds")
+
+# Adjust layout for better spacing
+plt.tight_layout()
 plt.show()
+
 ```
 
 **Explanation:**
