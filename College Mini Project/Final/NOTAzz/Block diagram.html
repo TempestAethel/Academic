@@ -3,55 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mermaid Diagrams with Theme Toggle</title>
+  <title>Mermaid Diagrams with Improved Colors</title>
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
-    mermaid.initialize({ startOnLoad: true });
+    // Mermaid configurations
+    const lightTheme = {
+      background: "#ffffff",
+      nodeTextColor: "#333333",
+      arrowColor: "#4CAF50",
+      lineColor: "#4CAF50",
+      borderColor: "#4CAF50",
+    };
 
-    // Function to download the diagram
-    function downloadDiagram(elementId, format) {
-      const svg = document.getElementById(elementId).querySelector("svg");
-      const serializer = new XMLSerializer();
-      const svgString = serializer.serializeToString(svg);
+    const darkTheme = {
+      background: "#1e1e1e",
+      nodeTextColor: "#f9f9f9",
+      arrowColor: "#8ab4f8",
+      lineColor: "#8ab4f8",
+      borderColor: "#8ab4f8",
+    };
 
-      if (format === "svg") {
-        const blob = new Blob([svgString], { type: "image/svg+xml" });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = `${elementId}.svg`;
-        link.click();
-        URL.revokeObjectURL(url);
-      } else if (format === "png") {
-        const canvas = document.createElement("canvas");
-        const context = canvas.getContext("2d");
-        const img = new Image();
-        const svgBlob = new Blob([svgString], { type: "image/svg+xml" });
-        const url = URL.createObjectURL(svgBlob);
+    function applyMermaidTheme(theme) {
+      const diagrams = document.querySelectorAll(".mermaid > svg");
 
-        img.onload = () => {
-          canvas.width = img.width;
-          canvas.height = img.height;
-          context.drawImage(img, 0, 0);
-          URL.revokeObjectURL(url);
+      diagrams.forEach((svg) => {
+        svg.style.backgroundColor = theme.background;
+        svg.style.color = theme.nodeTextColor;
 
-          canvas.toBlob((blob) => {
-            const pngUrl = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = pngUrl;
-            link.download = `${elementId}.png`;
-            link.click();
-            URL.revokeObjectURL(pngUrl);
-          }, "image/png");
-        };
-        img.src = url;
-      }
+        // Change arrow and line colors
+        svg.querySelectorAll("path").forEach((path) => path.setAttribute("stroke", theme.lineColor));
+        svg.querySelectorAll("polygon").forEach((polygon) => polygon.setAttribute("fill", theme.arrowColor));
+
+        // Change border colors
+        svg.querySelectorAll("rect").forEach((rect) => rect.setAttribute("stroke", theme.borderColor));
+        svg.querySelectorAll("text").forEach((text) => text.setAttribute("fill", theme.nodeTextColor));
+      });
     }
 
     // Theme toggle function
     function toggleTheme() {
       document.body.classList.toggle("dark-theme");
+
+      // Apply corresponding theme to Mermaid diagrams
+      if (document.body.classList.contains("dark-theme")) {
+        applyMermaidTheme(darkTheme);
+      } else {
+        applyMermaidTheme(lightTheme);
+      }
     }
+
+    // Initialize Mermaid with default light theme
+    document.addEventListener("DOMContentLoaded", () => {
+      mermaid.initialize({ startOnLoad: true });
+      applyMermaidTheme(lightTheme);
+    });
   </script>
   <style>
     body {
@@ -103,6 +108,7 @@
       border-radius: 8px;
       padding: 20px;
       background-color: white;
+      text-align: center;
       transition: background-color 0.3s, color 0.3s;
     }
 
@@ -119,13 +125,11 @@
 
     .download-buttons {
       margin-top: 10px;
-      text-align: center;
     }
 
     .download-buttons button {
       padding: 8px 15px;
       font-size: 14px;
-      margin: 5px;
       background-color: #4CAF50;
       color: white;
       border: none;
@@ -143,6 +147,11 @@
 
     h2 {
       margin-bottom: 20px;
+    }
+
+    .mermaid {
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
@@ -166,8 +175,7 @@
             F --> B
       </div>
       <div class="download-buttons">
-        <button onclick="downloadDiagram('diagram1', 'svg')">Download SVG</button>
-        <button onclick="downloadDiagram('diagram1', 'png')">Download PNG</button>
+        <button onclick="downloadDiagram('diagram1')">Download SVG</button>
       </div>
     </div>
 
@@ -185,94 +193,7 @@
             G[Phase Noise Model] --> D
       </div>
       <div class="download-buttons">
-        <button onclick="downloadDiagram('diagram2', 'svg')">Download SVG</button>
-        <button onclick="downloadDiagram('diagram2', 'png')">Download PNG</button>
-      </div>
-    </div>
-
-    <div class="diagram-container">
-      <h2>Antenna System Simulation Workflow</h2>
-      <div class="mermaid-placeholder">Rendering Diagram...</div>
-      <div class="mermaid" id="diagram3">
-        graph LR
-            A[System Parameters Setup] --> B[Phase Noise Simulation]
-            B --> C[PLL Design in Simulink]
-            C --> D[Performance Analysis]
-            D --> E[Phase Noise Spectrum]
-            D --> F[Step Response Analysis]
-            D --> G[Open-Loop Frequency Response]
-      </div>
-      <div class="download-buttons">
-        <button onclick="downloadDiagram('diagram3', 'svg')">Download SVG</button>
-        <button onclick="downloadDiagram('diagram3', 'png')">Download PNG</button>
-      </div>
-    </div>
-
-    <div class="diagram-container">
-      <h2>Complete Antenna System Block Diagram</h2>
-      <div class="mermaid-placeholder">Rendering Diagram...</div>
-      <div class="mermaid" id="diagram4">
-        graph TD
-            A[Input Signal] --> B[PLL System]
-            B --> C[Signal Stabilization]
-            C --> D[Antenna Transmission Line]
-            D --> E[Insertion Loss Minimization]
-            E --> F[Output Signal]
-            B --> G[Phase Noise Control]
-            C --> H[SFDR Improvement]
-            D --> I[Noise Figure Analysis]
-      </div>
-      <div class="download-buttons">
-        <button onclick="downloadDiagram('diagram4', 'svg')">Download SVG</button>
-        <button onclick="downloadDiagram('diagram4', 'png')">Download PNG</button>
-      </div>
-    </div>
-
-    <div class="diagram-container">
-      <h2>Feedback Control Loop with Analysis Metrics</h2>
-      <div class="mermaid-placeholder">Rendering Diagram...</div>
-      <div class="mermaid" id="diagram5">
-        graph LR
-            A[Reference Signal] --> B[Phase Detector]
-            B --> C[Loop Filter]
-            C --> D[VCO]
-            D --> E[Output Signal]
-            D --> F[Frequency Divider]
-            F --> B
-            G[Noise Figure Analysis] --> E
-            H[Power Analysis] --> C
-            I[SFDR Evaluation] --> E
-            J[Phase Noise Spectrum] --> D
-      </div>
-      <div class="download-buttons">
-        <button onclick="downloadDiagram('diagram5', 'svg')">Download SVG</button>
-        <button onclick="downloadDiagram('diagram5', 'png')">Download PNG</button>
-      </div>
-    </div>
-
-    <div class="diagram-container">
-      <h2>Full Block Diagram of the Project</h2>
-      <div class="mermaid-placeholder">Rendering Diagram...</div>
-      <div class="mermaid" id="diagram6">
-        graph TD
-            A[System Parameters Setup] --> B[Phase Noise Simulation]
-            B --> C[PLL Design]
-            C --> D[Open-Loop Response]
-            D --> E[Closed-Loop Response]
-            E --> F[Phase Noise Spectrum]
-            E --> G[Step Response Analysis]
-            E --> H[Performance Metrics]
-            H --> I[SFDR Improvement]
-            H --> J[Power Consumption Analysis]
-            H --> K[Noise Figure Analysis]
-            I --> L[Enhanced Signal Quality]
-            J --> M[Power Efficiency]
-            K --> N[Improved SNR]
-            L --> O[Optimized Antenna Performance]
-      </div>
-      <div class="download-buttons">
-        <button onclick="downloadDiagram('diagram6', 'svg')">Download SVG</button>
-        <button onclick="downloadDiagram('diagram6', 'png')">Download PNG</button>
+        <button onclick="downloadDiagram('diagram2')">Download SVG</button>
       </div>
     </div>
   </main>
