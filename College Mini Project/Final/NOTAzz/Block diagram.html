@@ -196,6 +196,89 @@
         <button onclick="downloadDiagram('diagram2')">Download SVG</button>
       </div>
     </div>
+
+<div class="diagram-container">
+  <h2>Antenna System Simulation Workflow</h2>
+  <div class="mermaid-placeholder">Rendering Diagram...</div>
+  <div class="mermaid" id="diagram3">
+    graph LR
+        A[System Parameters Setup] --> B[Phase Noise Simulation]
+        B --> C[PLL Design in Simulink]
+        C --> D[Performance Analysis]
+        D --> E[Phase Noise Spectrum]
+        D --> F[Step Response Analysis]
+        D --> G[Open-Loop Frequency Response]
+  </div>
+  <div class="download-buttons">
+    <button onclick="downloadDiagram('diagram3')">Download SVG</button>
+  </div>
+</div>
+
+<div class="diagram-container">
+  <h2>Complete Antenna System Block Diagram</h2>
+  <div class="mermaid-placeholder">Rendering Diagram...</div>
+  <div class="mermaid" id="diagram4">
+    graph TD
+        A[Input Signal] --> B[PLL System]
+        B --> C[Signal Stabilization]
+        C --> D[Antenna Transmission Line]
+        D --> E[Insertion Loss Minimization]
+        E --> F[Output Signal]
+        B --> G[Phase Noise Control]
+        C --> H[SFDR Improvement]
+        D --> I[Noise Figure Analysis]
+  </div>
+  <div class="download-buttons">
+    <button onclick="downloadDiagram('diagram4')">Download SVG</button>
+  </div>
+</div>
+
+<div class="diagram-container">
+  <h2>Feedback Control Loop with Analysis Metrics</h2>
+  <div class="mermaid-placeholder">Rendering Diagram...</div>
+  <div class="mermaid" id="diagram5">
+    graph LR
+        A[Reference Signal] --> B[Phase Detector]
+        B --> C[Loop Filter]
+        C --> D[VCO]
+        D --> E[Output Signal]
+        D --> F[Frequency Divider]
+        F --> B
+        G[Noise Figure Analysis] --> E
+        H[Power Analysis] --> C
+        I[SFDR Evaluation] --> E
+        J[Phase Noise Spectrum] --> D
+  </div>
+  <div class="download-buttons">
+    <button onclick="downloadDiagram('diagram5')">Download SVG</button>
+  </div>
+</div>
+
+<div class="diagram-container">
+  <h2>Full Block Diagram of the Project</h2>
+  <div class="mermaid-placeholder">Rendering Diagram...</div>
+  <div class="mermaid" id="diagram6">
+    graph TD
+        A[System Parameters Setup] --> B[Phase Noise Simulation]
+        B --> C[PLL Design]
+        C --> D[Open-Loop Response]
+        D --> E[Closed-Loop Response]
+        E --> F[Phase Noise Spectrum]
+        E --> G[Step Response Analysis]
+        E --> H[Performance Metrics]
+        H --> I[SFDR Improvement]
+        H --> J[Power Consumption Analysis]
+        H --> K[Noise Figure Analysis]
+        I --> L[Enhanced Signal Quality]
+        J --> M[Power Efficiency]
+        K --> N[Improved SNR]
+        L --> O[Optimized Antenna Performance]
+  </div>
+  <div class="download-buttons">
+    <button onclick="downloadDiagram('diagram6')">Download SVG</button>
+  </div>
+</div>
+
   </main>
 </body>
 </html>
