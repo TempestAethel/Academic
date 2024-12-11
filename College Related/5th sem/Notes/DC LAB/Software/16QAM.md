@@ -154,15 +154,11 @@ dataOutG = dataOutG(:);  % Reshape into a column vector
 ```
 % Calculate bit error rate for binary-coded QAM
 [numErrors, ber] = biterr(dataIn, dataOut);
-fprintf('
-The binary coding bit error rate is %5.2e, based on %d errors.
-', ber, numErrors);
+fprintf('The binary coding bit error rate is %5.2e, based on %d errors.', ber, numErrors);
 
 % Calculate bit error rate for Gray-coded QAM
 [numErrorsG, berG] = biterr(dataIn, dataOutG);
-fprintf('
-The Gray coding bit error rate is %5.2e, based on %d errors.
-', berG, numErrorsG);
+fprintf('The Gray coding bit error rate is %5.2e, based on %d errors.', berG, numErrorsG);
 ```
 - **biterr()**: Compares the transmitted data (`dataIn`) with the demodulated data (`dataOut` for binary and `dataOutG` for Gray encoding) to calculate the number of bit errors and the bit error rate (BER).
 - **ber**: The BER for binary encoding.
