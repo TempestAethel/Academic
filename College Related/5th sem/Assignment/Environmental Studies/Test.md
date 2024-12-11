@@ -138,3 +138,209 @@
     d) Noise Pollution Act  
     **Answer:** a) Water Act  
 
+21. **Which of the following wastes are called the Municipal Solid Waste (MSW)?**  
+    a) Food wastes  
+    b) Wood pieces  
+    c) Plastic cans  
+    d) All of the above  
+    **Answer:** d) All of the above  
+
+22. **Which of the following elements makes E-Waste hazardous in nature?**  
+    a) Lead  
+    b) Glass  
+    c) Plastic  
+    d) Iron  
+    **Answer:** a) Lead  
+
+23. **Normal average thickness of stratospheric ozone layer across the globe is around:**  
+    a) 200 DU  
+    b) 300 DU  
+    c) 400 DU  
+    d) 500 DU  
+    **Answer:** b) 300 DU  
+
+24. **Which practice can individuals adopt to contribute to E-waste reduction?**  
+    a) Upgrading to new devices frequently  
+    b) Donating or selling old electronics  
+    c) Throwing electronics in regular trash bins  
+    d) Ignoring old electronics  
+    **Answer:** b) Donating or selling old electronics  
+
+25. **The Water Act, 1974 is applicable to which of the following water bodies?**  
+    a) Rivers and Lakes  
+    b) Groundwater  
+    c) Coastal area  
+    d) All of the above  
+    **Answer:** d) All of the above  
+
+26. **________________ is the solid or semi-solid waste incidental to preparing, cooking, and serving food and cleaning of food service items.**  
+    a) Compost  
+    b) Manure  
+    c) Rubbish  
+    d) Garbage  
+    **Answer:** d) Garbage  
+
+27. **The process of burning municipal solid wastes under suitable temperature conditions in a specific furnace is called:**  
+    a) Landfill  
+    b) Incineration  
+    c) Recycling  
+    d) Vermicomposting  
+    **Answer:** b) Incineration  
+
+28. **According to Solid Waste Management rules 2016, a landfill site should be at a distance of how many meters away from a pond?**  
+    a) 50 meters  
+    b) 100 meters  
+    c) 200 meters  
+    d) 150 meters  
+    **Answer:** c) 200 meters  
+
+29. **The placenta is disposed of in a _____________ color bag.**  
+    a) Red  
+    b) Blue  
+    c) Yellow  
+    d) Black  
+    **Answer:** c) Yellow  
+
+30. **What does the Land Acquisition, Rehabilitation and Resettlement Act, 2013 aim to ensure?**  
+    a) Expeditious acquisition of land  
+    b) Fair compensation and transparency in land acquisition  
+    c) Acquisition of land without considering rehabilitation  
+    d) No compensation for landowners  
+    **Answer:** b) Fair compensation and transparency in land acquisition  
+
+31. **Which of the greenhouse gas is known as colorless, non-flammable, sweetish odor and laughing gas?**  
+    a) Methane  
+    b) CO2  
+    c) Nitrous Oxide  
+    d) Sulfur hexafluoride  
+    **Answer:** c) Nitrous Oxide  
+
+32. **Which of the following is the oldest and the most common method used to dump solid wastes?**  
+    a) River  
+    b) Ocean  
+    c) Landfill  
+    d) None of the above  
+    **Answer:** c) Landfill  
+
+33. **What is Extended Producer Responsibility (EPR) as per the E-waste management rules in India?**  
+    a) The responsibility of consumers to manage E-waste  
+    b) The responsibility of manufacturers to manage E-waste throughout the product lifecycle  
+    c) The responsibility of retailers to manage E-waste disposal  
+    d) The responsibility of informal recyclers to manage E-waste  
+    **Answer:** b) The responsibility of manufacturers to manage E-waste throughout the product lifecycle  
+
+34. **The pH value of the acid rain water is:**  
+    a) 5.7  
+    b) 7.0  
+    c) 8.5  
+    d) 7.5  
+    **Answer:** a) 5.7  
+
+35. **Groundwater is especially prone to excessive hardness due to:**  
+    a) Calcium and Sodium ions  
+    b) Calcium and Magnesium ions  
+    c) Sodium and Magnesium ions  
+    d) Potassium and Calcium ions  
+    **Answer:** b) Calcium and Magnesium ions  
+
+36. **The process of converting wet waste to manure is called:**  
+    a) Incineration  
+    b) Conservation  
+    c) Metabolism  
+    d) Composting  
+    **Answer:** d) Composting  
+
+37. **Which of the following statements is incorrect for plastic wastes?**  
+    a) It is used to make compost  
+    b) It lasts for a longer period of time  
+    c) Toxic fumes are produced when burnt  
+    d) All of the above  
+    **Answer:** a) It is used to make compost  
+
+38. **The waste produced in cotton mills are:**  
+    a) Municipal solid waste  
+    b) Non-biodegradable waste  
+    c) Hazardous waste  
+    d) Non-hazardous waste  
+    **Answer:** d) Non-hazardous waste  
+
+39. **The term ISWM refers to:**  
+    a) International Solid Waste Management  
+    b) Integrated Solid Waste Management  
+    c) Integrated Solid Waste Machine  
+    d) International Solid Waste Mechanism  
+    **Answer:** b) Integrated Solid Waste Management  
+
+40. **Which water source typically contains the highest concentration of radon?**  
+    a) Surface pond  
+    b) Well  
+    c) Ocean  
+    d) Spring  
+    **Answer:** b) Well  
+
+41. **Most bottled water contains fluoride:**  
+    a) True  
+    b) False  
+    **Answer:** a) True  
+
+42. **The Air (Prevention and Control of Pollution) Act, 1981 prohibits the use of:**  
+    a) Lead-based paints  
+    b) Firecrackers  
+    c) Diesel generators  
+    d) Plastic bags  
+    **Answer:** b) Firecrackers  
+
+43. **What is the minimum depth of the landfill required:**  
+    a) 1.5m  
+    b) 1.6m  
+    c) 1.7m  
+    d) 1.8m  
+    **Answer:** a) 1.5m  
+
+44. **Which of the following is not a solution for global warming?**  
+    a) Reducing fossil fuel consumption  
+    b) Planting more trees  
+    c) De-forestation  
+    d) None of the above  
+    **Answer:** c) De-forestation  
+
+45. **Biohazardous sharps containers must be rigid, leak-resistant, and puncture-proof:**  
+    a) True  
+    b) False  
+    **Answer:** a) True  
+
+46. **Which of the following temperature is optimum for incinerators?**  
+    a) 900-1100ºC  
+    b) 100-110ºC  
+    c) 90-110ºC  
+    d) 100-11000ºC  
+    **Answer:** a) 900-1100ºC  
+
+47. **World Ozone Day is being celebrated on:**  
+    a) September 5th  
+    b) September 16th  
+    c) October 15th  
+    d) September 11th  
+    **Answer:** b) September 16th  
+
+48. **Identify the correct one from the given list about wastes:**  
+    a) There is no real waste in nature  
+    b) The apparent wastes collected from one process become the input to another  
+    c) All processes of consumption and production produce waste  
+    d) All of the above  
+    **Answer:** d) All of the above  
+
+49. **Which of the following can be recycled many times?**  
+    a) Wood  
+    b) Plastic  
+    c) Aluminium  
+    d) Organic materials  
+    **Answer:** c) Aluminium  
+
+50. **Which of the following is the remedial measure for acid rain?**  
+    a) Reducing the release of oxides of nitrogen and sulfur into the atmosphere  
+    b) Use of coal, free from sulfur  
+    c) Use of electrostatic precipitator and catalytic converters  
+    d) All of the above  
+    **Answer:** d) All of the above
+    
