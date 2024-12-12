@@ -180,7 +180,20 @@ All programs ask the user for these parameters, which define the characteristics
 
 ---
 
-## Output for Both IIR and FIR Filters
+## Output for FIR Filters
+
+In both FIR and IIR designs, the order of the filter and cutoff frequency are displayed as outputs:
+
+- **FIR Filters**: The order is indirectly determined through the window and formula for calculating `n`.
+- **IIR Filters**: Directly displays the order of the Butterworth filter and the cutoff frequency.
+
+For example:
+```
+
+```
+
+---
+## Output for FIR Filters
 
 In both FIR and IIR designs, the order of the filter and cutoff frequency are displayed as outputs:
 
