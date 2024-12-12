@@ -175,3 +175,19 @@ Yv:
    10.0000 + 0.0000i  -2.0000 + 2.0000i
 circular Frequency shift property is satisfied
 ```  
+
+<div style="text-align: center; margin-top: 20px;">
+  <a href="https://runarok.github.io/GenAI/Misc/Lab/index.html" target="_blank" style="
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  " onmouseover="this.style.backgroundColor='#45a049'" onmouseout="this.style.backgroundColor='#4CAF50'">
+    Open Lab Page
+  </a>
+</div>
