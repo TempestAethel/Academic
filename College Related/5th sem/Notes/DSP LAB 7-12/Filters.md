@@ -16,9 +16,9 @@ clear all;
 close all;
 rp = input('enter the passband ripple=');
 rs = input('enter the stopband ripple=');
-fp = input('enter the passband freq=');
-fs = input('enter the stopband freq=');
-f = input('enter the sampling freq=');
+fp = input('enter the passband freq='); %wp
+fs = input('enter the stopband freq='); %ws
+f = input('enter the sampling freq='); %fs
 ```
 
 ### Example Values
@@ -32,9 +32,9 @@ f = input('enter the sampling freq=');
 - **IIR Filters**:
   - `rp = 3`
   - `rs = 60`
-  - `fp = 150`
-  - `fs = 300`
-  - `f = 1500`
+  - `wp = 150`
+  - `ws = 300`
+  - `fs = 1500`
 
 ---
 
