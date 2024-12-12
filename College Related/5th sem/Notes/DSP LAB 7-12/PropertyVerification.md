@@ -176,20 +176,19 @@ Yv:
 circular Frequency shift property is satisfied
 ```  
 
-<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+# Responsive Centered Button
+
+<div align="center" style="margin-top: 20px;">
   <a href="https://runarok.github.io/GenAI/Misc/Lab/index.html" target="_blank" style="
     display: inline-block;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-color: #4CAF50;
     color: white;
     font-weight: bold;
     padding: 15px 30px;
     font-size: 18px;
     text-decoration: none;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-  " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.3)';" 
-     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(0, 0, 0, 0.2)';">
+    border-radius: 8px;
+  ">
     Open Lab Page
   </a>
 </div>
