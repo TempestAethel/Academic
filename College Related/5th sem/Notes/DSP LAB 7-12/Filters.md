@@ -67,7 +67,7 @@ end
 ### **Step 3: Select Window Function**  
 Window function (e.g., `boxcar`, `hanning`, `hamming`) is selected:  
 ```matlab
-y = boxcar(n1);  % You can replace 'boxcar' with other window types
+y = boxcar(n1);  % You can replace 'boxcar' with other window types namely bartlet , hanning and hamming
 ```  
 
 ### **Step 4: Design FIR Filter**  
