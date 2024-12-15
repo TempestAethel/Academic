@@ -58,7 +58,7 @@
 
 ## **Module 3: Social Responsibilities of Business**
 
-### <a name="#mod3ques1"></a>1. **Explain the social responsibility of business towards different interest groups.**  
+### <a name="mod3ques1"></a>1. **Explain the social responsibility of business towards different interest groups.**
 
 Social responsibility refers to the obligation of businesses to act ethically and contribute to the well-being of society and the interests of various stakeholders. Businesses have a duty to fulfill their responsibilities towards different interest groups, as detailed below:
 
