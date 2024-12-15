@@ -38,7 +38,7 @@
 
 ## **Part 1: Copyright**
 
-### <a name="q1"></a>1. **Explain the criteria that an original work must meet to qualify for copyright protection.**  
+### <a id="q1"></a>1. **Explain the criteria that an original work must meet to qualify for copyright protection.**  
 
 To qualify for copyright protection, a work must fulfill specific criteria as defined under **The Copyright Act, 1957**. Copyright protects original expressions of ideas, not the ideas themselves. The main criteria include:
 
@@ -91,7 +91,7 @@ In conclusion, for a work to qualify for copyright protection, it must:
 This ensures that creators receive **exclusive rights** to their work while promoting creativity and innovation.
 
 
-### <a name="q2"></a>2. **Explain the process of copyright registration. What are the benefits for the copyright holder?**  
+### <a id="q2"></a>2. **Explain the process of copyright registration. What are the benefits for the copyright holder?**  
 
 The process of copyright registration is a formal procedure that allows the creator to legally recognize their ownership of a work. While copyright exists automatically as soon as the work is created, registering the work offers several advantages, including legal proof of ownership and enhanced protection. Below is an explanation of the process of copyright registration and the benefits it provides.
 
@@ -140,7 +140,7 @@ The process of copyright registration is a formal procedure that allows the crea
 
 In conclusion, while copyright protection is automatic upon creation, registering the work provides significant legal and commercial advantages. The process ensures that the creator has official documentation of ownership, exclusive rights to use the work, and the ability to enforce those rights in court.
 
-### <a name="q3"></a>3. **Explain the types/classes of copyrights**  
+### <a id="q3"></a>3. **Explain the types/classes of copyrights**  
 
 Copyright law provides protection to a wide range of creative works, and to ensure clear identification and categorization, it classifies these works into different types or classes. The Copyright Act of 1957 outlines several categories under which various works are eligible for copyright protection. Below are the key types/classes of copyrights:
 
@@ -198,7 +198,7 @@ Copyright law provides protection to a wide range of creative works, and to ensu
 The Copyright Act, 1957 provides a robust framework for the protection of various creative works, ensuring that creators across different fields receive the benefits of intellectual property law. The different types or classes of copyright cover a broad spectrum of creative expression, from literary works to artistic designs, cinematic creations, and software. By classifying these works, copyright law allows for clear ownership and protects the unique contributions of creators across diverse industries.
 
 
-### <a name="q4"></a>4. **What are the roles & functions of a copyright board & society in administering copyright laws & registration?**  
+### <a id="q4"></a>4. **What are the roles & functions of a copyright board & society in administering copyright laws & registration?**  
 
 The Copyright Board and Copyright Societies play crucial roles in the administration of copyright laws and the registration process. These bodies ensure that creators' rights are protected, disputes are resolved, and the registration process is handled efficiently. Below is a detailed explanation of their roles and functions:
 
@@ -261,7 +261,7 @@ The Copyright Board and Copyright Societies play crucial roles in the administra
 The Copyright Board and Copyright Societies play essential roles in the administration of copyright law. The Copyright Board handles legal disputes, appeals, and grants compulsory licenses, while Copyright Societies act as intermediaries, managing royalties, issuing licenses, and protecting creators' interests. Together, they ensure that copyright holders are compensated fairly and that their rights are protected in the marketplace.
 
 
-### <a name="q5"></a>5. **What are the key considerations & tests for determining fair use doctrine under copyright laws? Explain with example**  
+### <a id="q5"></a>5. **What are the key considerations & tests for determining fair use doctrine under copyright laws? Explain with example**  
 
 The **fair use doctrine** under copyright law allows for the limited use of copyrighted works without permission from the copyright holder. It aims to balance the rights of copyright holders with the need to promote the free use of knowledge, creativity, and information. In India, the fair use doctrine is governed by the **Copyright Act, 1957**, and is also influenced by international norms like the **Berne Convention**. However, the application of fair use is not automatic; it depends on several key considerations and tests.
 
@@ -296,7 +296,7 @@ The **fair use doctrine** under copyright law allows for the limited use of copy
 The **fair use doctrine** is a flexible and context-specific defense that balances the interests of copyright holders with the broader goals of education, commentary, and free expression. The key considerations for determining fair use include the purpose of use, the nature of the copyrighted work, the amount of the work used, the impact on the market, and whether the use transforms the original work in some way. For instance, using a brief excerpt from a book for commentary or research is more likely to be fair use than using the entire book for commercial purposes. Each case of fair use is unique, and courts weigh these factors to determine whether the use is justified under the law.
 
 
-### <a name="q6"></a>6. **What are the key events & circumstances surrounding the copyright dispute between the photographer David Slater & the macaque monkey in Indonesia in 2011?**  
+### <a id="q6"></a>6. **What are the key events & circumstances surrounding the copyright dispute between the photographer David Slater & the macaque monkey in Indonesia in 2011?**  
 
 The copyright dispute between photographer **David Slater** and a **macaque monkey** in Indonesia in 2011 is one of the most unusual and high-profile cases involving copyright law. The dispute revolves around the question of who owns the rights to a photograph taken by a monkey, without human intervention. The key events and circumstances are as follows:
 
@@ -332,7 +332,7 @@ The copyright dispute between David Slater and the macaque monkey in Indonesia i
 
 ## **Part 2: Trademark**
 
-### <a name="t1"></a>1. **What is a trademark? Explain the symbols in trademarks**  
+### <a id="t1"></a>1. **What is a trademark? Explain the symbols in trademarks**  
 
 A **trademark** is a unique symbol, word, phrase, logo, design, or combination of these elements used to identify and distinguish goods or services of one party from those of others. Trademarks are an essential component of branding, helping businesses protect their identity and consumers identify products or services in the marketplace. The purpose of a trademark is to ensure that the public can easily recognize the source of a product or service and avoid confusion with competing products.
 
@@ -391,7 +391,7 @@ Trademarks are often accompanied by symbols to indicate their legal status and p
 In summary, a **trademark** is a valuable asset that identifies and protects the brand identity of goods and services. The symbols used with trademarks, such as the ™ and ®, provide important information about the legal status of the mark. The ™ symbol signals that the mark is claimed, while the ® symbol indicates that the mark is registered and legally protected. Trademarks and their symbols help businesses protect their reputation, prevent consumer confusion, and promote fair competition in the marketplace.
 
 
-### <a name="t2"></a>2. **Explain the process of trademark registration. Explain the classification system for trademarks and its role in categorizing different types of marks**  
+### <a id="t2"></a>2. **Explain the process of trademark registration. Explain the classification system for trademarks and its role in categorizing different types of marks**  
 
 **Trademark Registration Process**
 
@@ -466,7 +466,7 @@ Trademarks are classified into different **classes** based on the **Nice Classif
 The **trademark registration process** is a crucial step for businesses to protect their brand identity and ensure legal exclusivity over their marks. The **classification system** plays an important role in organizing trademarks and defining their scope of protection, preventing conflicts, and helping in international trademark protection. By following this system, businesses can ensure that their trademarks are well protected across industries and borders.
 
 
-### <a name="t3"></a>3. **What are the advantages the registration of a trademark provides to the proprietor?**  
+### <a id="t3"></a>3. **What are the advantages the registration of a trademark provides to the proprietor?**  
 
 Registering a trademark provides significant advantages to the proprietor, offering both legal and practical protections. These advantages include:
 
@@ -504,7 +504,7 @@ Registering a trademark provides significant advantages to the proprietor, offer
 
 In conclusion, the registration of a trademark provides numerous benefits that protect the brand’s identity, enhance its commercial value, and provide legal tools for enforcement and expansion. It is a critical step for businesses to safeguard their intellectual property and maintain their competitive advantage.
 
-### <a name="t4"></a>4. **Identify the process of trademark registration & explain briefly the classification of trademarks**  
+### <a id="t4"></a>4. **Identify the process of trademark registration & explain briefly the classification of trademarks**  
 
 The process of trademark registration involves several steps that ensure the mark is legally protected and distinct from others in the marketplace. The steps in trademark registration are as follows:
 
@@ -543,7 +543,7 @@ For example, **Class 25** covers **clothing, footwear, and headgear**, while **C
 
 In conclusion, the trademark registration process is a crucial step for businesses to protect their brands, while the classification system ensures that trademarks are categorized appropriately, offering clear protection based on goods and services.
 
-### <a name="t5"></a>5. **Discuss the famous case law between Coca-Cola and Bisleri International. Put importance in the context of infringement of trademark rights**  
+### <a id="t5"></a>5. **Discuss the famous case law between Coca-Cola and Bisleri International. Put importance in the context of infringement of trademark rights**  
 
 1. **Background of the Coca-Cola vs. Bisleri Case**  
    - The case involves a trademark dispute between **Coca-Cola** and **Bisleri International**, where Coca-Cola accused Bisleri of infringing its trademark rights by adopting packaging similar to Coca-Cola’s for its bottled water products.  
@@ -592,7 +592,7 @@ In conclusion, the trademark registration process is a crucial step for business
 
 ## **Part 3: Industrial Design Rights**
 
-### <a name="id1"></a>1. **Explain industrial design rights**  
+### <a id="id1"></a>1. **Explain industrial design rights**  
 
 1. **Definition of Industrial Design Rights**  
    * Industrial design rights protect the aesthetic or ornamental aspects of an article. These can include the shape, configuration, pattern, or color of an article that gives it a unique visual appearance.  
@@ -642,7 +642,7 @@ In conclusion, the trademark registration process is a crucial step for business
     * By securing these rights, designers can ensure that their creations are not exploited by competitors, allowing them to maintain exclusivity and boost the value of their products in the market.
 
 
-### <a name="id2"></a>2. **Explain the case between Apple vs Samsung Electronics related to industrial design rights**  
+### <a id="id2"></a>2. **Explain the case between Apple vs Samsung Electronics related to industrial design rights**  
 
 1. **Background of the Case**  
    - The Apple vs. Samsung case is a well-known legal dispute that centered on **industrial design rights** and **patent infringement**. The case began in 2011 when Apple filed a lawsuit against Samsung, accusing the company of copying the design of its **iPhone** and **iPad** products.  
@@ -681,7 +681,7 @@ In conclusion, the trademark registration process is a crucial step for business
    - The case also raised important questions about the balance between protecting innovation and preventing monopolies on basic design features. It emphasized the need for a fair and nuanced approach to granting industrial design protections, which should not inhibit competition but should reward creativity and uniqueness in product design.
 
 
-### <a name="id3"></a>3. **Define industrial design and briefly explain the acts and laws governing industrial design**  
+### <a id="id3"></a>3. **Define industrial design and briefly explain the acts and laws governing industrial design**  
 
 1. **Definition of Industrial Design**  
    * An **industrial design** refers to the aesthetic or ornamental aspects of a product, including its shape, configuration, surface ornamentation, or any combination of these elements.  
@@ -715,7 +715,7 @@ In conclusion, the trademark registration process is a crucial step for business
    * The protection of industrial designs encourages creativity and innovation, supports fair competition, and helps businesses safeguard their distinctive product aesthetics from unauthorized use.
 
 
-### <a name="id4"></a>4. **Identify the procedure for registration of industrial design by taking the example of Apple vs Samsung**  
+### <a id="id4"></a>4. **Identify the procedure for registration of industrial design by taking the example of Apple vs Samsung**  
 
 1. **Overview of Industrial Design Registration Process**  
    * The registration of industrial designs is a legal process through which designers or businesses protect the unique aesthetic appearance of their products. The process ensures that the owner of the design has exclusive rights to use it and prevent others from copying or imitating it.
@@ -759,7 +759,7 @@ In conclusion, the trademark registration process is a crucial step for business
    * The process of registration, from creating a new design to filing an application and securing protection, provides a legal framework that encourages innovation while offering protection against imitation in competitive markets.
 
 
-### <a name="id5"></a>5. **Describe the enforcement for industrial design rights**  
+### <a id="id5"></a>5. **Describe the enforcement for industrial design rights**  
 
 1. **Enforcement of Industrial Design Rights**  
    * The enforcement of industrial design rights ensures that the owner of a registered design has the exclusive right to use the design and prevent others from unauthorized use or imitation. It serves to protect the visual appearance of products that are novel and original.
@@ -801,7 +801,7 @@ In conclusion, the trademark registration process is a crucial step for business
    * The role of international treaties and ADR methods further strengthens the global enforcement of industrial design rights, ensuring that designers can protect their work in both domestic and international markets.
 
 
-### <a name="id6"></a>6. **Explain the classification of industrial design and design registration trends in India**  
+### <a id="id6"></a>6. **Explain the classification of industrial design and design registration trends in India**  
 
 1. **Classification of Industrial Designs**  
    * The **classification of industrial designs** refers to categorizing designs based on the nature of the products they are applied to. This helps streamline the registration process, ensuring that designs are grouped according to their function or industry.
@@ -851,7 +851,7 @@ In conclusion, the trademark registration process is a crucial step for business
 
 ## **Part 4: Geographical Indications (GI)**
 
-### <a name="gi1"></a>1. **With specific acts, laws, and rules governing geographical indications in India, give some examples of well-known GI registrations**  
+### <a id="gi1"></a>1. **With specific acts, laws, and rules governing geographical indications in India, give some examples of well-known GI registrations**  
 
 1. **Geographical Indications (GI) in India**  
    * A **Geographical Indication (GI)** is a sign used on products that have a specific geographical origin and possess qualities or a reputation that are due to that origin. GI protection helps preserve the unique characteristics and reputation of products, and it ensures that only producers in that region can use the GI tag.
