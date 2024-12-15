@@ -77,7 +77,8 @@ c. A Robot driving learning problem
 
 ---
 
-### 6. Explain the steps in designing a learning system in detail.  {#q6}
+<a id="q6"></a>
+### 6. Explain the steps in designing a learning system in detail. 
 **Question:**  
 Explain the steps in designing a learning system in detail.  
 
@@ -86,7 +87,8 @@ Explain the steps in designing a learning system in detail.
 
 ---
 
-### 7. Explain different perspectives and issues in machine learning.  {#q7}
+<a id="q7"></a>
+### 7. Explain different perspectives and issues in machine learning. 
 **Question:**  
 Explain different perspectives and issues in machine learning.  
 
@@ -95,7 +97,8 @@ Explain different perspectives and issues in machine learning.
 
 ---
 
-### 8. Define concept learning and discuss with examples.  {#q8}
+<a id="q8"></a>
+### 8. Define concept learning and discuss with examples. 
 **Question:**  
 Define concept learning and discuss with examples.  
 
@@ -104,7 +107,8 @@ Define concept learning and discuss with examples.
 
 ---
 
-### 9. Explain the General-to-Specific Ordering of Hypotheses.  {#q9}
+<a id="q9"></a>
+### 9. Explain the General-to-Specific Ordering of Hypotheses.  
 **Question:**  
 Explain the General-to-Specific Ordering of Hypotheses.  
 
@@ -113,7 +117,8 @@ Explain the General-to-Specific Ordering of Hypotheses.
 
 ---
 
-### 10. Write FIND-S algorithm and explain with example.  {#q10}
+<a id="q10"></a>
+### 10. Write FIND-S algorithm and explain with example.  
 **Question:**  
 Write FIND-S algorithm and explain with the following example:  
 
@@ -129,7 +134,8 @@ Write FIND-S algorithm and explain with the following example:
 
 ---
 
-### 11. What are the key properties and complaints of the FIND-S algorithm?  {#q11}
+<a id="q11"></a>
+### 11. What are the key properties and complaints of the FIND-S algorithm? 
 **Question:**  
 What are the key properties and complaints of the FIND-S algorithm?  
 
@@ -138,7 +144,8 @@ What are the key properties and complaints of the FIND-S algorithm?
 
 ---
 
-### 12. Define Consistent Hypothesis and Version Space.  {#q12}
+<a id="q12"></a>
+### 12. Define Consistent Hypothesis and Version Space.  
 **Question:**  
 Define Consistent Hypothesis and Version Space.  
 
@@ -147,7 +154,8 @@ Define Consistent Hypothesis and Version Space.
 
 ---
 
-### 13. Write a LIST-THEN-ELIMINATE algorithm.  {#q13}
+<a id="q13"></a>
+### 13. Write a LIST-THEN-ELIMINATE algorithm.  
 **Question:**  
 Write a LIST-THEN-ELIMINATE algorithm.  
 
@@ -156,7 +164,8 @@ Write a LIST-THEN-ELIMINATE algorithm.
 
 ---
 
-### 14. Write the candidate elimination algorithm and illustrate with example.  {#q14}
+<a id="q14"></a>
+### 14. Write the candidate elimination algorithm and illustrate with example.  
 **Question:**  
 Write the candidate elimination algorithm and illustrate with an example.  
 
@@ -165,36 +174,46 @@ Write the candidate elimination algorithm and illustrate with an example.
 
 ---
 
-### 15. Write the final version space for given training examples using candidate elimination algorithm.  {#q15}
+<a id="q15"></a>
+### 15. Write the final version space for given training examples using candidate elimination algorithm.  
 **Question:**  
 Write the final version space for the below-mentioned training examples using candidate elimination algorithms:  
 
-**Training Examples:**  
+**Example—1:**
 
+| Origin  | Manufacturer | Color  | Decade | Type     | Example Type |
+|---------|--------------|--------|--------|----------|--------------|
+| Japan   | Honda        | Blue   | 1980   | Economy  | Positive     |
+| Japan   | Toyota       | Green  | 1970   | Sports   | Negative     |
+| Japan   | Toyota       | Blue   | 1990   | Economy  | Positive     |
+| USA     | Chrysler     | Red    | 1980   | Economy  | Negative     |
+| Japan   | Honda        | White  | 1980   | Economy  | Positive     |
+| Japan   | Toyota       | Green  | 1980   | Economy  | Positive     |
+| Japan   | Honda        | Red    | 1990   | Economy  | Negative     |
 
-| Instance | Sky   | AirTemp | Humidity | Wind   | Water | Forecast | EnjoySport |
-|----------|-------|---------|----------|--------|-------|----------|------------|
-| 1        | Sunny | Warm    | Normal   | Strong | Warm  | Same     | Yes        |
-| 2        | Sunny | Warm    | High     | Strong | Warm  | Same     | Yes        |
-| 3        | Rainy | Cold    | High     | Strong | Warm  | Change   | No         |
-| 4        | Sunny | Warm    | High     | Strong | Cool  | Change   | Yes        |
+---
 
-**Hypothesis Representation after Candidate Elimination Algorithm:**  
+**Example—2:**
 
-| Iteration | Specific Hypothesis              | General Hypothesis                                       |
-|-----------|----------------------------------|---------------------------------------------------------|
-| 0         | `< ∅, ∅, ∅, ∅, ∅, ∅ >`           | `< ?, ?, ?, ?, ?, ? >`                                  |
-| 1         | `< Sunny, Warm, Normal, Strong, Warm, Same >` | `< ?, ?, ?, ?, ?, ? >`                                  |
-| 2         | `< Sunny, Warm, ?, Strong, Warm, Same >`      | `< ?, ?, ?, ?, ?, ? >`                                  |
-| 3         | `< Sunny, Warm, ?, Strong, Warm, Same >`      | `< ?, ?, ?, ?, ?, ? >, < Sunny, ?, ?, ?, ?, ? >`       |
-| 4         | `< Sunny, Warm, ?, Strong, ?, ? >`            | `< Sunny, ?, ?, ?, ?, ?>, < ?, Warm, ?, ?, ?, ?>`       |
+| Size  | Color  | Shape    | Class |
+|-------|--------|----------|-------|
+| Big   | Red    | Circle   | No    |
+| Small | Red    | Triangle | No    |
+| Small | Red    | Circle   | Yes   |
+| Big   | Blue   | Circle   | No    |
+| Small | Blue   | Circle   | Yes   |
+
+---
 
 **Answer Placeholder:**  
 <!-- Write your answer here -->
 
+
+
 ---
 
-### 16. Explain in detail the Inductive Bias of Candidate Elimination algorithm.  {#q16}
+<a id="q16"></a>
+### 16. Explain in detail the Inductive Bias of Candidate Elimination algorithm.  
 **Question:**  
 Explain in detail the Inductive Bias of Candidate Elimination algorithm.  
 
