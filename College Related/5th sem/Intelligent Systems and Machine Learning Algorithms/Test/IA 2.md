@@ -23,7 +23,8 @@
 
 ## Questions and Placeholders
 
-### 1. Define Machine Learning. Explain with examples why machine learning is important.  {#q1}
+<a id="q1"></a>
+### 1. Define Machine Learning. Explain with examples why machine learning is important. 
 **Question:**  
 Define Machine Learning. Explain with examples why machine learning is important.  
 
@@ -32,7 +33,8 @@ Define Machine Learning. Explain with examples why machine learning is important
 
 ---
 
-### 2. Discuss some applications of machine learning with examples.  {#q2}
+<a id="q2"></a>
+### 2. Discuss some applications of machine learning with examples.
 **Question:**  
 Discuss some applications of machine learning with examples.  
 
@@ -41,7 +43,8 @@ Discuss some applications of machine learning with examples.
 
 ---
 
-### 3. Explain how some disciplines have influenced machine learning.  {#q3}
+<a id="q3"></a>
+### 3. Explain how some disciplines have influenced machine learning.  
 **Question:**  
 Explain how some disciplines have influenced machine learning.  
 
@@ -50,7 +53,8 @@ Explain how some disciplines have influenced machine learning.
 
 ---
 
-### 4. What are well-posed learning problems?  {#q4}
+<a id="q4"></a>
+### 4. What are well-posed learning problems?
 **Question:**  
 What are well-posed learning problems?  
 
@@ -59,7 +63,8 @@ What are well-posed learning problems?
 
 ---
 
-### 5. Describe the problems with respect to Tasks, Performance, and Experience.  {#q5}
+<a id="q5"></a>
+### 5. Describe the problems with respect to Tasks, Performance, and Experience. 
 **Question:**  
 Describe the following problems with respect to Tasks, Performance, and Experience:  
 
