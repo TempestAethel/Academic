@@ -49,6 +49,85 @@
 
 ### 11. An FSK system transmits binary data at the rate of **2 x 10⁶ bps**. During transmission, AWGN with zero mean and two-sided PSD **10⁻²⁰ W/Hz** is added to the signal. The amplitude of the received sinusoidal wave for digit 1 or 0 is **1 μV**. Determine the average probability of symbol error assuming non-coherent detection.
 
+<p>To determine the average probability of symbol error for an FSK system with non-coherent detection, we can use the following formula for the probability of symbol error:</p>
+
+<pre>
+P_e = Q(√(2E_b / N_0))
+</pre>
+
+<p>Where:</p>
+<ul>
+    <li><strong>P_e</strong> is the probability of symbol error.</li>
+    <li><strong>Q(x)</strong> is the Q-function, which is related to the tail probability of the Gaussian distribution.</li>
+    <li><strong>E_b</strong> is the energy per bit.</li>
+    <li><strong>N_0</strong> is the two-sided power spectral density (PSD) of the noise.</li>
+</ul>
+
+<h3>Step 1: Calculate the energy per bit E_b</h3>
+
+<p>The energy per bit E_b is related to the received signal amplitude A by the following formula:</p>
+
+<pre>
+E_b = A² / R_b
+</pre>
+
+<p>Where:</p>
+<ul>
+    <li><strong>A</strong> is the amplitude of the received signal.</li>
+    <li><strong>R_b</strong> is the bit rate.</li>
+</ul>
+
+<p>Given:</p>
+<ul>
+    <li><strong>A = 1 μV = 1 × 10<sup>-6</sup> V.</li>
+    <li><strong>R_b = 2 × 10<sup>6</sup> bps.</li>
+</ul>
+
+<p>Substitute the values into the equation:</p>
+
+<pre>
+E_b = (1 × 10<sup>-6</sup>)² / (2 × 10<sup>6</sup>) = (1 × 10<sup>-12</sup>) / (2 × 10<sup>6</sup>) = 5 × 10<sup>-19</sup> Joules.
+</pre>
+
+<h3>Step 2: Use the noise power spectral density N_0</h3>
+
+<p>The two-sided power spectral density N<sub>0</sub> is given as:</p>
+
+<pre>
+N_0 = 10<sup>-20</sup> W/Hz.
+</pre>
+
+<h3>Step 3: Calculate the argument of the Q-function</h3>
+
+<p>We now need to calculate the argument of the Q-function:</p>
+
+<pre>
+√(2E_b / N_0) = √((2 × 5 × 10<sup>-19</sup>) / 10<sup>-20</sup>) = √10 ≈ 3.162.
+</pre>
+
+<h3>Step 4: Calculate the probability of symbol error</h3>
+
+<p>The probability of symbol error is:</p>
+
+<pre>
+P_e = Q(3.162).
+</pre>
+
+<p>Using a standard Q-function table or calculator:</p>
+
+<pre>
+Q(3.162) ≈ 0.00078.
+</pre>
+
+<h3>Final Answer:</h3>
+
+<p>The average probability of symbol error is approximately:</p>
+
+<pre>
+P_e ≈ 0.00078.
+</pre>
+
+
 ### 12. A binary data is transmitted over AWGN channel using BPSK at the rate of **2 Mbps**. It is desired to have average probability of error **Pe ≤ 10⁻⁵**, with noise spectral density **No/2 = 10⁻¹² W/Hz**. Determine the average carrier power required at the receiver input if the detector is of coherent type. Take **erfc(3.5) = 0.00025**.
 
 ### 13. Explain Non-coherent BFSK detection with relevant equations and explanation.
