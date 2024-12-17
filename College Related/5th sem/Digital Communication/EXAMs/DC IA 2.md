@@ -47,6 +47,8 @@
 
 ### 10. Derive the expression for the probability of error considering coherent Binary Phase Shift Keying (BPSK) signal.
 
+---
+
 ### 11. An FSK system transmits binary data at the rate of **2 x 10⁶ bps**. During transmission, AWGN with zero mean and two-sided PSD **10⁻²⁰ W/Hz** is added to the signal. The amplitude of the received sinusoidal wave for digit 1 or 0 is **1 μV**. Determine the average probability of symbol error assuming non-coherent detection.
 
 <p>To determine the average probability of symbol error for an FSK system with non-coherent detection, we can use the following formula for the probability of symbol error:</p>
@@ -127,16 +129,316 @@ Q(3.162) ≈ 0.00078.
 P_e ≈ 0.00078.
 </pre>
 
+---
 
 ### 12. A binary data is transmitted over AWGN channel using BPSK at the rate of **2 Mbps**. It is desired to have average probability of error **Pe ≤ 10⁻⁵**, with noise spectral density **No/2 = 10⁻¹² W/Hz**. Determine the average carrier power required at the receiver input if the detector is of coherent type. Take **erfc(3.5) = 0.00025**.
 
+<p>To determine the average carrier power required at the receiver input for a BPSK system under AWGN conditions, we can use the following formula for the probability of error in a BPSK system with coherent detection:</p>
+
+<pre>
+P_e = (1/2) * erfc(√(E_b / N_0))
+</pre>
+
+<p>Where:</p>
+<ul>
+    <li><strong>P_e</strong> is the probability of error.</li>
+    <li><strong>erfc(x)</strong> is the complementary error function.</li>
+    <li><strong>E_b</strong> is the energy per bit.</li>
+    <li><strong>N_0</strong> is the noise power spectral density.</li>
+</ul>
+
+<h3>Step 1: Given values</h3>
+
+<ul>
+    <li><strong>P_e = 10<sup>-5</sup></strong></li>
+    <li><strong>N<sub>0</sub>/2 = 10<sup>-12</sup> W/Hz, so N<sub>0</sub> = 2 × 10<sup>-12</sup> W/Hz.</li>
+    <li><strong>Bit rate R<sub>b</sub> = 2 Mbps = 2 × 10<sup>6</sup> bps.</li>
+    <li><strong>erfc(3.5) = 0.00025</strong></li>
+</ul>
+
+<h3>Step 2: Relating P<sub>e</sub> to erfc</h3>
+
+<p>From the equation for the probability of error:</p>
+
+<pre>
+P_e = (1/2) * erfc(√(E_b / N_0))
+</pre>
+
+<p>Rearranging for erfc(√(E_b / N_0)):</p>
+
+<pre>
+erfc(√(E_b / N_0)) = 2 * P_e
+</pre>
+
+<p>Substitute the given P<sub>e</sub> = 10<sup>-5</sup>:</p>
+
+<pre>
+erfc(√(E_b / N_0)) = 2 * 10<sup>-5</sup>
+</pre>
+
+<h3>Step 3: Solve for √(E<sub>b</sub> / N<sub>0</sub>)</h3>
+
+<p>We are given that erfc(3.5) = 0.00025, so we approximate:</p>
+
+<pre>
+erfc(x) ≈ 2 * 10<sup>-5</sup> ⇒ x ≈ 3.5
+</pre>
+
+<p>Thus:</p>
+
+<pre>
+√(E_b / N_0) = 3.5
+</pre>
+
+<h3>Step 4: Solve for E<sub>b</sub></h3>
+
+<p>Now square both sides of the equation:</p>
+
+<pre>
+(E_b / N_0) = 3.5<sup>2</sup> = 12.25
+</pre>
+
+<p>So:</p>
+
+<pre>
+E_b = 12.25 * N_0
+</pre>
+
+<p>Substitute N<sub>0</sub> = 2 × 10<sup>-12</sup> W/Hz:</p>
+
+<pre>
+E_b = 12.25 * 2 × 10<sup>-12</sup> = 24.5 × 10<sup>-12</sup> Joules
+</pre>
+
+<h3>Step 5: Calculate the average carrier power</h3>
+
+<p>The energy per bit E<sub>b</sub> is related to the carrier power P<sub>c</sub> by the equation:</p>
+
+<pre>
+E_b = P_c / R_b
+</pre>
+
+<p>Where:</p>
+<ul>
+    <li><strong>P_c</strong> is the average carrier power.</li>
+    <li><strong>R_b</strong> is the bit rate.</li>
+</ul>
+
+<p>Rearrange the equation to solve for P<sub>c</sub>:</p>
+
+<pre>
+P_c = E_b * R_b
+</pre>
+
+<p>Substitute E<sub>b</sub> = 24.5 × 10<sup>-12</sup> Joules and R<sub>b</sub> = 2 × 10<sup>6</sup> bps:</p>
+
+<pre>
+P_c = 24.5 × 10<sup>-12</sup> * 2 × 10<sup>6</sup> = 49 × 10<sup>-6</sup> = 49 μW
+</pre>
+
+<h3>Final Answer:</h3>
+
+<p>The average carrier power required at the receiver input is:</p>
+
+<pre>
+P_c = 49 μW.
+</pre>
+
+---
+
 ### 13. Explain Non-coherent BFSK detection with relevant equations and explanation.
+
+<p><strong>Non-Coherent BFSK Detection</strong></p>
+
+<p>Binary Frequency Shift Keying (BFSK) is a form of frequency modulation where two distinct frequencies represent two binary states (0 and 1). Non-coherent detection of BFSK refers to detecting the transmitted binary data without knowledge of the phase of the carrier signal. This means that the receiver does not have access to the phase of the received signal, unlike coherent detection, where phase synchronization is assumed.</p>
+
+<h3>Principle of Non-Coherent BFSK Detection</h3>
+
+<p>In non-coherent BFSK detection, the receiver uses the frequency differences between the two signals to determine which bit was transmitted. Since phase synchronization is not required, the receiver relies on comparing the energy received over each frequency during the symbol period.</p>
+
+<h3>Key Concepts</h3>
+
+<ul>
+    <li><strong>Two Frequencies:</strong> 
+        <ul>
+            <li>The binary 1 is represented by a frequency <strong>f<sub>1</sub></strong>.</li>
+            <li>The binary 0 is represented by a frequency <strong>f<sub>0</sub></strong>.</li>
+        </ul>
+    </li>
+    <li><strong>Non-Coherent Detection:</strong> The receiver doesn’t know the phase of the signal at any point, so it must make decisions based solely on the signal's energy in each frequency band.</li>
+</ul>
+
+<h3>Signal Model</h3>
+
+<p>The transmitted signal for BFSK can be expressed as:</p>
+
+<ul>
+    <li>For bit 1 (represented by frequency <strong>f<sub>1</sub></strong>):</li>
+    <pre>
+    s<sub>1</sub>(t) = √(2E<sub>b</sub>) · cos(2π f<sub>1</sub> t + φ)
+    </pre>
+    
+    <li>For bit 0 (represented by frequency <strong>f<sub>0</sub></strong>):</li>
+    <pre>
+    s<sub>0</sub>(t) = √(2E<sub>b</sub>) · cos(2π f<sub>0</sub> t + φ)
+    </pre>
+</ul>
+
+<p>Where:</p>
+<ul>
+    <li><strong>E<sub>b</sub></strong> is the energy per bit.</li>
+    <li><strong>f<sub>0</sub></strong> and <strong>f<sub>1</sub></strong> are the frequencies corresponding to bit 0 and bit 1, respectively.</li>
+    <li><strong>φ</strong> is the phase, which is unknown in non-coherent detection.</li>
+</ul>
+
+<p>The signal is corrupted by noise, typically modeled as Additive White Gaussian Noise (AWGN).</p>
+
+<h3>Detection Process</h3>
+
+<p>The receiver needs to determine whether bit 1 or bit 0 was transmitted based on the received signal. For non-coherent detection, this is done by comparing the <strong>energy</strong> received during a symbol period for both frequencies <strong>f<sub>0</sub></strong> and <strong>f<sub>1</sub></strong>.</p>
+
+<h4>1. Matched Filter Detection</h4>
+<p>A matched filter is used for each frequency, and the received signal is correlated with the expected waveform for that frequency. The energy for each frequency is computed over the symbol period <strong>T</strong>.</p>
+
+<h4>2. Energy Computation</h4>
+<p>The decision is based on the energies <strong>E<sub>0</sub></strong> and <strong>E<sub>1</sub></strong> computed for the frequencies <strong>f<sub>0</sub></strong> and <strong>f<sub>1</sub></strong>, respectively. The energy for a given frequency is:</p>
+<pre>
+E<sub>f</sub> = ∫<sub>0</sub><sup>T</sup> |r(t) · cos(2π f t)|² dt
+</pre>
+
+<p>Where:</p>
+<ul>
+    <li><strong>r(t)</strong> is the received signal.</li>
+    <li><strong>f</strong> is either <strong>f<sub>0</sub></strong> or <strong>f<sub>1</sub></strong>, depending on the hypothesis.</li>
+</ul>
+
+<h4>3. Decision Rule</h4>
+<p>The receiver computes the energies <strong>E<sub>0</sub></strong> and <strong>E<sub>1</sub></strong> and chooses the bit corresponding to the frequency that has the highest energy. Specifically:</p>
+<ul>
+    <li>If <strong>E<sub>1</sub> > E<sub>0</sub>, bit 1 is detected.</li>
+    <li>If <strong>E<sub>0</sub> > E<sub>1</sub>, bit 0 is detected.</li>
+</ul>
+
+<h3>Probability of Error</h3>
+
+<p>The probability of error for non-coherent BFSK detection is influenced by the signal-to-noise ratio (SNR), which is a function of the energy per bit <strong>E<sub>b</sub></strong> and the noise power spectral density <strong>N<sub>0</sub></strong>.</p>
+
+<p>The probability of error <strong>P<sub>e</sub></strong> for non-coherent detection is given by:</p>
+<pre>
+P<sub>e</sub> = Q(√(E<sub>b</sub> / N<sub>0</sub>))
+</pre>
+
+Where:
+<ul>
+    <li><strong>Q(x)</strong> is the Q-function, which represents the tail probability of the Gaussian distribution.</li>
+</ul>
+
+<h3>Energy Detection Method</h3>
+
+<p>For non-coherent detection, the energy of the signal is the key parameter. The receiver essentially compares the total energy in the received signal during the symbol period for the two frequencies. The frequency corresponding to the greater energy will determine the transmitted bit.</p>
+
+<h3>Key Points of Non-Coherent BFSK Detection</h3>
+
+<ul>
+    <li><strong>No Phase Knowledge:</strong> Non-coherent detection does not require knowledge of the phase of the received signal, which simplifies the detection process compared to coherent detection.</li>
+    <li><strong>Energy Comparison:</strong> The decision is made based on comparing the energy of the signal received at two different frequencies.</li>
+    <li><strong>Matched Filters:</strong> Matched filters are used for optimal detection, as they maximize the signal-to-noise ratio (SNR) at the receiver for each frequency.</li>
+    <li><strong>Error Probability:</strong> The error probability depends on the ratio of the energy per bit <strong>E<sub>b</sub></strong> to the noise power spectral density <strong>N<sub>0</sub></strong>, and it can be calculated using the Q-function.</li>
+</ul>
+
+<h3>Summary</h3>
+
+<p>Non-coherent BFSK detection is based on comparing the energy of the received signal at two distinct frequencies corresponding to the binary bits. It does not require phase synchronization, making it simpler than coherent detection. The probability of error in this system depends on the energy per bit and the noise spectral density, and the error is minimized by using matched filters for each frequency.</p>
+
+---
 
 ### 14. Define the Hilbert Transform. State the properties of it.
 
 ### 15. Define the complex envelope of bandpass signals. Obtain the canonical representation of bandpass signals.
 
+---
+
 ### 16. Explain the Gram-Schmidt Orthogonalization procedure.
+
+<p><strong>Gram-Schmidt Orthogonalization Procedure</strong></p>
+
+<p>The Gram-Schmidt Orthogonalization procedure is a method used in linear algebra to orthogonalize a set of vectors in an inner product space, which means transforming a set of linearly independent vectors into a set of orthogonal (perpendicular) vectors. This process is widely used in various fields such as signal processing, numerical analysis, and machine learning.</p>
+
+<h3>Goal</h3>
+
+<p>The goal of the Gram-Schmidt procedure is to take a set of linearly independent vectors and produce an orthogonal (or orthonormal) set of vectors that span the same subspace. These orthogonal vectors can then be used for more efficient computations or simplifications, such as solving systems of linear equations, eigenvalue problems, and more.</p>
+
+<h3>Procedure</h3>
+
+<p>Given a set of linearly independent vectors, <strong>{v₁, v₂, ..., vₖ}</strong>, the Gram-Schmidt procedure constructs an orthogonal set of vectors <strong>{u₁, u₂, ..., uₖ}</strong> by performing the following steps:</p>
+
+<h4>Step 1: Initialize the First Vector</h4>
+
+<p>Start by defining the first vector of the orthogonal set:</p>
+<pre>
+u₁ = v₁
+</pre>
+
+<h4>Step 2: Orthogonalize Subsequent Vectors</h4>
+
+<p>For each vector <strong>vₖ</strong> in the original set (for <strong>k = 2, 3, ..., n</strong>), subtract the projection of <strong>vₖ</strong> onto each of the previous vectors <strong>u₁, u₂, ..., uₖ₋₁</strong> to ensure orthogonality. The projection of <strong>vₖ</strong> onto <strong>uᵢ</strong> is given by:</p>
+<pre>
+proj(uᵢ) = (vᵢ · uᵢ) / (uᵢ · uᵢ) * uᵢ
+</pre>
+
+<p>So, the new vector <strong>uₖ</strong> is:</p>
+<pre>
+uₖ = vₖ - ∑<sub>i=1</sub><sup>k-1</sup> proj(uᵢ)
+</pre>
+
+<h4>Step 3: Normalize (Optional)</h4>
+
+<p>If you want to create an orthonormal set, normalize each <strong>uᵢ</strong> by dividing it by its magnitude:</p>
+<pre>
+eᵢ = uᵢ / ||uᵢ||
+</pre>
+
+<p>Now, the set <strong>{e₁, e₂, ..., eₖ}</strong> forms an orthonormal basis, where each vector has a unit length (norm = 1).</p>
+
+<h3>Example</h3>
+
+<p>Let’s illustrate the Gram-Schmidt procedure with a simple example. Consider the two linearly independent vectors <strong>v₁ = [1, 1]</strong> and <strong>v₂ = [1, 0]</strong>.</p>
+
+<pre>
+Step 1: Initialize the first vector:
+u₁ = v₁ = [1, 1]
+
+Step 2: Orthogonalize v₂:
+proj(u₁) = (v₂ · u₁) / (u₁ · u₁) * u₁ = (1 * 1 + 0 * 1) / (1 * 1 + 1 * 1) * [1, 1] = 1/2 * [1, 1] = [1/2, 1/2]
+u₂ = v₂ - proj(u₁) = [1, 0] - [1/2, 1/2] = [1/2, -1/2]
+
+Step 3: Normalize (optional):
+||u₁|| = √(1² + 1²) = √2
+e₁ = u₁ / ||u₁|| = [1/√2, 1/√2]
+
+||u₂|| = √((1/2)² + (-1/2)²) = 1/√2
+e₂ = u₂ / ||u₂|| = [1/2, -1/2] / 1/√2 = [√2/2, -√2/2]
+</pre>
+
+<p>Now, the set of orthonormal vectors <strong>{e₁, e₂}</strong> is:</p>
+<pre>
+e₁ = [√2/2, √2/2]
+e₂ = [√2/2, -√2/2]
+</pre>
+
+<h3>Key Points</h3>
+
+<ul>
+    <li><strong>Orthogonal Vectors:</strong> The vectors produced by the Gram-Schmidt process are orthogonal, meaning their inner product (dot product) is zero: <strong>uᵢ · uⱼ = 0</strong> for <strong>i ≠ j</strong>.</li>
+    <li><strong>Orthonormal Vectors:</strong> If the vectors are also normalized, then they are orthonormal, meaning their norms are 1: <strong>||uᵢ|| = 1</strong>.</li>
+    <li><strong>Applications:</strong> The Gram-Schmidt procedure is used in QR decomposition, solving linear systems, and in algorithms such as the Gram-Schmidt algorithm in numerical computing.</li>
+</ul>
+
+<h3>Summary</h3>
+
+<p>The Gram-Schmidt Orthogonalization procedure is a fundamental algorithm used to generate an orthogonal (or orthonormal) set of vectors from a given set of linearly independent vectors. The process involves subtracting projections of the vectors onto each other and, if desired, normalizing them to produce orthonormal vectors.</p>
+
+---
 
 ### 17. Derive the expressions for mean and variance of the correlator outputs. Also, show that the correlator outputs are statistically independent (or) the conversion of the Continuous AWGN Channel into a Vector Channel.
 
