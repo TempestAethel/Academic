@@ -7,12 +7,12 @@
 
 ### 2. Design a linear block code with a minimum distance of 3 and a message block size of 8 bits.
 
-### 3. If ‘C’ is a valid code vector such as C = DG, then prove that **C * H^T = 0**, where H is the parity check matrix.
+### 3. If ‘C’ is a valid code vector such as **C = DG**, then prove that **C * H^T = 0**, where H is the parity check matrix.
 
 ### 4. In a linear block code, the syndrome is given by:
-   - S1 = r1 + r2 + r3 + r5
-   - S2 = r1 + r2 + r4 + r6
-   - S3 = r1 + r3 + r4 + r7
+   - **S1 = r1 + r2 + r3 + r5**
+   - **S2 = r1 + r2 + r4 + r6**
+   - **S3 = r1 + r3 + r4 + r7**
    - Find:
      - Generator matrix [G]
      - Parity check matrix [H]
@@ -60,3 +60,5 @@
 ### 16. Explain the Gram-Schmidt Orthogonalization procedure.
 
 ### 17. Derive the expressions for mean and variance of the correlator outputs. Also, show that the correlator outputs are statistically independent (or) the conversion of the Continuous AWGN Channel into a Vector Channel.
+
+### 18. Derive the expression for the probability of error in a coherent **binary phase shift keying (BPSK)** system.
