@@ -45,8 +45,6 @@ Informed search strategies use problem-specific knowledge, often in the form of 
 - **Greedy Best-First Search**: Selects the node with the smallest estimated cost to reach the goal.
 - **A* Search**: Combines the cost to reach the current node and the heuristic estimate to the goal.
 
-   
-
 **Uninformed Search Strategies**  
 Uninformed (or blind) search strategies do not use additional problem-specific information. They explore states systematically without regard to the goal's location, which often results in higher computational cost.
 
@@ -57,8 +55,6 @@ Uninformed (or blind) search strategies do not use additional problem-specific i
 #### Examples of Uninformed Search:
 - **Breadth-First Search (BFS)**: Explores all nodes at the current depth before proceeding to the next level.
 - **Depth-First Search (DFS)**: Explores as deep as possible along one branch before backtracking.
-
-   
 
 ### Differences Between Informed and Uninformed Search
 
@@ -84,24 +80,17 @@ Uninformed (or blind) search strategies do not use additional problem-specific i
 | **Solution Optimality**    | Can guarantee optimal solutions with proper heuristics (e.g., A* search). | Guarantees optimal solutions in some cases (e.g., BFS). |
 | **Complexity**             | Depends on the quality of the heuristic.                  | May have higher time and space complexity.            |
 
-   
-
 **Scenarios Where Informed Search is Suitable**  
 1. **Pathfinding in Maps**: A* search, which uses heuristics like straight-line distance, is highly effective for finding the shortest path between two locations.  
 2. **Game AI**: Greedy best-first search is useful in scenarios like chess or Go, where heuristic evaluation functions guide the AI's moves.  
 3. **Complex Optimization Problems**: In logistics or resource allocation problems, informed search reduces the search space significantly.
-
-   
 
 **Scenarios Where Uninformed Search is Suitable**  
 1. **Exploring Unknown Spaces**: Breadth-First Search (BFS) is useful when the structure of the solution is unknown, such as navigating a maze.  
 2. **Simple Problem Domains**: Depth-First Search (DFS) can work effectively in problems where solutions are located deep in the search tree but require less computational memory.  
 3. **Guaranteed Solution Search**: BFS ensures finding the shortest solution path when step costs are equal, making it suitable for puzzles like the "8-puzzle" or word ladder problems.
 
-
 ---
-
-   
 
 <a id="q3"></a>
 ### 3. Explain the role of heuristics in informed search strategies. How do heuristics contribute to finding optimal solutions?
@@ -119,7 +108,6 @@ Heuristics are problem-specific knowledge or rules that estimate the cost or dis
 4. **Flexibility**:  
    - Heuristics can be tailored to different problems, allowing their application across diverse domains.
 
-   
 **Example: Heuristics in Pathfinding**  
 - **Straight-Line Distance (Euclidean Distance)**:  
   Used in GPS navigation systems to estimate the direct distance to a destination.  
@@ -266,9 +254,7 @@ Where:
 
 Consider a maze where the robot starts at position ( (1, 1) ) and the goal is at ( (5, 5) ). The Manhattan distance heuristic will calculate:
 
-[
-h(1, 1) = |5 - 1| + |5 - 1| = 4 + 4 = 8
-]
+[ h(1, 1) = |5 - 1| + |5 - 1| = 4 + 4 = 8 ]
 
 This heuristic value of 8 tells the robot that the goal is 8 steps away, in terms of horizontal and vertical movements. As the robot moves closer to the goal, the heuristic value will decrease, guiding the robot to move toward the goal efficiently.
 
