@@ -121,14 +121,11 @@ Heuristics are problem-specific knowledge or rules that estimate the cost or dis
    - Heuristics can be tailored to different problems, allowing their application across diverse domains.
 
    
-
 **Example: Heuristics in Pathfinding**  
 - **Straight-Line Distance (Euclidean Distance)**:  
   Used in GPS navigation systems to estimate the direct distance to a destination.  
 - **Manhattan Distance**:  
   Commonly used in grid-based problems like the 8-puzzle or robotics, where movements are restricted to horizontal and vertical directions.
-
-   
 
 **Impact of Heuristics on Optimality**  
 1. **Admissible Heuristics**:  
@@ -137,8 +134,6 @@ Heuristics are problem-specific knowledge or rules that estimate the cost or dis
 2. **Non-Admissible Heuristics**:  
    - May lead to suboptimal solutions but often speeds up the search significantly.  
    - Example: Overestimating travel time to reach a destination.
-
-   
 
 **Challenges in Designing Heuristics**  
 1. **Trade-Off Between Accuracy and Computation**:  
