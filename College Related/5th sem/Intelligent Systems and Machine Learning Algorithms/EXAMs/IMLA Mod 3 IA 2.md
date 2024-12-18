@@ -69,7 +69,6 @@ Uninformed (or blind) search strategies do not use additional problem-specific i
 | **Examples**               | Greedy Best-First Search, A* Search           | BFS, DFS                                   |
 | **Knowledge Required**     | Requires additional problem-specific knowledge.| No additional knowledge required.          |
 
-
 ---   
 
 <a id="q2"></a>
