@@ -162,7 +162,7 @@ A **heuristic function** is a strategy or approach used to simplify and speed up
 
 2. **Euclidean Distance:**
    - This heuristic is often used in problems involving continuous space (e.g., robotics or game AI). It calculates the straight-line distance between two points.
-   - Example: For two points \( (x_1, y_1) \) and \( (x_2, y_2) \), the heuristic is calculated as \( \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \).
+   - Example: For two points ( (x_1, y_1) ) and ( (x_2, y_2) ), the heuristic is calculated as ( \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} ).
 
 3. **Greedy Heuristic:**
    - A simple heuristic used in algorithms like Greedy Best-First Search. It focuses on the next immediate best step without considering the overall path.
@@ -170,7 +170,7 @@ A **heuristic function** is a strategy or approach used to simplify and speed up
 
 4. **A* Heuristic:**
    - A combination of the actual cost to reach a point and an estimated cost to reach the goal. It balances between exploration and exploitation.
-   - Example: In pathfinding, A* uses the formula \( f(n) = g(n) + h(n) \), where \( g(n) \) is the cost from the start to node \( n \), and \( h(n) \) is the heuristic estimate from \( n \) to the goal.
+   - Example: In pathfinding, A* uses the formula ( f(n) = g(n) + h(n) ), where ( g(n) ) is the cost from the start to node ( n ), and ( h(n) ) is the heuristic estimate from ( n ) to the goal.
 
 5. **Domain-Specific Heuristics:**
    - These are tailored to particular problems and incorporate domain knowledge. For example, in chess, a heuristic might prioritize piece safety or control of the center.
@@ -234,15 +234,15 @@ For this problem, we'll design a heuristic function based on the **Manhattan dis
 
 **Heuristic Function:**
 
-Let the robot’s current position be \( (x_1, y_1) \) and the goal position be \( (x_2, y_2) \). The **Manhattan distance** heuristic \( h(x_1, y_1) \) is calculated as:
+Let the robot’s current position be ( (x_1, y_1) ) and the goal position be ( (x_2, y_2) ). The **Manhattan distance** heuristic ( h(x_1, y_1) ) is calculated as:
 
 [
 h(x_1, y_1) = |x_2 - x_1| + |y_2 - y_1|
 ]
 
 Where:
-- \( |x_2 - x_1| \) is the absolute difference in the x-coordinates (horizontal distance),
-- \( |y_2 - y_1| \) is the absolute difference in the y-coordinates (vertical distance).
+- ( |x_2 - x_1| ) is the absolute difference in the x-coordinates (horizontal distance),
+- ( |y_2 - y_1| ) is the absolute difference in the y-coordinates (vertical distance).
 
 **Justification for the Choice of Heuristic:**
 
@@ -265,7 +265,7 @@ Where:
 
 **Example:**
 
-Consider a maze where the robot starts at position \( (1, 1) \) and the goal is at \( (5, 5) \). The Manhattan distance heuristic will calculate:
+Consider a maze where the robot starts at position ( (1, 1) ) and the goal is at ( (5, 5) ). The Manhattan distance heuristic will calculate:
 
 [
 h(1, 1) = |5 - 1| + |5 - 1| = 4 + 4 = 8
@@ -287,7 +287,7 @@ Greedy Best-First Search is an **informed search algorithm** that selects the mo
 The key principles of Greedy Best-First Search are:
 
 1. **Use of Heuristic Information:**
-   - GBFS utilizes a **heuristic function** \( h(n) \) that estimates the cost or distance from a given node \( n \) to the goal. The algorithm selects the node with the **lowest heuristic value** to expand next.
+   - GBFS utilizes a **heuristic function** ( h(n) ) that estimates the cost or distance from a given node ( n ) to the goal. The algorithm selects the node with the **lowest heuristic value** to expand next.
    - The heuristic function is a critical part of GBFS, as it guides the algorithm toward the goal by predicting which node is most likely to lead to a solution.
 
 2. **Greedy Approach:**
@@ -308,7 +308,7 @@ The key principles of Greedy Best-First Search are:
    - The heuristic essentially serves as a "map" that directs the search process, aiming to reduce the number of nodes explored.
 
 2. **Selection of Nodes to Explore:**
-   - At each step, GBFS selects the node with the **lowest heuristic value** \( h(n) \). This means that the algorithm will prioritize nodes that appear to be closest to the goal, based on the heuristic’s prediction.
+   - At each step, GBFS selects the node with the **lowest heuristic value** ( h(n) ). This means that the algorithm will prioritize nodes that appear to be closest to the goal, based on the heuristic’s prediction.
    - The algorithm continually evaluates nodes based on their heuristic values, expanding the most promising node first.
 
 3. **Estimation of Goal Distance:**
@@ -316,9 +316,9 @@ The key principles of Greedy Best-First Search are:
    - The heuristic value influences the algorithm’s decision to explore certain paths, aiming to minimize the number of nodes expanded to reach the goal.
 
 **Example:**
-Consider a maze where the robot is trying to reach the goal. Suppose the robot’s current position is at \( (1, 1) \) and the goal is at \( (5, 5) \). If the heuristic used is **Manhattan distance**, then the robot would calculate the heuristic value for each neighboring node and choose the one that is closest to the goal in terms of the horizontal and vertical distance.
+Consider a maze where the robot is trying to reach the goal. Suppose the robot’s current position is at ( (1, 1) ) and the goal is at ( (5, 5) ). If the heuristic used is **Manhattan distance**, then the robot would calculate the heuristic value for each neighboring node and choose the one that is closest to the goal in terms of the horizontal and vertical distance.
 
-If at node \( (1, 1) \), the heuristic to the goal at \( (5, 5) \) is \( h(1, 1) = 8 \) (since \( |5 - 1| + |5 - 1| = 8 \)), the algorithm will look at all neighboring nodes and choose the one with the smallest heuristic value to explore next.
+If at node ( (1, 1) ), the heuristic to the goal at ( (5, 5) ) is ( h(1, 1) = 8 ) (since ( |5 - 1| + |5 - 1| = 8 )), the algorithm will look at all neighboring nodes and choose the one with the smallest heuristic value to explore next.
 
 **Advantages of Greedy Best-First Search:**
 
@@ -411,7 +411,7 @@ Greedy Best-First Search (GBFS) is one of several search algorithms that fall un
 
 **Informed Strategy:** GBFS is an informed search algorithm that selects nodes based solely on their heuristic values, aiming to explore nodes that seem to lead closest to the goal. It is **greedy** because it prioritizes immediate proximity to the goal rather than considering the cost to reach the node.
 
-- **Heuristic Function:** Uses only the heuristic function \( h(n) \), which estimates the cost or distance from the current node to the goal.
+- **Heuristic Function:** Uses only the heuristic function ( h(n) ), which estimates the cost or distance from the current node to the goal.
 - **Goal:** Minimize the heuristic value to reach the goal.
 - **Exploration Strategy:** Expands the node that appears to be closest to the goal (i.e., the node with the lowest heuristic value).
 - **Optimality:** Does not guarantee optimal solutions because it does not consider the cost of reaching a node.
@@ -432,8 +432,8 @@ Greedy Best-First Search (GBFS) is one of several search algorithms that fall un
 - **Exploration Strategy:** Expands all nodes at one depth level before moving to the next.
 - **Optimality:** Guarantees optimality if all edges have the same cost, as it explores the shallowest paths first.
 - **Completeness:** Guaranteed to find a solution if one exists, as it explores all possible paths.
-- **Time Complexity:** \( O(b^d) \), where \( b \) is the branching factor and \( d \) is the depth of the shallowest goal.
-- **Memory Complexity:** \( O(b^d) \), which can be large for deep or large search spaces.
+- **Time Complexity:** ( O(b^d) ), where ( b ) is the branching factor and ( d ) is the depth of the shallowest goal.
+- **Memory Complexity:** ( O(b^d) ), which can be large for deep or large search spaces.
 
 **Example:** BFS is useful in finding the shortest path in an unweighted graph, like searching for the shortest route on a map where all roads have equal length.
 
@@ -448,8 +448,8 @@ Greedy Best-First Search (GBFS) is one of several search algorithms that fall un
 - **Exploration Strategy:** Expands nodes by diving deep along one branch before backtracking.
 - **Optimality:** Does not guarantee optimal solutions and may get stuck in long, non-optimal paths.
 - **Completeness:** Not complete in infinite search spaces or graphs with cycles.
-- **Time Complexity:** \( O(b^d) \), where \( b \) is the branching factor and \( d \) is the depth of the shallowest goal.
-- **Memory Complexity:** \( O(bd) \), which is generally more memory efficient than BFS.
+- **Time Complexity:** ( O(b^d) ), where ( b ) is the branching factor and ( d ) is the depth of the shallowest goal.
+- **Memory Complexity:** ( O(bd) ), which is generally more memory efficient than BFS.
 
 **Example:** DFS is useful when memory is limited, and the search space is deep but not overly wide. It can be effective in problems where you need to explore all possibilities and find any solution, not necessarily the optimal one.
 
@@ -457,12 +457,12 @@ Greedy Best-First Search (GBFS) is one of several search algorithms that fall un
 
 **Informed Strategy:** A* combines the advantages of both **GBFS** and **Uniform Cost Search (UCS)**. It uses both the cost to reach the current node and the heuristic to estimate the total cost to the goal.
 
-- **Heuristic Function:** Uses both the actual cost to reach a node \( g(n) \) and the heuristic \( h(n) \), combining them into a cost function \( f(n) = g(n) + h(n) \).
-- **Goal:** Minimize the total estimated cost \( f(n) \), which considers both the cost to reach the node and the estimated distance to the goal.
-- **Exploration Strategy:** Expands nodes that minimize the total cost \( f(n) \), balancing exploration based on both cost and heuristic.
+- **Heuristic Function:** Uses both the actual cost to reach a node ( g(n) ) and the heuristic ( h(n) ), combining them into a cost function ( f(n) = g(n) + h(n) ).
+- **Goal:** Minimize the total estimated cost ( f(n) ), which considers both the cost to reach the node and the estimated distance to the goal.
+- **Exploration Strategy:** Expands nodes that minimize the total cost ( f(n) ), balancing exploration based on both cost and heuristic.
 - **Optimality:** Guarantees optimality if the heuristic is admissible (never overestimates the cost to the goal).
 - **Completeness:** Always finds a solution if one exists, provided the search space is finite.
-- **Time Complexity:** Generally \( O(b^d) \), but more efficient than BFS for most problems with a good heuristic.
+- **Time Complexity:** Generally ( O(b^d) ), but more efficient than BFS for most problems with a good heuristic.
 - **Memory Complexity:** Requires more memory than GBFS, since it must store both the cost and heuristic for each node.
 
 **Example:** A* is widely used in pathfinding applications like robotics and navigation, where both the cost of movement and a good heuristic (e.g., Euclidean distance) are available.
@@ -473,10 +473,10 @@ Greedy Best-First Search (GBFS) is one of several search algorithms that fall un
 
 - **Heuristic Function:** Does not use any heuristic function.
 - **Goal:** Minimize the cost to reach the goal, considering only the cost of paths traversed.
-- **Exploration Strategy:** Expands nodes based on the lowest path cost \( g(n) \), ensuring the cheapest path is explored first.
+- **Exploration Strategy:** Expands nodes based on the lowest path cost ( g(n) ), ensuring the cheapest path is explored first.
 - **Optimality:** Guarantees optimality when path costs are non-negative.
 - **Completeness:** Guaranteed to find a solution if one exists and the search space is finite.
-- **Time Complexity:** \( O(b^d) \), similar to BFS, but more efficient when path costs are considered.
+- **Time Complexity:** ( O(b^d) ), similar to BFS, but more efficient when path costs are considered.
 - **Memory Complexity:** Requires more memory than BFS due to the need to store the path costs for each node.
 
 **Example:** UCS is ideal for finding the least-cost path in weighted graphs, such as route planning where different roads or routes have different costs (e.g., in transportation networks).
@@ -485,11 +485,11 @@ Greedy Best-First Search (GBFS) is one of several search algorithms that fall un
 
 | **Property**               | **Greedy Best-First Search (GBFS)**               | **Breadth-First Search (BFS)**              | **Depth-First Search (DFS)**             | **A\* Search**                        | **Uniform Cost Search (UCS)**     |
 |                           -|                                                --|                                          -|                                       -|                                    --|                                 --|
-| **Heuristic Usage**         | Uses only heuristic function \( h(n) \)           | Does not use any heuristic                | Does not use any heuristic             | Uses both \( g(n) \) and \( h(n) \)  | Does not use any heuristic       |
+| **Heuristic Usage**         | Uses only heuristic function ( h(n) )           | Does not use any heuristic                | Does not use any heuristic             | Uses both ( g(n) ) and ( h(n) )  | Does not use any heuristic       |
 | **Optimality**              | Not guaranteed                                  | Guaranteed if all edge costs are equal    | Not guaranteed                         | Guaranteed with admissible heuristic | Guaranteed with non-negative costs|
 | **Completeness**            | Can fail if heuristic is misleading               | Always finds a solution if one exists     | Can fail in infinite spaces or cyclic graphs | Always finds a solution if one exists | Always finds a solution if one exists |
-| **Time Complexity**         | Can be fast, depends on heuristic                 | \( O(b^d) \)                             | \( O(b^d) \)                           | \( O(b^d) \), but more efficient with good heuristic | \( O(b^d) \)                       |
-| **Memory Complexity**       | Low memory usage                                 | \( O(b^d) \)                             | \( O(bd) \)                            | \( O(b^d) \), higher than GBFS      | Higher than BFS, stores path costs|
+| **Time Complexity**         | Can be fast, depends on heuristic                 | ( O(b^d) )                             | ( O(b^d) )                           | ( O(b^d) ), but more efficient with good heuristic | ( O(b^d) )                       |
+| **Memory Complexity**       | Low memory usage                                 | ( O(b^d) )                             | ( O(bd) )                            | ( O(b^d) ), higher than GBFS      | Higher than BFS, stores path costs|
 
    
 
@@ -511,14 +511,14 @@ The **A\* search algorithm** is a widely used **informed search** algorithm that
 
 1. **Node Representation:**
    Each node in the search space has three key components:
-   - \( g(n) \): The **cost** to reach the node \( n \) from the start node. This is the actual path cost.
-   - \( h(n) \): The **heuristic estimate** of the cost from node \( n \) to the goal. This is an estimation of the remaining cost to the goal.
-   - \( f(n) = g(n) + h(n) \): The **total estimated cost** of the path from the start node to the goal through node \( n \). It combines both the cost to reach the node and the heuristic estimate of the remaining distance.
+   - ( g(n) ): The **cost** to reach the node ( n ) from the start node. This is the actual path cost.
+   - ( h(n) ): The **heuristic estimate** of the cost from node ( n ) to the goal. This is an estimation of the remaining cost to the goal.
+   - ( f(n) = g(n) + h(n) ): The **total estimated cost** of the path from the start node to the goal through node ( n ). It combines both the cost to reach the node and the heuristic estimate of the remaining distance.
 
 2. **Search Strategy:**
-   - **Open List (Fringe)**: A priority queue that holds all the nodes that need to be explored. Initially, only the start node is in the open list. Nodes in the open list are prioritized based on the value of \( f(n) \).
+   - **Open List (Fringe)**: A priority queue that holds all the nodes that need to be explored. Initially, only the start node is in the open list. Nodes in the open list are prioritized based on the value of ( f(n) ).
    - **Closed List**: A set that contains all the nodes that have already been expanded (i.e., nodes for which all neighbors have been examined).
-   - The algorithm iterates by expanding the node with the lowest \( f(n) \) value from the open list, then exploring its neighbors. If a better path to a neighbor is found (i.e., a path with a lower \( f(n) \)), the neighbor's values are updated.
+   - The algorithm iterates by expanding the node with the lowest ( f(n) ) value from the open list, then exploring its neighbors. If a better path to a neighbor is found (i.e., a path with a lower ( f(n) )), the neighbor's values are updated.
 
 3. **Termination Criteria:**
    - A* terminates when the goal node is reached, and the path from the start to the goal is returned.
@@ -526,19 +526,19 @@ The **A\* search algorithm** is a widely used **informed search** algorithm that
 
 ### **Role of Heuristic Functions in A\* Search:**
 
-The heuristic function \( h(n) \) plays a crucial role in guiding the search and improving the algorithm's efficiency. Here’s how the heuristic impacts A*:
+The heuristic function ( h(n) ) plays a crucial role in guiding the search and improving the algorithm's efficiency. Here’s how the heuristic impacts A*:
 
 1. **Guiding the Search Direction:**
    - The heuristic helps **prioritize nodes** that appear to be closer to the goal. Without the heuristic, A* would essentially be equivalent to Uniform Cost Search, which explores all nodes based on their actual cost from the start node.
    - A good heuristic ensures that A* does not waste time exploring unpromising paths, making the search more efficient by directing the exploration toward more likely solutions.
 
 2. **Optimizing Search Efficiency:**
-   - The combination of **path cost** \( g(n) \) and **heuristic estimate** \( h(n) \) allows A* to balance between **cost minimization** (from the start node) and **goal-directedness** (through the heuristic). 
+   - The combination of **path cost** ( g(n) ) and **heuristic estimate** ( h(n) ) allows A* to balance between **cost minimization** (from the start node) and **goal-directedness** (through the heuristic). 
    - If the heuristic is very accurate, A* can often find the shortest path quickly, reducing the need to explore irrelevant nodes.
 
 3. **Admissibility of Heuristic:**
    - A heuristic is **admissible** if it never overestimates the true cost to reach the goal. This is important because it ensures that A* remains **optimal**—the path it finds is guaranteed to be the shortest possible path.
-   - If the heuristic is **consistent** (also called **monotonic**), meaning \( h(n) \leq c(n, n') + h(n') \) (where \( c(n, n') \) is the cost from node \( n \) to node \( n' \)), then A* will not revisit nodes and will still guarantee optimality and efficiency.
+   - If the heuristic is **consistent** (also called **monotonic**), meaning ( h(n) \leq c(n, n') + h(n') ) (where ( c(n, n') ) is the cost from node ( n ) to node ( n' )), then A* will not revisit nodes and will still guarantee optimality and efficiency.
 
 4. **Heuristic Accuracy and Efficiency:**
    - The effectiveness of A* is highly dependent on the accuracy of the heuristic. A more accurate heuristic (one that is closer to the actual cost to the goal) will lead to a faster solution, as it will reduce the number of nodes explored.
@@ -548,11 +548,11 @@ The heuristic function \( h(n) \) plays a crucial role in guiding the search and
 
 Consider a **grid-based pathfinding problem**, where a robot must navigate from a start point to a goal point while avoiding obstacles.
 
-- **Heuristic Function \( h(n) \)**: In this case, a common heuristic is the **Manhattan distance** (if movement is restricted to horizontal and vertical moves), which estimates the cost from the current position to the goal by summing the absolute differences in the x and y coordinates.
-  - For instance, if the current node is at position \( (x_1, y_1) \) and the goal is at \( (x_2, y_2) \), the heuristic value would be \( h(n) = |x_1 - x_2| + |y_1 - y_2| \).
+- **Heuristic Function ( h(n) )**: In this case, a common heuristic is the **Manhattan distance** (if movement is restricted to horizontal and vertical moves), which estimates the cost from the current position to the goal by summing the absolute differences in the x and y coordinates.
+  - For instance, if the current node is at position ( (x_1, y_1) ) and the goal is at ( (x_2, y_2) ), the heuristic value would be ( h(n) = |x_1 - x_2| + |y_1 - y_2| ).
 
 - **Step-by-step Execution**:
-   - A* will start at the initial node, calculate the \( f(n) \) values (i.e., the sum of the cost so far \( g(n) \) and the heuristic estimate \( h(n) \)) for each neighboring node, and expand the one with the smallest \( f(n) \).
+   - A* will start at the initial node, calculate the ( f(n) ) values (i.e., the sum of the cost so far ( g(n) ) and the heuristic estimate ( h(n) )) for each neighboring node, and expand the one with the smallest ( f(n) ).
    - This process continues until the goal is reached. The heuristic guides the search by focusing on nodes that seem closer to the goal while considering the path cost.
 
 
@@ -595,19 +595,19 @@ An **admissible heuristic** is a critical concept in the context of the A* searc
 ### **Properties of an Admissible Heuristic:**
 
 1. **Never Overestimates the True Cost:**
-   - An admissible heuristic \( h(n) \) for any node \( n \) in a search space must **never overestimate** the true cost of reaching the goal from that node. This means that \( h(n) \leq h^*(n) \), where \( h^*(n) \) is the true cost to the goal from node \( n \).
+   - An admissible heuristic ( h(n) ) for any node ( n ) in a search space must **never overestimate** the true cost of reaching the goal from that node. This means that ( h(n) \leq h^*(n) ), where ( h^*(n) ) is the true cost to the goal from node ( n ).
    - This ensures that the heuristic always provides a lower or equal value compared to the actual cost to reach the goal. Therefore, it does not lead the search down paths that are more costly than necessary.
 
 2. **Guidance for Search Efficiency:**
-   - While the heuristic function \( h(n) \) must be admissible, it is still allowed to be optimistic. The closer \( h(n) \) is to the true cost, the more effective the heuristic will be in guiding the search and making the algorithm more efficient.
+   - While the heuristic function ( h(n) ) must be admissible, it is still allowed to be optimistic. The closer ( h(n) ) is to the true cost, the more effective the heuristic will be in guiding the search and making the algorithm more efficient.
    - The heuristic acts as a "guide" for A* by prioritizing nodes that appear closer to the goal, allowing A* to explore fewer nodes and reach the goal faster.
 
 3. **Monotonicity (Consistency):**
-   - Although not a strict requirement for admissibility, many heuristics used in A* are also **monotonic** or **consistent**. A heuristic is **consistent** if for every node \( n \) and its successor \( n' \), the heuristic satisfies the condition:
+   - Although not a strict requirement for admissibility, many heuristics used in A* are also **monotonic** or **consistent**. A heuristic is **consistent** if for every node ( n ) and its successor ( n' ), the heuristic satisfies the condition:
      [
      h(n) \leq c(n, n') + h(n')
      ]
-     where \( c(n, n') \) is the actual cost from node \( n \) to node \( n' \).
+     where ( c(n, n') ) is the actual cost from node ( n ) to node ( n' ).
    - Consistency ensures that the estimated cost along any path does not decrease as you move toward the goal, which also guarantees that A* will expand nodes in a way that avoids revisiting nodes unnecessarily.
 
 4. **Non-negative Values:**
@@ -618,8 +618,8 @@ An **admissible heuristic** is a critical concept in the context of the A* searc
 An admissible heuristic contributes to the **optimality** of A* in the following ways:
 
 1. **Ensuring Optimality by Preventing Overestimation:**
-   - The key contribution of an admissible heuristic to A*'s optimality is that it guarantees that A* will never **overestimate** the cost of a path from a node to the goal. Since A* uses both the **actual cost** to reach a node (\( g(n) \)) and the **estimated cost** to reach the goal (\( h(n) \)), the sum \( f(n) = g(n) + h(n) \) represents a lower bound on the total cost.
-   - Because \( h(n) \) is admissible, it ensures that A* will not choose a non-optimal path with a high cost, preventing the algorithm from missing the optimal solution. Thus, A* will always expand the node that has the lowest total estimated cost and will explore the most promising paths first.
+   - The key contribution of an admissible heuristic to A*'s optimality is that it guarantees that A* will never **overestimate** the cost of a path from a node to the goal. Since A* uses both the **actual cost** to reach a node (( g(n) )) and the **estimated cost** to reach the goal (( h(n) )), the sum ( f(n) = g(n) + h(n) ) represents a lower bound on the total cost.
+   - Because ( h(n) ) is admissible, it ensures that A* will not choose a non-optimal path with a high cost, preventing the algorithm from missing the optimal solution. Thus, A* will always expand the node that has the lowest total estimated cost and will explore the most promising paths first.
 
 2. **A* Search Will Always Find the Optimal Solution:**
    - If the heuristic is admissible, A* is guaranteed to find an **optimal solution** to the problem. Since the heuristic does not overestimate, A* can safely expand nodes based on the minimum estimated cost without risking skipping over the optimal solution.
@@ -672,7 +672,7 @@ In this case, the goal is to **minimize the total distance** from the start to t
   [
   h(n) = |x_1 - x_2| + |y_1 - y_2|
   ]
-  where \( (x_1, y_1) \) is the current position of the agent, and \( (x_2, y_2) \) is the position of the goal.
+  where ( (x_1, y_1) ) is the current position of the agent, and ( (x_2, y_2) ) is the position of the goal.
 
 - **Why is it suitable?**
   - The Manhattan distance provides a **lower bound** on the true cost of the path because the agent can only move in the four cardinal directions, and the heuristic reflects the minimum number of steps needed (assuming no obstacles).
@@ -684,7 +684,7 @@ In this case, the goal is to **minimize the total distance** from the start to t
   [
   h(n) = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
   ]
-  where \( (x_1, y_1) \) is the current position and \( (x_2, y_2) \) is the goal position.
+  where ( (x_1, y_1) ) is the current position and ( (x_2, y_2) ) is the goal position.
 
 - **Why is it suitable?**
   - The Euclidean distance gives a more accurate estimate of the actual cost when diagonal movement is allowed.
