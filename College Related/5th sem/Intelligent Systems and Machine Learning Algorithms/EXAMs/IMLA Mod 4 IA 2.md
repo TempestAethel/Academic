@@ -1,4 +1,3 @@
-GG
 # Intelligent Systems and Machine Learning Algorithms (Module 4) - Question Bank
 
 ## Table of Contents
